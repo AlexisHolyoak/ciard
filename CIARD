@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-03-02T16:44:07.136Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36 OPR/66.0.3515.115" etag="kLS9hP-CvFfXNRp65CKI" version="12.7.9" type="github">
+<mxfile host="www.draw.io" modified="2020-03-02T16:44:32.409Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36 OPR/66.0.3515.115" etag="lCGcVqBPC2xtQ71wEX-P" version="12.7.9" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="2490" dy="2022" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -295,10 +295,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VqicLCmAfGiYp4RMHkP9-142" value="FAMILIA_POST_DESASTRE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;fillColor=#008cff;fontColor=#FFFFFF;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="545" y="630" width="230" height="130" as="geometry" />
+          <mxGeometry x="545" y="680" width="230" height="80" as="geometry" />
         </mxCell>
         <mxCell id="VqicLCmAfGiYp4RMHkP9-143" value="+ ID_INFO_FAMILIA)&#xa;+ CONDICION&#xa;+ DAÑOS_PERSONALES" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="VqicLCmAfGiYp4RMHkP9-142">
-          <mxGeometry y="30" width="230" height="100" as="geometry" />
+          <mxGeometry y="30" width="230" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VqicLCmAfGiYp4RMHkP9-150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" edge="1" parent="1" source="VqicLCmAfGiYp4RMHkP9-81" target="VqicLCmAfGiYp4RMHkP9-117">
           <mxGeometry relative="1" as="geometry">
