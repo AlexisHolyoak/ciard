@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2020-03-02T16:21:55.013Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36 OPR/66.0.3515.115" etag="uk4fkPziXQ-DNkwISJs2" version="12.7.9" type="github">
+<mxfile host="www.draw.io" modified="2020-03-02T16:44:07.136Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36 OPR/66.0.3515.115" etag="kLS9hP-CvFfXNRp65CKI" version="12.7.9" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="2253" dy="1900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2490" dy="2022" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -232,19 +232,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VqicLCmAfGiYp4RMHkP9-117" value="INFORMACIÓN_EDAN" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;fillColor=#008cff;fontColor=#FFFFFF;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="520" y="440" width="160" height="120" as="geometry" />
+          <mxGeometry x="525" y="470" width="270" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="VqicLCmAfGiYp4RMHkP9-118" value="+Attribute1&#xa;+Attribute2&#xa;+Attribute3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="VqicLCmAfGiYp4RMHkP9-117">
-          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-118" value="+ ID_INFO_EDAN&#xa;+ INFRAESTRUCTURA_POST_DESASTRE&#xa;+ FAMILIA_POST DESASTRE&#xa;+ ID_DESASTRE" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="VqicLCmAfGiYp4RMHkP9-117">
+          <mxGeometry y="30" width="270" height="70" as="geometry" />
         </mxCell>
         <mxCell id="VqicLCmAfGiYp4RMHkP9-119" value="LO EVALUADORES EDAN PODRAN VER LOS DESASTRES SEGUN LOS ESPACIOS QUE TIENEN ASIGNADOS" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="570" y="170" width="250" height="80" as="geometry" />
         </mxCell>
         <mxCell id="VqicLCmAfGiYp4RMHkP9-120" value="INFO_INFRAESTRUCTURA" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;fillColor=#008cff;fontColor=#FFFFFF;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="200" y="570" width="270" height="290" as="geometry" />
+          <mxGeometry x="200" y="640" width="270" height="320" as="geometry" />
         </mxCell>
-        <mxCell id="VqicLCmAfGiYp4RMHkP9-121" value="+ ID_INFO_INFRAESTRUCTURA&#xa;+ ID_DESASTRE&#xa;+ ID_CATEGORIA&#xa;+ ID_CONSTRUCCIÓN&#xa;+ NUMERO_LOTE&#xa;+ TENENCIA PROPIA (SI / NO)&#xa;+ CONDICION_USO&#xa;+ TECHO&#xa;+ PAREDES&#xa;+ PISO&#xa;+ CANTIDAD DE PISOS&#xa;+ AGUA&#xa;+ ALCANTARILLADO&#xa;+ LUZ&#xa;+ GAS_NATURAL&#xa;+ TRANSPORTE_PUBLICO&#xa;+ TELECOMUNICACIONES" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="VqicLCmAfGiYp4RMHkP9-120">
-          <mxGeometry y="30" width="270" height="260" as="geometry" />
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-121" value="+ ID_INFO_INFRAESTRUCTURA&#xa;+ ID_ESPACIO_URBANO&#xa;+ ID_CATEGORIA&#xa;+ ID_CONSTRUCCIÓN&#xa;+ NUMERO_LOTE&#xa;+ TENENCIA PROPIA (SI / NO)&#xa;+ CONDICION_USO&#xa;+ TECHO&#xa;+ PAREDES&#xa;+ PISO&#xa;+ CANTIDAD DE PISOS&#xa;+ AGUA&#xa;+ ALCANTARILLADO&#xa;+ LUZ&#xa;+ GAS_NATURAL&#xa;+ TRANSPORTE_PUBLICO&#xa;+ TELECOMUNICACIONES&#xa;+ ID_EVALUADOR_EDAN&#xa;+ iID_JEFE_FAMILIA  (ID_INFO_FAMILIA" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="VqicLCmAfGiYp4RMHkP9-120">
+          <mxGeometry y="30" width="270" height="290" as="geometry" />
         </mxCell>
         <mxCell id="VqicLCmAfGiYp4RMHkP9-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="VqicLCmAfGiYp4RMHkP9-122" target="VqicLCmAfGiYp4RMHkP9-121">
           <mxGeometry relative="1" as="geometry" />
@@ -270,16 +270,55 @@
         <mxCell id="VqicLCmAfGiYp4RMHkP9-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VqicLCmAfGiYp4RMHkP9-103" target="VqicLCmAfGiYp4RMHkP9-120">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="VqicLCmAfGiYp4RMHkP9-130" target="VqicLCmAfGiYp4RMHkP9-118">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="VqicLCmAfGiYp4RMHkP9-130" value="INFRAESTRUCTURA_POST_DESASTRE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;fillColor=#008cff;fontColor=#FFFFFF;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="510" y="800" width="280" height="200" as="geometry" />
+          <mxGeometry x="920" y="630" width="280" height="180" as="geometry" />
         </mxCell>
         <mxCell id="VqicLCmAfGiYp4RMHkP9-131" value="+ ID_POST_DESASTRE&#xa;+ INFO_INFRAESTRUCTURA&#xa;+ AGUA&#xa;+ LUZ&#xa;+ GAS_NATURAL&#xa;+ TRANSPORTE_PUBLICO&#xa;+ TELECOMUNICACIONES&#xa;+ ALCANTARILLADO&#xa;+ CONDICION" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="VqicLCmAfGiYp4RMHkP9-130">
-          <mxGeometry y="30" width="280" height="170" as="geometry" />
+          <mxGeometry y="30" width="280" height="150" as="geometry" />
         </mxCell>
         <mxCell id="VqicLCmAfGiYp4RMHkP9-134" value="CONDICION:&lt;br&gt;AFECTADA&lt;br&gt;INHABITABLE&lt;br&gt;DESTRUIDA&lt;br&gt;&lt;br&gt;SOLO SE PUEDEN ACTUALIZAS LOS SERVICIOS BASICOS QUE FUERON MARCADOS CON VERDADERO EN LA PRIMERA CONSULTA" style="shape=note;size=20;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="30" y="890" width="300" height="140" as="geometry" />
+          <mxGeometry x="1270" y="625" width="300" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="VqicLCmAfGiYp4RMHkP9-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1.007;entryY=0.755;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VqicLCmAfGiYp4RMHkP9-131" target="VqicLCmAfGiYp4RMHkP9-134">
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="VqicLCmAfGiYp4RMHkP9-139" target="VqicLCmAfGiYp4RMHkP9-143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-139" value="INFO_FAMILIA" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;fillColor=#008cff;fontColor=#FFFFFF;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="550" y="820" width="220" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-140" value="+ ID_FAMILIA&#xa;+ ID_INFRAESTRUCTURA&#xa;+ ID_PERSONA&#xa;+ GESTANTE&#xa;+ DISCAPACIDAD&#xa;+ ENFERMEDAD_CRONICA" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="VqicLCmAfGiYp4RMHkP9-139">
+          <mxGeometry y="30" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-161" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="VqicLCmAfGiYp4RMHkP9-142" target="VqicLCmAfGiYp4RMHkP9-118">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-142" value="FAMILIA_POST_DESASTRE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;fillColor=#008cff;fontColor=#FFFFFF;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="545" y="630" width="230" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-143" value="+ ID_INFO_FAMILIA)&#xa;+ CONDICION&#xa;+ DAÑOS_PERSONALES" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="VqicLCmAfGiYp4RMHkP9-142">
+          <mxGeometry y="30" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" edge="1" parent="1" source="VqicLCmAfGiYp4RMHkP9-81" target="VqicLCmAfGiYp4RMHkP9-117">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="300" />
+              <mxPoint x="680" y="360" />
+              <mxPoint x="585" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="VqicLCmAfGiYp4RMHkP9-103" target="VqicLCmAfGiYp4RMHkP9-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-156" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="1" source="VqicLCmAfGiYp4RMHkP9-131" target="VqicLCmAfGiYp4RMHkP9-134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="VqicLCmAfGiYp4RMHkP9-121" target="VqicLCmAfGiYp4RMHkP9-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VqicLCmAfGiYp4RMHkP9-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="VqicLCmAfGiYp4RMHkP9-140" target="VqicLCmAfGiYp4RMHkP9-121">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
