@@ -175,7 +175,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Laratrust\LaratrustServiceProvider::class,
-        BeyondCode\ErdGenerator\ErdGeneratorServiceProvider::class,
+        // BeyondCode\ErdGenerator\ErdGeneratorServiceProvider::class,  to run model diagrams
     ],
 
     /*
