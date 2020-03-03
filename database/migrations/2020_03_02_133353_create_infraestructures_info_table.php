@@ -39,6 +39,7 @@ class CreateInfraestructuresInfoTable extends Migration
             $table->boolean('telecomunications')->default(0);            
             $table->timestamps();
         });
+        
     }
 
     /**

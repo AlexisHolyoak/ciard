@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'CIARD'),
+    'name' => env('APP_NAME', 'C.I.A.R.D.'),
 
     /*
     |--------------------------------------------------------------------------
@@ -175,6 +175,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Laratrust\LaratrustServiceProvider::class,
+        BeyondCode\ErdGenerator\ErdGeneratorServiceProvider::class,
     ],
 
     /*
