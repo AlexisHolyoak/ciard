@@ -23,3 +23,4 @@ Route::post('administration/access','AdminController@rolCreation')->name('admin.
 Route::get('/administration/access/edit/{role}','AdminController@rolEdit')->name('admin.access.edit');
 Route::post('/administration/access/update/{role}','AdminController@rolUpdate')->name('admin.access.update');
 
+Route::get('/administration/users','AdminController@users')->name('admin.user.index');

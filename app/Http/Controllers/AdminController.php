@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use App\Role;
 use App\Permission;
+use App\Person;
 class AdminController extends Controller
 {
     //
@@ -38,5 +39,9 @@ class AdminController extends Controller
         $role-> attachPermissions($request->permission_id);
         $role-> save();
         return Redirect::action('AdminController@index');
+    }
+    public function users(){
+        $people= Person::all();
+        return view('admin.users.index',compact(['people']));
     }
 }

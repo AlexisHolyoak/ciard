@@ -12,4 +12,8 @@ class Role extends LaratrustRole
     {
         return $this->belongsToMany(Permission::class,'permission_role');
     }
+
+    public function users(){
+        return $this->hasMany(User::class,);
+    }
 }
