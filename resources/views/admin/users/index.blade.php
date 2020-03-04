@@ -37,7 +37,7 @@
                             </td>
                             <td>{{$person->document_number}}</td>
                             <td>{{$person->name}} {{$person->first_surname}} {{$person->second_surname}}</td>
-                            <td>@foreach($person->user->roles as $role) {{$rol->display_name}} @endforeach</td>
+                            <td>@foreach($person->user->roles as $role) {{$role->display_name}} @endforeach</td>
                             <td>@foreach($person->user->permissions as $permission)
                                 {{$permission->display_name}}
                                 @endforeach</td>
