@@ -2,33 +2,37 @@
 
 return [
     'role_structure' => [
-        'superadministrator' => [
-            'users' => 'c,r,u,d',
-            'profile' => 'r,u'
+        'superadministrador' => [
+            'usuarios' => 'c,r,u,d',
+            'roles'=> 'c,r,u,d',
+            'perfil' => 'r,u',
+            'desastres'=>'c,r,u,d'
         ],
-        'evaluator' => [
-            'people' => 'c,r,u,d',
-            'infraestructure'=>'c,r,u',
+        'evaluador' => [
+            'personas' => 'c,r,u,d',
+            'infraestructura'=>'c,r,u',
             'edan'=> 'c,r,u'
         ],
-        'administrator' => [
-            'users' => 'c,r,u,d',
-            'profile' => 'r,u',
-            'evaluators'=>'c,r,u,d'
+        'administrador' => [
+            'usuarios' => 'c,r,u,d',
+            'perfil' => 'r,u',
+            'roles'=> 'c,r,u',
+            'evaluadores'=>'c,r,u,d',
+            'desastres'=>'c,r,u,d'
         ],
-        'user' => [
-            'profile' => 'r,u'
+        'usuario' => [
+            'pérfil' => 'r,u'
         ],
     ],
     'permission_structure' => [
         'cru_user' => [
-            'profile' => 'c,r,u'
+            'perfil' => 'c,r,u'
         ],
     ],
     'permissions_map' => [
-        'c' => 'create',
-        'r' => 'read',
-        'u' => 'update',
-        'd' => 'delete'
+        'c' => 'crear',
+        'r' => 'visualizar',
+        'u' => 'actualizar',
+        'd' => 'eliminar'
     ]
 ];

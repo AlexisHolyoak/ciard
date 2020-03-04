@@ -10,21 +10,21 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    
-    
-    
+
+
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    
+
     @include('layouts.styles')
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-primary shadow-sm ">
+        <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm ">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'C.I.A.R.D') }}
@@ -36,13 +36,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item {{ Request::is('home', '/*') ? 'active' : '' }}">
+                        <li class="nav-item {{ Request::segment('1')=='home' ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('home') }}">Inicio <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item {{ Request::is('administration', '/*') ? 'active' : '' }}">
+                        <li class="nav-item {{ Request::segment('1')=='administration' ? 'active' : '' }}">
                             <a class="nav-link" href="{{route('admin.index')}}">Administración </a>
                         </li>
-                        <li class="nav-item {{ Request::is('disasters', '/*') ? 'active' : '' }}">
+                        <li class="nav-item {{ Request::segment('1')=='disasters' ? 'active' : '' }}">
                             <a class="nav-link" href="#">Desastres </a>
                         </li>
                     </ul>
@@ -87,7 +87,7 @@
             @yield('content')
         </main>
     </div>
-   
+
     @include('layouts.scripts')
 </body>
 </html>

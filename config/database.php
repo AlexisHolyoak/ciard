@@ -26,6 +26,23 @@ return [
     | Of course, examples of configuring each database platform that is
     | supported by Laravel is shown below to make development simple.
     |
+            //HEROKU CREDENTIALS
+
+            'url' => env('DATABASE_URL','mysql://b9a97bfae41986:ac9c5aee@us-cdbr-iron-east-04.cleardb.net/heroku_1e37bdb9d8b2879?reconnect=true'),
+            'host' => env('DB_HOST', 'us-cdbr-iron-east-04.cleardb.net'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'heroku_1e37bdb9d8b2879'),
+            'username' => env('DB_USERNAME', 'b9a97bfae41986'),
+            'password' => env('DB_PASSWORD', 'ac9c5aee'),
+
+             //LOCAL CREDENTIALS
+
+             'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'ciard'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', ''),
     |
     | All database work in Laravel is done through the PHP PDO facilities
     | so make sure you have the driver for your particular database of
@@ -41,7 +58,7 @@ return [
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
-        ],        
+        ],
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL','mysql://b9a97bfae41986:ac9c5aee@us-cdbr-iron-east-04.cleardb.net/heroku_1e37bdb9d8b2879?reconnect=true'),

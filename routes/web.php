@@ -18,4 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/administration','AdminController@index')->name('admin.index');
+Route::get('/administration/access','AdminController@index')->name('admin.index');
+Route::post('administration/access','AdminController@rolCreation')->name('admin.access.store');
+Route::get('/administration/access/edit/{role}','AdminController@rolEdit')->name('admin.access.edit');
+Route::post('/administration/access/update/{role}','AdminController@rolUpdate')->name('admin.access.update');
+

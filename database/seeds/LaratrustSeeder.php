@@ -51,10 +51,11 @@ class LaratrustSeeder extends Seeder
 
             // Attach all permissions to the role
             $role->permissions()->sync($permissions);
-
+            /*
             $this->command->info("Creating '{$key}' user");
-
+            */
             // Create default user for each role
+            /*
             $user = \App\User::create([
                 'name' => ucwords(str_replace('_', ' ', $key)),
                 'email' => $key.'@app.com',
@@ -62,9 +63,11 @@ class LaratrustSeeder extends Seeder
             ]);
 
             $user->attachRole($role);
+            */
         }
 
         // Creating user with permissions
+        /*
         if (!empty($userPermission)) {
 
             foreach ($userPermission as $key => $modules) {
@@ -97,7 +100,7 @@ class LaratrustSeeder extends Seeder
                 // Attach all permissions to the user
                 $user->permissions()->sync($permissions);
             }
-        }
+        }*/
     }
 
     /**

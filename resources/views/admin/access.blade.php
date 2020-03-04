@@ -6,24 +6,29 @@
     Nuevo rol
   </div>
   <div class="card-body">
-    <form>
+    <form role="form" action="{{ route('admin.access.store')}}" method="post">
+    {{ csrf_field() }}
         <div class="form-group">
-            <label for="exampleInputEmail1">Abreviación del rol</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">Un pequeño nombre identificador del rol.</small>
+            <label for="name">Abreviación del rol</label>
+            <input type="text" class="form-control" name="name"  >
+            <small id="name" class="form-text text-muted">Un pequeño nombre identificador del rol.</small>
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Nombre a mostrar</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="display_name">Nombre a mostrar</label>
+            <input type="text" class="form-control" name="display_name">
         </div>
         <div class="form-group">
             <label for="permissions">Permisos</label>
-            <select class="selectpicker form-control" multiple>
-                <option>Ver-Administración</option>
-                <option>Editar-Administración</option>
-                <option>Editar-Usuarios</option>
+            <select class="form-control selectpicker " name="permission_id[]" multiple>
+                @foreach($permissions as $permission)
+                <option value="{{$permission->id}}">{{$permission->display_name}}</option>
+                @endforeach
             </select>
-        </div>       
+        </div>
+        <div class="form-group">
+            <label for="description">Descripción</label>
+            <textarea type="text" class="form-control" name="description"></textarea>
+        </div>
         <button type="submit" class="btn btn-primary">Registrar</button>
     </form>
   </div>
@@ -35,7 +40,7 @@
     Lista de roles
     </div>
     <div class="card-body">
-    <table id="example" class="display" style="width:100%">
+    <table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
                 <tr>
                     <th>Rol</th>
@@ -44,11 +49,19 @@
                 </tr>
         </thead>
         <tbody>
+        @foreach($roles as $rol)
                 <tr>
-                    <td>Administrador</td>
-                    <td>Ver-Usuarios, Editar-Usuarios, Crear-Usuarios</td>
-                    <td><button class="btn btn-primary">Editar</button></td>
+                    <td data-priority="1" >{{$rol->display_name}}</td>
+                    <td data-priority="3" style="white-space: nowrap" >
+                        @foreach($rol->permissions as $permission)
+                        {{$permission->display_name}},
+                        @endforeach
+                    </td>
+                    <td data-priority="2" width="1%">
+                        <a href="{{route('admin.access.edit',$rol)}}" class="btn btn-primary">Editar</a>
+                    </td>
                 </tr>
+        @endforeach
         </tbody>
     </table>
     </div>
@@ -59,13 +72,25 @@
 @section('style')
 <link href="{{asset('css/bootstrap-select.min.css') }}" rel="stylesheet" type="text/css" />
 <link href="{{asset('css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{asset('css/responsive.dataTables.min.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{asset('css/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
+<style>
+    #example{
+        display:none
+    }
+</style>
 @endsection
 @section('script')
 <script src="{{asset('js/bootstrap-select.min.js') }}" ></script>
 <script src="{{asset('js/jquery.dataTables.min.js') }}" ></script>
+<script src="{{asset('js/dataTables.responsive.min.js') }}" ></script>
+<script src="{{asset('js/dataTables.bootstrap4.min.js') }}" ></script>
 <script>
 $(document).ready(function() {
-    $('#example').DataTable();
+    $('#example').fadeIn();
+    $('#example').DataTable({
+        responsive: true
+    });
 } );
 </script>
 @endsection
