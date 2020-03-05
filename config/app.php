@@ -175,7 +175,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Laratrust\LaratrustServiceProvider::class,
-        // BeyondCode\ErdGenerator\ErdGeneratorServiceProvider::class,  to run model diagrams
+        //TO SHOW MODEL DIAGRAMS:
+        // BeyondCode\ErdGenerator\ErdGeneratorServiceProvider::class,
+        //TO GENERATE SEEDS FROM DATABASE:
+        Orangehill\Iseed\IseedServiceProvider::class,
     ],
 
     /*
