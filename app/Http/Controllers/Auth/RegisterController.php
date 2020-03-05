@@ -71,9 +71,9 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         $person = Person::create([
-            'name'=>$data['name'],
-            'first_surname'=>$data['first_surname'],
-            'second_surname'=>$data['second_surname'],
+            'name'=>ucwords(strtolower( $data['name'])),
+            'first_surname'=>ucwords(strtolower($data['first_surname'])),
+            'second_surname'=>ucwords(strtolower($data['second_surname'])),
             'birthday'=>$data['birthday'],
             'document_type'=>$data['document_type'],
             'document_number'=>$data['document_number']

@@ -56,7 +56,7 @@
                             <label for="birthday" class="col-md-4 col-form-label text-md-right">Fecha de nacimiento</label>
 
                             <div class="col-md-6">
-                                <input id="birthday" type="text" class="form-control @error('birthday') is-invalid @enderror" name="birthday" value="{{ old('birthday') }}" required autocomplete="birthday" autofocus>
+                                <input id="birthday" type="date" class="form-control @error('birthday') is-invalid @enderror" name="birthday" value="{{ old('birthday') }}" required autocomplete="birthday" autofocus>
 
                                 @error('birthday')
                                     <span class="invalid-feedback" role="alert">
@@ -68,7 +68,7 @@
                         <div class="form-group row">
                             <label for="document_type" class="col-md-4 col-form-label text-md-right">Tipo de documento</label>
 
-                            <div class="col-md-6">                                
+                            <div class="col-md-6">
                                 <select id="document_type" class="custom-select"  name="document_type" required>
                                     <option selected>Selecciona una opción...</option>
                                     <option value="1">D.N.I.</option>

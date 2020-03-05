@@ -1,7 +1,7 @@
 @extends('admin.layout')
 @section('admin')
     <div class="col-md-12 mb-4">
-        <button class="btn btn-success">Nuevo Usuario</button>
+        <a href="{{route('admin.user.create')}}" class="btn btn-success">Crear usuario</a>
     </div>
     <div class="col-md-12">
         <div class="card">
@@ -13,37 +13,38 @@
                     <thead>
                         <tr>
                             <th>Tipo de documento</th>
-                            <th data-priority="2">N° documento</th>
+                            <th>N° documento</th>
 
-                            <th data-priority="1">Nombre</th>
+                            <th>Nombre</th>
                             <th>Rol</th>
-                            <th>Permisos</th>
+                            <th class="none">Permisos</th>
                             <th>Correo electrónico</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
-                    @foreach($people as $person)
+                    @foreach($users as $user)
                         <tr>
-                            <td>@if($person->document_type==1)
+                            <td>@if($user->person->document_type==1)
                                     D.N.I.
-                                @elseif($person->document_type==2)
+                                @elseif($user->person->document_type==2)
                                     Pasaporte
-                                @elseif($person->document_type==3)
+                                @elseif($user->person->document_type==3)
                                     Carnet de extranjeria
-                                @elseif($person->document_type==4)
+                                @elseif($user->person->document_type==4)
                                     Otro documento
                                 @endif
                             </td>
-                            <td>{{$person->document_number}}</td>
-                            <td>{{$person->name}} {{$person->first_surname}} {{$person->second_surname}}</td>
-                            <td>@foreach($person->user->roles as $role) {{$role->display_name}} @endforeach</td>
-                            <td>@foreach($person->user->permissions as $permission)
-                                {{$permission->display_name}}
+                            <td>{{$user->person->document_number}}</td>
+                            <td>{{$user->person->name}} {{$user->person->first_surname}} {{$user->person->second_surname}}</td>
+
+                            <td>@foreach($user->roles as $role) {{$role->display_name}} @endforeach</td>
+                            <td>@foreach($user->permissions as $permission)
+                                {{$permission->display_name}},
                                 @endforeach</td>
-                            <td>{{$person->user->email}}</td>
+                            <td>{{$user->email}}</td>
                             <td>
-                                <a href="" class="btn btn-primary">Editar</a>
+                                <a href="{{route('admin.user.edit',$user)}}" class="btn btn-primary">Editar</a>
                             </td>
                         </tr>
                     @endforeach
@@ -71,7 +72,8 @@
         $(document).ready(function() {
             $('#users_table').fadeIn();
             $('#users_table').DataTable({
-                responsive: true
+                responsive: true,
+                responsivePriority: 10001, targets: 4
             });
         } );
     </script>
