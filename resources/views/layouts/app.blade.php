@@ -82,7 +82,7 @@
                 </div>
             </div>
         </nav>
-
+        @include('layouts.notifications')
         <main class="py-4">
             @yield('content')
         </main>

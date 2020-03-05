@@ -26,4 +26,8 @@ Route::post('/administration/access/update/{role}','AdminController@rolUpdate')-
 Route::get('/administration/users','AdminController@users')->name('admin.user.index');
 Route::get('/administration/users/create','AdminController@createUser')->name('admin.user.create');
 Route::post('/administration/users/create','AdminController@storeUser')->name('admin.user.store');
-Route::get('/administration/users/edit/{user}', 'AdminController@editUser')->name('admin.user.edit');
+Route::get('/administration/users/edit/{usuario}', 'AdminController@editUser')->name('admin.user.edit');
+Route::post('/administration/users/update/{usuario}', 'AdminController@updateUser')->name('admin.user.update');
+Route::post('/administration/users/update/rol/{usuario}','AdminController@updateUserRole')->name('admin.user.update.role');
+Route::post('/administration/users/update/permission/{usuario}','AdminController@updateUserPermission')->name('admin.user.update.permission');
+
