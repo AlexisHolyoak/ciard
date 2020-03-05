@@ -54,7 +54,16 @@ class AdminController extends Controller
         return view('admin.users.create',compact(['permissions','roles']));
     }
     public function storeUser(Request $request){
-
+        $this->validate($request,[
+            'name' => ['required', 'string', 'max:255'],
+            'first_surname'=> ['required', 'string', 'max:255'],
+            'second_surname'=> ['required', 'string', 'max:255'],
+            'document_type'=> ['required'],
+            'document_number'=> ['required', 'string', 'max:255'],
+            'birthday'=> ['required', 'date'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
         $role=Role::find($request->role_id);
 
         $person = Person::create([
@@ -83,6 +92,16 @@ class AdminController extends Controller
         return view('admin.users.edit',compact(['usuario','roles','permissions','permissions_selected_id']));
     }
     public function updateUser(User $usuario, Request $request){
+        $this->validate($request,[
+            'name' => ['required', 'string', 'max:255'],
+            'first_surname'=> ['required', 'string', 'max:255'],
+            'second_surname'=> ['required', 'string', 'max:255'],
+            'document_type'=> ['required'],
+            'document_number'=> ['required', 'string', 'max:255'],
+            'birthday'=> ['required', 'date'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
         $persona_id = $usuario->people_id;
         $str_name = ucwords(strtolower( $request->name));
         $str_f_surname = ucwords(strtolower( $request->first_surname));
