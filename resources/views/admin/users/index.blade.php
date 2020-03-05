@@ -13,9 +13,8 @@
                     <thead>
                         <tr>
                             <th>Tipo de documento</th>
-                            <th>N° documento</th>
-
-                            <th>Nombre</th>
+                            <th data-priority="1">N° documento</th>
+                            <th data-priority="1">Nombre</th>
                             <th>Rol</th>
                             <th class="none">Permisos</th>
                             <th>Correo electrónico</th>
