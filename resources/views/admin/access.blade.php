@@ -44,7 +44,7 @@
         <thead>
                 <tr>
                     <th>Rol</th>
-                    <th>Permisos</th>
+                    <th class="none">Permisos</th>
                     <th>Acciones</th>
                 </tr>
         </thead>
@@ -52,13 +52,13 @@
         @foreach($roles as $rol)
                 <tr>
                     <td data-priority="1" >{{$rol->display_name}}</td>
-                    <td data-priority="3" style="white-space: nowrap" >
+                    <td data-priority="3"  >
                         @foreach($rol->permissions as $permission)
                         {{$permission->display_name}},
                         @endforeach
                     </td>
-                    <td data-priority="2" width="1%">
-                        <a href="{{route('admin.access.edit',$rol)}}" class="btn btn-primary">Editar</a>
+                    <td data-priority="2" width="1%" style="text-align: center;">
+                        <a href="{{route('admin.access.edit',$rol)}}" class="btn btn-primary btn-sm">Editar</a>
                     </td>
                 </tr>
         @endforeach

@@ -9,21 +9,22 @@
                Usuarios
             </div>
             <div class="card-body">
-                <table class="table table-striped table-bordered" id="users_table" style="width:100%">
+                <table class="table table-striped table-bordered dt-responsive" id="users_table" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Tipo de documento</th>
-                            <th data-priority="1">N° documento</th>
                             <th data-priority="1">Nombre</th>
+                            <th>Tipo de documento</th>
+                            <th >N° documento</th>
                             <th>Rol</th>
                             <th class="none">Permisos</th>
                             <th>Correo electrónico</th>
-                            <th>Acciones</th>
+                            <th data-priority="2">Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                     @foreach($users as $user)
                         <tr>
+                            <td>{{$user->person->name}} {{$user->person->first_surname}} {{$user->person->second_surname}}</td>
                             <td>@if($user->person->document_type==1)
                                     D.N.I.
                                 @elseif($user->person->document_type==2)
@@ -35,15 +36,15 @@
                                 @endif
                             </td>
                             <td>{{$user->person->document_number}}</td>
-                            <td>{{$user->person->name}} {{$user->person->first_surname}} {{$user->person->second_surname}}</td>
+
 
                             <td>@foreach($user->roles as $role) {{$role->display_name}} @endforeach</td>
                             <td>@foreach($user->permissions as $permission)
                                 {{$permission->display_name}},
                                 @endforeach</td>
                             <td>{{$user->email}}</td>
-                            <td>
-                                <a href="{{route('admin.user.edit',['usuario'=>$user])}}" class="btn btn-primary">Editar</a>
+                            <td style="text-align: center">
+                                <a href="{{route('admin.user.edit',['usuario'=>$user])}}" class="btn btn-primary btn-sm">Editar</a>
                             </td>
                         </tr>
                     @endforeach
@@ -71,8 +72,8 @@
         $(document).ready(function() {
             $('#users_table').fadeIn();
             $('#users_table').DataTable({
+                dom: 'lBfrtip',
                 responsive: true,
-                responsivePriority: 10001, targets: 4
             });
         } );
     </script>
