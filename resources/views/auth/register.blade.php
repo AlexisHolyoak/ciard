@@ -148,16 +148,3 @@
     </div>
 </div>
 @endsection
-@section('style')
-<link href="{{asset('css/gijgo.min.css') }}" rel="stylesheet" type="text/css" />
-@endsection
-@section('script')
-    <script src="{{asset('js/gijgo.min.js') }}"></script>
-    <script>
-        $('#birthday').datepicker({
-            uiLibrary: 'bootstrap4',
-            footer: true, modal: true,
-            format: 'yyyy-mm-dd'
-        });
-    </script>
-@endsection
