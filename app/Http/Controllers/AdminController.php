@@ -99,8 +99,8 @@ class AdminController extends Controller
             'document_type'=> ['required'],
             'document_number'=> ['required', 'string', 'max:255'],
             'birthday'=> ['required', 'date'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'password' => ['required', 'string', 'confirmed'],
         ]);
         $persona_id = $usuario->people_id;
         $str_name = ucwords(strtolower( $request->name));
