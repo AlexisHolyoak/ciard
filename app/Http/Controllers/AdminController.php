@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Building;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
@@ -182,5 +183,24 @@ class AdminController extends Controller
         $urbanSpace->zone_id = $zone->id;
         $urbanSpace->save();
         return Redirect::action('AdminController@urbanSpaces',[$zone])->with('success',"Se ha registrado un nuevo espacio urbano para la zona");;;;
+    }
+
+    public function buildings(UrbanSpace $urbanspace){
+        $buildings=Building::where('urban_space_id',$urbanspace->id)->get();
+        return view('admin.location.zones.building',compact(['urbanspace','buildings']));
+    }
+    public function deleteBuilding(Building $building){
+        $urbanspace = $building->urbanSpace;
+        Building::destroy($building->id);
+        return Redirect::action('AdminController@buildings',[$urbanspace])->with('warning',"Se ha eliminado una construcción del espacio urbano");;;;;;
+    }
+
+    public function storeBuilding(UrbanSpace $urbanspace, Request $request){
+        $building = new Building();
+        $building->type = $request->get('type');
+        $building->name = strtoupper($request->name);
+        $building->urban_space_id = $urbanspace->id;
+        $building->save();
+        return Redirect::action('AdminController@buildings',[$urbanspace])->with('success',"Se ha registrado una nueva construcción en este espacio urbano");;;;;
     }
 }

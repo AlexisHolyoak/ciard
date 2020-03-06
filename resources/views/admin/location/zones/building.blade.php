@@ -3,16 +3,21 @@
     <div class="col-md-4">
         <div class="card">
             <div class="card-header">
-                Registrar nuevo espacio urbano
+                Registrar nuevo edificio
             </div>
             <div class="card-body">
-                <form action="{{route('admin.location.urbanspace.store',$zone)}}" method="post">
+                <form action="{{route('admin.location.building.store',$urbanspace)}}" method="post">
                     @csrf
                     <div class="form-group ">
                         <label for="type" class="col-form-label">Tipo de espacio urbano</label>
                         <select name="type" class="form-control" id="" required>
-                            <option value="CALLE">CALLE</option>
-                            <option value="MANZANA">MANZANA</option>
+                            <option value="EDIFICIO">EDIFICIO</option>
+                            <option value="DEPARTAMENTO">DEPARTAMENTO</option>
+                            <option value="PISO">PISO</option>
+                            <option value="COLEGIO">COLEGIO</option>
+                            <option value="BANCO">BANCO</option>
+                            <option value="MERCADO">MERCADO</option>
+                            <option value="NEGOCIO">NEGOCIO</option>
                         </select>
 
                         @error('type')
@@ -33,7 +38,7 @@
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Registrar</button>
-                        <a href="{{route('admin.location.show.district',$zone->district)}}" class="btn btn-secondary">Atras</a>
+                        <a href="{{route('admin.location.urbanspace.index',$urbanspace->zone)}}" class="btn btn-secondary">Atras</a>
                     </div>
                 </form>
             </div>
@@ -42,26 +47,33 @@
     <div class="col-md-8">
         <div class="card">
             <div class="card-header">
-                Espacios urbanos de la zona: {{$zone->type}} {{$zone->name}}
+                Edificios del espacio urbano: {{$urbanspace->zone->type}} {{$urbanspace->zone->name}}
             </div>
             <div class="card-body">
-                <a href="{{route('admin.location.show.district',$zone->district)}}" class="btn btn-secondary mb-4 float-right">Atras</a>
-                <table class="table table-striped table-bordered dt-responsive" id="urban_space_table" style="width:100%">
+                <a href="{{route('admin.location.urbanspace.index',$urbanspace->zone)}}" class="btn btn-secondary mb-4 float-right">Atras</a>
+                <table class="table table-striped table-bordered dt-responsive" id="buildings_table" style="width:100%">
                     <thead>
                     <tr>
+                        <th>Tipo</th>
                         <th>Nombre</th>
-                        <th>Acciones</th>
+                        <th class="none">Acciones</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($urbanspaces as $urbanspace)
-                    <tr>
-                        <td>{{$urbanspace->type}} "{{$urbanspace->name}}"</td>
-                        <td>
-                            <a href="{{route('admin.location.building.index',$urbanspace)}}" class="btn btn-primary btn-sm">Construcciones</a>
-                        </td>
-                    </tr>
-                        @endforeach
+                    @foreach($buildings as $building)
+                        <tr>
+                            <td>{{$building->type}}</td>
+                            <td>{{$building->name}}</td>
+                            <td>
+                                <form action="{{route('admin.location.building.delete',$building)}}" method="post">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                    @csrf
+                                    <input type="submit" class="btn btn-danger btn-sm" value="Eliminar">
+                                </form>
+                            </td>
+                        </tr>
+                    @endforeach
                     </tbody>
                 </table>
             </div>
@@ -73,7 +85,7 @@
     <link href="{{asset('css/responsive.dataTables.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{asset('css/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
     <style>
-        #urban_space_table{
+        #buildings_table{
             display:none
         }
     </style>
@@ -84,8 +96,8 @@
     <script src="{{asset('js/dataTables.bootstrap4.min.js') }}" ></script>
     <script>
         $(document).ready(function() {
-            $('#urban_space_table').fadeIn();
-            $('#urban_space_table').DataTable({
+            $('#buildings_table').fadeIn();
+            $('#buildings_table').DataTable({
                 dom: 'lBfrtip',
                 responsive: true,
             });

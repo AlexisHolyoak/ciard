@@ -71,11 +71,10 @@
 
                         <div class="col-md-6">
                             <select id="document_type" class="custom-select"  name="document_type" required>
-                                <option selected>Selecciona una opción...</option>
-                                <option value="1">D.N.I.</option>
-                                <option value="2">Pasaporte</option>
-                                <option value="3">Carnet de extranjeria</option>
-                                <option value="4">Otro documento</option>
+                                <option value="1" {{old('document_type')== 1 ?'selected':''}}>D.N.I.</option>
+                                <option value="2" {{old('document_type')== 2 ?'selected':''}}>Pasaporte</option>
+                                <option value="3" {{old('document_type')== 3 ?'selected':''}}>Carnet de extranjeria</option>
+                                <option value="4" {{old('document_type')== 4 ?'selected':''}}>Otro documento</option>
                             </select>
                             @error('document_type')
                             <span class="invalid-feedback" role="alert">

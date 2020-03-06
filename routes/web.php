@@ -38,6 +38,9 @@ Route::get('/administration/location/district/{district}/zone/create','AdminCont
 Route::post('/administration/location/district/{district}/zone/store','AdminController@storeZone')->name('admin.location.store.zone');
 Route::get('/administration/location/zone/{zone}/urbanspaces','AdminController@urbanSpaces')->name('admin.location.urbanspace.index');
 Route::post('/administration/location/zone/{zone}/urbanspaces','AdminController@storeUrbanSpace')->name('admin.location.urbanspace.store');
+Route::get('/administration/location/urbanspace/{urbanspace}/buildings','AdminController@buildings')->name('admin.location.building.index');
+Route::post('/administration/location/urbanspace/{urbanspace}/buildings','AdminController@storeBuilding')->name('admin.location.building.store');
+Route::delete('/administration/location/delete/building/{building}','AdminController@deleteBuilding')->name('admin.location.building.delete');
 
 //AJAX UBIGEO
 Route::get('/ajax-departments/',function(){
