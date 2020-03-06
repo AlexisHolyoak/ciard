@@ -9,6 +9,11 @@ use App\Role;
 use App\Permission;
 use App\Person;
 use App\User;
+use App\Department;
+use App\Province;
+use App\District;
+use App\Zone;
+use App\UrbanSpace;
 use DB;
 class AdminController extends Controller
 {
@@ -135,5 +140,47 @@ class AdminController extends Controller
         $usuario->detachPermissions($usuario->permissions);
         $usuario->attachPermissions($permissions);
         return Redirect::action('AdminController@editUser',[$usuario])->with('success',"Actualizaste los permisos por defecto del usuario correctamente");;
+    }
+
+    public function location(){
+        return view('admin.location.index');
+    }
+    public function showDistrict(District $district){
+        $zones = Zone::where('district_id',$district->id)->get();
+        return view('admin.location.zones',compact(['district','zones']));
+    }
+    public function zones(Request $request){
+        $this->validate($request,[
+            'department' => ['required'],
+            'province'=> ['required'],
+            'district_id'=> ['required']
+        ]);
+        $district_id = $request->district_id;
+        $district=District::find($district_id);
+        $zones = Zone::where('district_id',$district->id)->get();
+        return view('admin.location.zones',compact(['district','zones']));
+    }
+    public function createZone(District $district){
+       return view('admin.location.zones.create',compact('district'));
+    }
+    public function storeZone(District $district, Request $request){
+        $zone = new Zone();
+        $zone->district_id = $district->id;
+        $zone->name =strtoupper($request->get('name')) ;
+        $zone->type= $request -> get('type');
+        $zone->save();
+        return Redirect::action('AdminController@createZone',[$district])->with('success',"Se ha registrado una nueva zona para el distrito");;;
+    }
+    public function urbanSpaces(Zone $zone){
+        $urbanspaces=UrbanSpace::where('zone_id',$zone->id)->get();
+        return view('admin.location.zones.urbanspace',compact(['urbanspaces','zone']));
+    }
+    public function storeUrbanSpace(Zone $zone, Request $request){
+        $urbanSpace=new UrbanSpace();
+        $urbanSpace->name= strtoupper($request->name);
+        $urbanSpace->type = $request->type;
+        $urbanSpace->zone_id = $zone->id;
+        $urbanSpace->save();
+        return Redirect::action('AdminController@urbanSpaces',[$zone])->with('success',"Se ha registrado un nuevo espacio urbano para la zona");;;;
     }
 }

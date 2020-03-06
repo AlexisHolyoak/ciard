@@ -31,3 +31,21 @@ Route::post('/administration/users/update/{usuario}', 'AdminController@updateUse
 Route::post('/administration/users/update/rol/{usuario}','AdminController@updateUserRole')->name('admin.user.update.role');
 Route::post('/administration/users/update/permission/{usuario}','AdminController@updateUserPermission')->name('admin.user.update.permission');
 
+Route::get('/administration/location','AdminController@location')->name('admin.location.index');
+Route::get('/administration/location/district/{district}', 'AdminController@showDistrict')->name('admin.location.show.district');
+Route::post('/administration/location/district', 'AdminController@zones')->name('admin.location.district');
+Route::get('/administration/location/district/{district}/zone/create','AdminController@createZone')->name('admin.location.create.zone');
+Route::post('/administration/location/district/{district}/zone/store','AdminController@storeZone')->name('admin.location.store.zone');
+Route::get('/administration/location/zone/{zone}/urbanspaces','AdminController@urbanSpaces')->name('admin.location.urbanspace.index');
+Route::post('/administration/location/zone/{zone}/urbanspaces','AdminController@storeUrbanSpace')->name('admin.location.urbanspace.store');
+
+//AJAX UBIGEO
+Route::get('/ajax-departments/',function(){
+    return Response::json(App\Department::all());
+});
+Route::get('/ajax-provinces/{id}',function($id){
+    return Response::json(App\Province::where('department_id', $id)->get());
+});
+Route::get('/ajax-districts/{id}',function($id){
+    return Response::json(App\District::where('province_id', $id)->get());
+});
