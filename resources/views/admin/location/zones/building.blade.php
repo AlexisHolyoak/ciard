@@ -18,6 +18,7 @@
                             <option value="BANCO">BANCO</option>
                             <option value="MERCADO">MERCADO</option>
                             <option value="NEGOCIO">NEGOCIO</option>
+                            <option value="REFUGIO">REFUGIO</option>
                         </select>
 
                         @error('type')
