@@ -177,7 +177,7 @@ class AdminController extends Controller
         $zone->name =strtoupper($request->get('name')) ;
         $zone->type= $request -> get('type');
         $zone->save();
-        return Redirect::action('AdminController@createZone',[$district])->with('success',"Se ha registrado una nueva zona para el distrito");
+        return Redirect::action('AdminController@showDistrict',[$district])->with('success',"Se ha registrado una nueva zona para el distrito");
     }
     public function urbanSpaces(Zone $zone){
         $urbanspaces=UrbanSpace::where('zone_id',$zone->id)->get();
