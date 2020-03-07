@@ -58,6 +58,7 @@
                     <tr>
                         <td>{{$urbanspace->type}} "{{$urbanspace->name}}"</td>
                         <td>
+                            <a href="#" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#edit-urbanspace-{{$urbanspace->id}}">Editar</a>
                             <a href="{{route('admin.location.building.index',$urbanspace)}}" class="btn btn-primary btn-sm">Construcciones</a>
                         </td>
                     </tr>
@@ -68,6 +69,9 @@
         </div>
     </div>
 @endsection
+@foreach($urbanspaces as $urbanspace)
+    @include('admin.location.zones.editurbanspace')
+    @endforeach
 @section('style')
     <link href="{{asset('css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{asset('css/responsive.dataTables.min.css') }}" rel="stylesheet" type="text/css" />

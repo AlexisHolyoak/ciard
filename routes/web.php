@@ -42,6 +42,8 @@ Route::get('/administration/location/urbanspace/{urbanspace}/buildings','AdminCo
 Route::post('/administration/location/urbanspace/{urbanspace}/buildings','AdminController@storeBuilding')->name('admin.location.building.store');
 Route::delete('/administration/location/delete/building/{building}','AdminController@deleteBuilding')->name('admin.location.building.delete');
 
+Route::put('/administration/location/update/zone/{zone}','AdminController@updateZone')->name('admin.location.update.zone');
+Route::put('/administration/location/update/urbanspace/{urbanspace}','AdminController@updateUrbanSpace')->name('admin.location.update.urbanspace');
 //AJAX UBIGEO
 Route::get('/ajax-departments/',function(){
     return Response::json(App\Department::all());

@@ -134,13 +134,13 @@ class AdminController extends Controller
         $usuario->detachPermissions($usuario->permissions);
         $usuario->attachRole($request->get('role_id'));
         $usuario->attachPermissions($role->permissions);
-        return Redirect::action('AdminController@editUser', [$usuario])->with('success',"Actualizaste el rol del usuario correctamente");;
+        return Redirect::action('AdminController@editUser', [$usuario])->with('success',"Actualizaste el rol del usuario correctamente");
     }
     public function updateUserPermission(User $usuario, Request $request){
         $permissions=$request->permissions_id;
         $usuario->detachPermissions($usuario->permissions);
         $usuario->attachPermissions($permissions);
-        return Redirect::action('AdminController@editUser',[$usuario])->with('success',"Actualizaste los permisos por defecto del usuario correctamente");;
+        return Redirect::action('AdminController@editUser',[$usuario])->with('success',"Actualizaste los permisos por defecto del usuario correctamente");
     }
 
     public function location(){
@@ -161,6 +161,13 @@ class AdminController extends Controller
         $zones = Zone::where('district_id',$district->id)->get();
         return view('admin.location.zones',compact(['district','zones']));
     }
+    public function updateZone(Zone $zone, Request $request){
+        $zone = Zone::find($zone->id);
+        $zone->type = $request->type;
+        $zone->name = strtoupper($request->name);
+        $zone->save();
+        return Redirect::action('AdminController@showDistrict',[$zone->district])->with('success',"Se ha actualizado la zona");;
+    }
     public function createZone(District $district){
        return view('admin.location.zones.create',compact('district'));
     }
@@ -170,7 +177,7 @@ class AdminController extends Controller
         $zone->name =strtoupper($request->get('name')) ;
         $zone->type= $request -> get('type');
         $zone->save();
-        return Redirect::action('AdminController@createZone',[$district])->with('success',"Se ha registrado una nueva zona para el distrito");;;
+        return Redirect::action('AdminController@createZone',[$district])->with('success',"Se ha registrado una nueva zona para el distrito");
     }
     public function urbanSpaces(Zone $zone){
         $urbanspaces=UrbanSpace::where('zone_id',$zone->id)->get();
@@ -182,7 +189,14 @@ class AdminController extends Controller
         $urbanSpace->type = $request->type;
         $urbanSpace->zone_id = $zone->id;
         $urbanSpace->save();
-        return Redirect::action('AdminController@urbanSpaces',[$zone])->with('success',"Se ha registrado un nuevo espacio urbano para la zona");;;;
+        return Redirect::action('AdminController@urbanSpaces',[$zone])->with('success',"Se ha registrado un nuevo espacio urbano para la zona");
+    }
+    public function updateUrbanSpace(UrbanSpace $urbanspace, Request $request){
+        $urbanSpace = UrbanSpace::find($urbanspace->id);
+        $urbanSpace->type= $request->type;
+        $urbanSpace->name = strtoupper($request->name);
+        $urbanSpace->save();
+        return Redirect::action('AdminController@urbanSpaces',[$urbanSpace->zone])->with('success',"Se ha actualizado el espacio urbano");;
     }
 
     public function buildings(UrbanSpace $urbanspace){
@@ -192,7 +206,7 @@ class AdminController extends Controller
     public function deleteBuilding(Building $building){
         $urbanspace = $building->urbanSpace;
         Building::destroy($building->id);
-        return Redirect::action('AdminController@buildings',[$urbanspace])->with('warning',"Se ha eliminado una construcción del espacio urbano");;;;;;
+        return Redirect::action('AdminController@buildings',[$urbanspace])->with('warning',"Se ha eliminado una construcción del espacio urbano");
     }
 
     public function storeBuilding(UrbanSpace $urbanspace, Request $request){
@@ -201,6 +215,6 @@ class AdminController extends Controller
         $building->name = strtoupper($request->name);
         $building->urban_space_id = $urbanspace->id;
         $building->save();
-        return Redirect::action('AdminController@buildings',[$urbanspace])->with('success',"Se ha registrado una nueva construcción en este espacio urbano");;;;;
+        return Redirect::action('AdminController@buildings',[$urbanspace])->with('success',"Se ha registrado una nueva construcción en este espacio urbano");
     }
 }

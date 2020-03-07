@@ -10,7 +10,7 @@
                 <div class="card-body">
                     <a href="{{route('admin.location.create.zone',$district)}}" class="btn btn-success btn-sm mb-4">Crear zona</a>
 
-                    <table class="table table-bordered dt-responsive" id="zones_table">
+                    <table class="table table-bordered dt-responsive" id="zones_table" style="width: 100%">
                         <thead>
                         <tr>
                             <th>Tipo de zona</th>
@@ -23,7 +23,9 @@
                             <tr>
                                 <td>{{$zone->type}}</td>
                                 <td>{{$zone->name}}</td>
-                                <td><a href="{{route('admin.location.urbanspace.index',$zone)}}" class="btn btn-sm btn-primary">Gestionar</a></td>
+                                <td>
+                                    <a href="#" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#edit-zone-{{$zone->id}}">Editar</a>
+                                    <a href="{{route('admin.location.urbanspace.index',$zone)}}" class="btn btn-sm btn-primary">Gestionar</a></td>
                             </tr>
                         @endforeach
                         </tbody>
@@ -34,6 +36,9 @@
     </div>
 
 @endsection
+@foreach($zones as $zone)
+    @include('admin.location.zones.editzone')
+@endforeach
 @section('style')
     <link href="{{asset('css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{asset('css/responsive.dataTables.min.css') }}" rel="stylesheet" type="text/css" />
