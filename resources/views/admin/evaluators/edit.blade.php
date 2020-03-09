@@ -61,6 +61,7 @@
                     </tr>
                     </thead>
                     <tbody>
+                    @if(!empty($person->evaluator))
                     @foreach($person->evaluator->urbanspaces as $urbanspace)
                         <tr>
                             <td>{{$urbanspace->zone->district->nombre}}</td>
@@ -75,6 +76,14 @@
                                 </form>
                         </tr>
                         @endforeach
+                        @else
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        @endif
                     </tbody>
                 </table>
             </div>
