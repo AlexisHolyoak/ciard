@@ -217,4 +217,7 @@ class AdminController extends Controller
         $building->save();
         return Redirect::action('AdminController@buildings',[$urbanspace])->with('success',"Se ha registrado una nueva construcción en este espacio urbano");
     }
+    public function evaluators(){
+        $evaluators = User::whereRoleIs('evaluador')->get();
+    }
 }
