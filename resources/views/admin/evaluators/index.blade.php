@@ -28,7 +28,11 @@
                             </td>
                             <td>
                                 @if(!empty($user->person->evaluator))
+                                    @if($user->person->evaluator->urbanspaces->count()>0)
                                     {{($user->person->evaluator->available == 1)? 'DISPONIBLE': 'NO DISPONIBLE'}}
+                                    @else
+                                        SIN ASIGNAR
+                                    @endif
                                 @else
                                     SIN ASIGNAR
                                 @endif
