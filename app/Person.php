@@ -9,8 +9,8 @@ class Person extends Model
     //
     protected $table = 'people';
     protected $fillable = [
-        'name', 
-        'first_surname', 
+        'name',
+        'first_surname',
         'second_surname',
         'document_type',
         'document_number',
@@ -18,5 +18,8 @@ class Person extends Model
     ];
     public function user(){
         return $this->hasOne(User::class, 'people_id');
+    }
+    public function edanEvaluator(){
+        return $this->hasOne(EdanEvaluator::class, 'people_id');
     }
 }

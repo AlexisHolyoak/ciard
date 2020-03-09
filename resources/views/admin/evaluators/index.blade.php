@@ -6,42 +6,23 @@
                 Evaluadores
             </div>
             <div class="card-body">
-                <table class="table table-striped table-bordered dt-responsive" id="users_table" style="width:100%">
+                <table class="table table-striped table-bordered dt-responsive" id="evaluators_table" style="width:100%">
                     <thead>
                     <tr>
                         <th data-priority="1">Nombre</th>
-                        <th>Tipo de documento</th>
-                        <th >N° documento</th>
-                        <th>Rol</th>
-                        <th class="none">Permisos</th>
-                        <th>Correo electrónico</th>
+                        <th class="none">Espacios urbanos asignados</th>
+                        <th>Disponibilidad</th>
                         <th data-priority="2">Acciones</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($users as $user)
+                    @foreach($evaluators as $evaluator)
                         <tr>
-                            <td>{{$user->person->name}} {{$user->person->first_surname}} {{$user->person->second_surname}}</td>
-                            <td>@if($user->person->document_type==1)
-                                    D.N.I.
-                                @elseif($user->person->document_type==2)
-                                    Pasaporte
-                                @elseif($user->person->document_type==3)
-                                    Carnet de extranjeria
-                                @elseif($user->person->document_type==4)
-                                    Otro documento
-                                @endif
-                            </td>
-                            <td>{{$user->person->document_number}}</td>
-
-
-                            <td>@foreach($user->roles as $role) {{$role->display_name}} @endforeach</td>
-                            <td>@foreach($user->permissions as $permission)
-                                    {{$permission->display_name}},
-                                @endforeach</td>
-                            <td>{{$user->email}}</td>
-                            <td style="text-align: center">
-                                <a href="{{route('admin.user.edit',['usuario'=>$user])}}" class="btn btn-primary btn-sm">Editar</a>
+                            <td>{{$evaluator->person->name}} {{$evaluator->person->first_surname}} {{$evaluator->person->second_surname}}</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="" class="btn btn-warning btn-sm">Editar</a>
                             </td>
                         </tr>
                     @endforeach

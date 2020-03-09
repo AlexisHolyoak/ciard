@@ -219,5 +219,6 @@ class AdminController extends Controller
     }
     public function evaluators(){
         $evaluators = User::whereRoleIs('evaluador')->get();
+        return view('admin.evaluators.index',compact(['evaluators']));
     }
 }

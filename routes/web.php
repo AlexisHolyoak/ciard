@@ -44,6 +44,8 @@ Route::delete('/administration/location/delete/building/{building}','AdminContro
 
 Route::put('/administration/location/update/zone/{zone}','AdminController@updateZone')->name('admin.location.update.zone');
 Route::put('/administration/location/update/urbanspace/{urbanspace}','AdminController@updateUrbanSpace')->name('admin.location.update.urbanspace');
+
+Route::get('/administration/evaluators','AdminController@evaluators')->name('admin.evaluators.index');
 //AJAX UBIGEO
 Route::get('/ajax-departments/',function(){
     return Response::json(App\Department::all());

@@ -9,7 +9,6 @@
                 </div>
                 <div class="card-body">
                     <a href="{{route('admin.location.create.zone',$district)}}" class="btn btn-success btn-sm mb-4">Crear zona</a>
-
                     <table class="table table-bordered dt-responsive" id="zones_table" style="width: 100%">
                         <thead>
                         <tr>
