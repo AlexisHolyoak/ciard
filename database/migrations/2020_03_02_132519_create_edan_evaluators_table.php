@@ -17,8 +17,6 @@ class CreateEdanEvaluatorsTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('people_id')->unsigned();
             $table->foreign('people_id')->references('id')->on('people');
-            $table->bigInteger('government_id')->unsigned();
-            $table->foreign('government_id')->references('id')->on('governments');
             $table->boolean('available')->default(1);
             $table->timestamps();
         });
