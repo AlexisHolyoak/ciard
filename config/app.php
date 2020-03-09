@@ -176,7 +176,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Laratrust\LaratrustServiceProvider::class,
         //TO SHOW MODEL DIAGRAMS:
-        // BeyondCode\ErdGenerator\ErdGeneratorServiceProvider::class,
+        //BeyondCode\ErdGenerator\ErdGeneratorServiceProvider::class,
         //TO GENERATE SEEDS FROM DATABASE:
         Orangehill\Iseed\IseedServiceProvider::class,
     ],

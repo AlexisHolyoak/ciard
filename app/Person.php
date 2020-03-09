@@ -19,7 +19,7 @@ class Person extends Model
     public function user(){
         return $this->hasOne(User::class, 'people_id');
     }
-    public function edanEvaluator(){
+    public function evaluator(){
         return $this->hasOne(EdanEvaluator::class, 'people_id');
     }
 }

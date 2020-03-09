@@ -46,6 +46,9 @@ Route::put('/administration/location/update/zone/{zone}','AdminController@update
 Route::put('/administration/location/update/urbanspace/{urbanspace}','AdminController@updateUrbanSpace')->name('admin.location.update.urbanspace');
 
 Route::get('/administration/evaluators','AdminController@evaluators')->name('admin.evaluators.index');
+Route::get('/administration/evaluators/{person}/edit','AdminController@editEvaluator')->name('admin.evaluators.edit');
+Route::post('/administration/evaluators/{person}/update','AdminController@updateEvaluator')->name('admin.evaluators.update');
+Route::delete('/administration/evaluators/{person}/delete/{urbanspace}','AdminController@deleteEvaluator')->name('admin.evaluators.delete');
 //AJAX UBIGEO
 Route::get('/ajax-departments/',function(){
     return Response::json(App\Department::all());
@@ -55,4 +58,10 @@ Route::get('/ajax-provinces/{id}',function($id){
 });
 Route::get('/ajax-districts/{id}',function($id){
     return Response::json(App\District::where('province_id', $id)->get());
+});
+Route::get('/ajax-zones/{id}', function ($id){
+   return Response::json(App\Zone::where('district_id',$id)->get());
+});
+Route::get('/ajax-urbanspace/{id}',function ($id){
+    return Response::json(App\UrbanSpace::where('zone_id',$id)->get());
 });

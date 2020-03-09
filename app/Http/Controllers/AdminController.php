@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Building;
+use App\EdanEvaluator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
@@ -15,6 +16,7 @@ use App\Province;
 use App\District;
 use App\Zone;
 use App\UrbanSpace;
+use App\UrbanSpaceEvaluator;
 use DB;
 class AdminController extends Controller
 {
@@ -218,7 +220,26 @@ class AdminController extends Controller
         return Redirect::action('AdminController@buildings',[$urbanspace])->with('success',"Se ha registrado una nueva construcción en este espacio urbano");
     }
     public function evaluators(){
-        $evaluators = User::whereRoleIs('evaluador')->get();
-        return view('admin.evaluators.index',compact(['evaluators']));
+        $users = User::whereRoleIs('evaluador')->get();
+        return view('admin.evaluators.index',compact(['users']));
+    }
+    public function editEvaluator(Person $person){
+        return view('admin.evaluators.edit',compact(['person']));
+    }
+    public function updateEvaluator(Person $person, Request $request){
+        $evaluator = EdanEvaluator::firstOrCreate(
+            ['people_id'=>$person->id],
+            ['available'=>1]
+            );
+        $urban_space_id = $request->get('urbanspace');
+        $evaluator->urbanspaces()->attach($urban_space_id);
+        return Redirect::action('AdminController@editEvaluator',[$person])->with('success','Se ha asignado un nuevo espacio urbano al evaluador');
+    }
+    public function deleteEvaluator(Person $person, $urbanspace, Request $request){
+        $evaluator= EdanEvaluator::where('people_id',$person->id)->first();
+        $urbanSpace = UrbanSpace::find($urbanspace);
+        //$urbanSpace->evaluators()->detach($evaluator->id);
+        $urbanSpaceEvaluator = UrbanSpaceEvaluator::where('evaluator_id',$evaluator->id)->where('urban_space_id',$urbanSpace->id)->delete();
+        return Redirect::action('AdminController@editEvaluator',[$person])->with('warning','Se ha eliminado el espacio urbano asignado al evaluador');;
     }
 }

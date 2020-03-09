@@ -16,13 +16,25 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($evaluators as $evaluator)
+                    @foreach($users as $user)
                         <tr>
-                            <td>{{$evaluator->person->name}} {{$evaluator->person->first_surname}} {{$evaluator->person->second_surname}}</td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$user->person->name}} {{$user->person->first_surname}} {{$user->person->second_surname}}</td>
                             <td>
-                                <a href="" class="btn btn-warning btn-sm">Editar</a>
+                                @if(!empty($user->person->evaluator))
+                                @foreach($user->person->evaluator->urbanspaces as $urbanspace)
+                                        <br>* {{$urbanspace->zone->district->nombre}}, {{$urbanspace->zone->type}} {{$urbanspace->zone->name}}, {{$urbanspace->type}} {{$urbanspace->name}}
+                                    @endforeach
+                                    @endif
+                            </td>
+                            <td>
+                                @if(!empty($user->person->evaluator))
+                                    {{($user->person->evaluator->available == 1)? 'DISPONIBLE': 'NO DISPONIBLE'}}
+                                @else
+                                    SIN ASIGNAR
+                                @endif
+                            </td>
+                            <td>
+                                <a href="{{route('admin.evaluators.edit',$user->person)}}" class="btn btn-warning btn-sm">Asignar</a>
                             </td>
                         </tr>
                     @endforeach
