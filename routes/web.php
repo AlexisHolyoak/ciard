@@ -49,6 +49,12 @@ Route::get('/administration/evaluators','AdminController@evaluators')->name('adm
 Route::get('/administration/evaluators/{person}/edit','AdminController@editEvaluator')->name('admin.evaluators.edit');
 Route::post('/administration/evaluators/{person}/update','AdminController@updateEvaluator')->name('admin.evaluators.update');
 Route::delete('/administration/evaluators/{person}/delete/{urbanspace}','AdminController@deleteEvaluator')->name('admin.evaluators.delete');
+
+Route::get('/disasters','DisasterController@index')->name('disasters.index');
+Route::get('/disasters/create','DisasterController@create')->name('disasters.create');
+Route::post('/disasters/store','DisasterController@store')->name('disasters.store');
+Route::get('/disasters/edit/{disaster}','DisasterController@edit')->name('disasters.edit');
+Route::put('/disasters/update/{disaster}','DisasterController@update')->name('disasters.update');
 //AJAX UBIGEO
 Route::get('/ajax-departments/',function(){
     return Response::json(App\Department::all());
@@ -64,4 +70,11 @@ Route::get('/ajax-zones/{id}', function ($id){
 });
 Route::get('/ajax-urbanspace/{id}',function ($id){
     return Response::json(App\UrbanSpace::where('zone_id',$id)->get());
+});
+//AJAX DISASTERS
+Route::get('/ajax-dangers',function(){
+   return Response::json(App\Danger::all());
+});
+Route::get('/ajax-danger-type/{id}',function ($id){
+   return Response::json(App\DisasterType::where('danger_id',$id)->get());
 });

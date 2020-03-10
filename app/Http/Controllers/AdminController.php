@@ -11,8 +11,6 @@ use App\Role;
 use App\Permission;
 use App\Person;
 use App\User;
-use App\Department;
-use App\Province;
 use App\District;
 use App\Zone;
 use App\UrbanSpace;
@@ -21,6 +19,10 @@ use DB;
 class AdminController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('role:administrador|superadministrador');
+    }
     public function index()
     {
         $permissions=Permission::all();

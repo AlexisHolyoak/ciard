@@ -6,6 +6,7 @@
     Nuevo rol
   </div>
   <div class="card-body">
+      @if(Auth::user()->hasPermission(['crear-roles']))
     <form role="form" action="{{ route('admin.access.store')}}" method="post">
     {{ csrf_field() }}
         <div class="form-group">
@@ -31,6 +32,9 @@
         </div>
         <button type="submit" class="btn btn-primary">Registrar</button>
     </form>
+      @else
+      NO TIENES PERMISOS DE CREACIÓN DE ROLES
+      @endif
   </div>
 </div>
 </div>
@@ -40,6 +44,7 @@
     Lista de roles
     </div>
     <div class="card-body">
+        @if(Auth::user()->hasPermission(['visualizar-roles']))
     <table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
                 <tr>
@@ -58,12 +63,17 @@
                         @endforeach
                     </td>
                     <td data-priority="2" width="1%" style="text-align: center;">
+                        @if(Auth::user()->hasPermission('actualizar-roles'))
                         <a href="{{route('admin.access.edit',$rol)}}" class="btn btn-primary btn-sm">Editar</a>
+                        @endif
                     </td>
                 </tr>
         @endforeach
         </tbody>
     </table>
+        @else
+            NO TIENES PERMISO DE VISUALIZACIÓN DE ROLES
+        @endif
     </div>
 </div>
 </div>

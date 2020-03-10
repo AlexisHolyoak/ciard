@@ -237,7 +237,7 @@ return [
              */
             'abort' => [
                 'code' => 403,
-                'message' => 'User does not have any of the necessary access rights.'
+                'message' => 'El usuario no tiene ninguno de los necesarios accesos correctos para esta acción.'
             ],
             /**
              * Redirects the user to the given url.
@@ -248,8 +248,8 @@ return [
             'redirect' => [
                 'url' => '/home',
                 'message' => [
-                    'key' => 'error',
-                    'content' => ''
+                    'key' => 'warning',
+                    'content' => 'El usuario no tiene los accesos correctos para realizar esta acción'
                 ]
             ]
         ]

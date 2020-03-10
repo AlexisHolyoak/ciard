@@ -39,11 +39,13 @@
                         <li class="nav-item {{ Request::segment('1')=='home' ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('home') }}">Inicio <span class="sr-only">(current)</span></a>
                         </li>
+                        @if(Auth::user()->hasRole(['administrador','superadministrador']))
                         <li class="nav-item {{ Request::segment('1')=='administration' ? 'active' : '' }}">
                             <a class="nav-link" href="{{route('admin.index')}}">Administración </a>
                         </li>
+                        @endif
                         <li class="nav-item {{ Request::segment('1')=='disasters' ? 'active' : '' }}">
-                            <a class="nav-link" href="#">Desastres </a>
+                            <a class="nav-link" href="{{route('disasters.index')}}">Desastres </a>
                         </li>
                     </ul>
 

@@ -177,7 +177,8 @@ return [
         Laratrust\LaratrustServiceProvider::class,
         //TO SHOW MODEL DIAGRAMS:
         //BeyondCode\ErdGenerator\ErdGeneratorServiceProvider::class,
-        //TO GENERATE SEEDS FROM DATABASE:
+        // TO GENERATE SEEDS FROM DATABASE:
+        // just run: php artisan iseed my_table
         Orangehill\Iseed\IseedServiceProvider::class,
     ],
 

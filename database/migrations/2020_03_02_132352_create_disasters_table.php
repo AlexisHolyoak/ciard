@@ -16,7 +16,7 @@ class CreateDisastersTable extends Migration
         Schema::create('disasters', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('disaster_type_id')->unsigned();
-            $table->foreign('disaster_type_id')->references('id')->on('disasters');
+            $table->foreign('disaster_type_id')->references('id')->on('disaster_types');
             $table->dateTime('date_time_disaster');
             $table->bigInteger('urban_space_id')->unsigned();
             $table->foreign('urban_space_id')->references('id')->on('urban_spaces');

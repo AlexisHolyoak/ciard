@@ -20,4 +20,7 @@ class UrbanSpace extends Model
     public function evaluators(){
         return $this->belongsToMany(EdanEvaluator::class,'urban_spaces_evaluators','urban_space_id','evaluator_id')->using(UrbanSpaceEvaluator::class)->withTimestamps();
     }
+    public function disasters(){
+        return $this->hasMany(Disaster::class);
+    }
 }
