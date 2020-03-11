@@ -21,8 +21,7 @@ class CreateInfraestructuresInfoTable extends Migration
             $table->foreign('infraestructure_type_id')->references('id')->on('infraestructure_types');
             $table->bigInteger('edan_evaluator_id')->unsigned();
             $table->foreign('edan_evaluator_id')->references('id')->on('edan_evaluators');
-            $table->bigInteger('family_boss_id')->unsigned();
-            $table->foreign('family_boss_id')->references('id')->on('families_info');
+            $table->bigInteger('family_boss_id')->nullable();
             $table->bigInteger('building_id')->nullable();
             $table->integer('number');
             $table->boolean('tenencia')->default(1);
@@ -36,10 +35,10 @@ class CreateInfraestructuresInfoTable extends Migration
             $table->boolean('lights')->default(0);
             $table->boolean('natural_gas')->default(0);
             $table->boolean('public_transport')->default(0);
-            $table->boolean('telecomunications')->default(0);            
+            $table->boolean('telecomunications')->default(0);
             $table->timestamps();
         });
-        
+
     }
 
     /**

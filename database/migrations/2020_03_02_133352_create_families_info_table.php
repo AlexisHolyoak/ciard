@@ -16,8 +16,8 @@ class CreateFamiliesInfoTable extends Migration
         Schema::create('families_info', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('people_id')->unsigned();
-            $table->foreign('people_id')->references('id')->on('people');           
-            $table->boolean('pregnant')->default(0);
+            $table->foreign('people_id')->references('id')->on('people');
+            $table->integer('pregnant')->nullable()->default(0);
             $table->string('disability')->nullable();
             $table->string('chronic_disease')->nullable();
             $table->timestamps();

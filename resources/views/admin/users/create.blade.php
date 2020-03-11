@@ -1,8 +1,5 @@
 @extends('admin.layout')
 @section('admin')
-    <div class="col-md-12 mb-4">
-        <a href="{{route('admin.user.create')}}" class="btn btn-success">Crear usuario</a>
-    </div>
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">

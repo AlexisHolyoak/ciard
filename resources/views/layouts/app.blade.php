@@ -41,11 +41,21 @@
                         </li>
                         @if(Auth::user()->hasRole(['administrador','superadministrador']))
                         <li class="nav-item {{ Request::segment('1')=='administration' ? 'active' : '' }}">
-                            <a class="nav-link" href="{{route('admin.index')}}">Administración </a>
+                            <a class="nav-link" href="{{route('admin.index')}}">Administración</a>
+                        </li>
+                        <li class="nav-item {{ Request::segment('1')=='disasters' ? 'active' : '' }}">
+                            <a class="nav-link" href="{{route('disasters.index')}}">Desastres</a>
+                        </li>
+                        <li class="nav-item {{ Request::segment('1')=='infrastructure' ? 'active' : '' }}">
+                            <a class="nav-link" href="{{route('infrastructure.index')}}">Infraestructuras</a>
                         </li>
                         @endif
-                        <li class="nav-item {{ Request::segment('1')=='disasters' ? 'active' : '' }}">
-                            <a class="nav-link" href="{{route('disasters.index')}}">Desastres </a>
+                        <li class="nav-item dropdown {{ Request::segment('1')=='forms' ? 'active' : '' }}">
+                            <a class="nav-link  dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Formularios </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{{route('forms.pre.index')}}">Pre catastrofe</a>
+                                <a class="dropdown-item" href="#">Post catastrofe</a>
+                            </div>
                         </li>
                     </ul>
 

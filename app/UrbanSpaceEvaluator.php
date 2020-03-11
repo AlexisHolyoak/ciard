@@ -12,4 +12,10 @@ class UrbanSpaceEvaluator extends Pivot
         'evaluator_id',
         'urban_space_id',
     ];
+    public function urbanspace(){
+        return $this->belongsTo(UrbanSpace::class,'urban_space_id');
+    }
+    public function evaluator(){
+        return $this->belongsTo(EdanEvaluator::class,'evaluator_id');
+    }
 }

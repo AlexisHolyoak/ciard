@@ -55,6 +55,18 @@ Route::get('/disasters/create','DisasterController@create')->name('disasters.cre
 Route::post('/disasters/store','DisasterController@store')->name('disasters.store');
 Route::get('/disasters/edit/{disaster}','DisasterController@edit')->name('disasters.edit');
 Route::put('/disasters/update/{disaster}','DisasterController@update')->name('disasters.update');
+
+Route::get('/forms/pre/index','FormsController@index')->name('forms.pre.index');
+Route::get('/forms/pre/infrastructure/urbanspace/{urbanspace}','FormsController@infrastructures')->name('forms.pre.infrastructure');
+Route::get('/forms/pre/infrastructure/urbanspace/{urbanspace}/create','FormsController@createInfrastructure')->name('forms.pre.infrastructure.create');
+Route::post('/forms/pre/infrastructure/urbanspace/{urbanspace}/store','FormsController@storeInfrastructure')->name('forms.pre.infrastructure.store');
+
+
+Route::get('/infrastructure/index','InfrastructureController@index')->name('infrastructure.index');
+Route::get('/infrastructure/create','InfrastructureController@create')->name('infrastructure.create');
+Route::post('/infrastructure/store','InfrastructureController@store')->name('infrastructure.store');
+Route::get('/infrastructure/edit/{type}','InfrastructureController@edit')->name('infrastructure.edit');
+Route::put('/infrastructure/update/{type}','InfrastructureController@update')->name('infrastructure.update');
 //AJAX UBIGEO
 Route::get('/ajax-departments/',function(){
     return Response::json(App\Department::all());
