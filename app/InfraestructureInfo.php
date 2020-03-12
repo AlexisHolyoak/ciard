@@ -14,4 +14,7 @@ class InfraestructureInfo extends Model
     public function boss(){
         return $this->belongsTo(FamilyInfo::class,'family_boss_id');
     }
+    public function urbanspace(){
+        return $this->belongsTo(UrbanSpace::class, 'urban_space_id');
+    }
 }

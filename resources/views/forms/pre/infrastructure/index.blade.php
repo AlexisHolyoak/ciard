@@ -18,14 +18,16 @@
                             </div>
                         </div>
 
+                        <hr>
+                        <h6>A continuación se muestran las infraestructuras de esta calle/manzana:</h6>
 
-                        <table class="table table-bordered" id="infrastructure_table">
+                        <table class="table table-bordered" id="infrastructure_table" style="width: 100%">
                             <thead>
                             <tr>
-                                <th>Responsable</th>
+                                <th>Responsable de la infraestructura</th>
                                 <th>N°/Lote</th>
-                                <th class="none">Categoria</th>
-                                <th>Acciones</th>
+                                <th >Categoria</th>
+                                <th class="none">Acciones</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -36,7 +38,8 @@
 
                                 <td>{{$infrastructure->category->name}}</td>
                                 <td>
-                                    <a href="" class="btn btn-sm btn-warning">Habitantes</a>
+                                    <a href="{{route('habitants.index',$infrastructure)}}" class="btn btn-sm btn-warning">Habitantes</a>
+                                    <a href="" class="btn btn-primary btn-sm">Infraestructura</a>
                                 </td>
                             </tr>
                             @endforeach

@@ -50,6 +50,7 @@
                             <a class="nav-link" href="{{route('infrastructure.index')}}">Infraestructuras</a>
                         </li>
                         @endif
+                        @if(Auth::user()->hasRole(['evaluador']))
                         <li class="nav-item dropdown {{ Request::segment('1')=='forms' ? 'active' : '' }}">
                             <a class="nav-link  dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Formularios </a>
                             <div class="dropdown-menu">
@@ -57,6 +58,7 @@
                                 <a class="dropdown-item" href="#">Post catastrofe</a>
                             </div>
                         </li>
+                        @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->

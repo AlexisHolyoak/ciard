@@ -67,6 +67,14 @@ Route::get('/infrastructure/create','InfrastructureController@create')->name('in
 Route::post('/infrastructure/store','InfrastructureController@store')->name('infrastructure.store');
 Route::get('/infrastructure/edit/{type}','InfrastructureController@edit')->name('infrastructure.edit');
 Route::put('/infrastructure/update/{type}','InfrastructureController@update')->name('infrastructure.update');
+
+Route::get('/infrastructure/{infrastructure}/habitants','FormsController@habitants')->name('habitants.index');
+Route::get('/infrastructure/{infrastructure}/habitants/create','FormsController@createHabitant')->name('habitants.create');
+Route::post('/infrastructure/{infrastructure}/habitants/store','FormsController@storeHabitant')->name('habitants.store');
+
+
+Route::get('/infrastructure/edit/{infrastructure}','FormsControler@editInfrastructure')->name('infrastructure.edit');
+
 //AJAX UBIGEO
 Route::get('/ajax-departments/',function(){
     return Response::json(App\Department::all());

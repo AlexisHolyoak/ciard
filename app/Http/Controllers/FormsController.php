@@ -20,7 +20,8 @@ class FormsController extends Controller
         $user= Auth::user();
         $evaluator= EdanEvaluator::where('people_id',$user->person->id)->first();
         $designations = UrbanSpaceEvaluator::where('evaluator_id',$evaluator->id)->get();
-        return view('forms.pre.index',compact(['designations']));
+        $infrastructures = InfraestructureInfo::all();
+        return view('forms.pre.index',compact(['designations','infrastructures']));
     }
     public function infrastructures(UrbanSpace $urbanspace){
         $infrastructures = InfraestructureInfo::where('urban_space_id',$urbanspace->id)->get();
@@ -79,6 +80,38 @@ class FormsController extends Controller
 
         $infrastructure->family_boss_id = $family_member->id;
         $infrastructure->save();
-        return Redirect::action('FormsController@infrastructures',[$urbanspace])->with('success','En un momento podras registrar a los habitantes de esta infraestructura');
+        return Redirect::action('FormsController@createHabitant',[$infrastructure])->with('success','Se ha registrado la infraestructura ahora, solicita información de los habitantes');
+    }
+    public function habitants(InfraestructureInfo $infrastructure){
+        $family_members = FamilyInfo::where('infraestructure_info_id',$infrastructure->id)->get();
+        return view('forms.pre.habitants.index',compact(['family_members','infrastructure']));
+    }
+    public function createHabitant(InfraestructureInfo $infrastructure){
+        return view('forms.pre.habitants.create',compact(['infrastructure']));
+    }
+    public function storeHabitant(InfraestructureInfo $infrastructure, Request $request){
+        $name = ucwords(strtolower( $request->name));
+        $first_surname = ucwords(strtolower( $request->first_surname));
+        $second_surname = ucwords(strtolower( $request->second_surname));
+
+        $person = new Person();
+        $person->name = $name;
+        $person->first_surname = $first_surname;
+        $person->second_surname = $second_surname;
+        $person->document_type = $request->get('document_type');
+        $person->document_number = $request->document_number;
+        $person->sex = $request->get('sex');
+        $person->birthday = $request->birthday;
+
+        $person->save();
+
+        $family_member = new FamilyInfo();
+        $family_member->people_id = $person->id;
+        $family_member->pregnant = $request->pregnant;
+        $family_member->disability = $request->disability;
+        $family_member->chronic_disease = $request->chronic_disease;
+        $family_member->infraestructure_info_id = $infrastructure->id;
+        $family_member->save();
+        return Redirect::action('FormsController@createHabitant',[$infrastructure])->with('success','Se ha añadido un nuevo habitante en esta infraestructura');
     }
 }
