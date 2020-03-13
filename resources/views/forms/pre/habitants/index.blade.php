@@ -40,7 +40,7 @@
                                         @endif: {{$family_member->person->document_number}}</td>
                                     <td>{{$family_member->person->birthday}}</td>
                                     <td>
-                                        <a href="" class="btn btn-primary btn-sm">Editar</a>
+                                        <a href="{{route('habitants.edit', ['infrastructure'=> $infrastructure, 'habitant'=>$family_member])}}" class="btn btn-primary btn-sm">Editar</a>
                                     </td>
                                 </tr>
                             @endforeach

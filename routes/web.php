@@ -60,6 +60,8 @@ Route::get('/forms/pre/index','FormsController@index')->name('forms.pre.index');
 Route::get('/forms/pre/infrastructure/urbanspace/{urbanspace}','FormsController@infrastructures')->name('forms.pre.infrastructure');
 Route::get('/forms/pre/infrastructure/urbanspace/{urbanspace}/create','FormsController@createInfrastructure')->name('forms.pre.infrastructure.create');
 Route::post('/forms/pre/infrastructure/urbanspace/{urbanspace}/store','FormsController@storeInfrastructure')->name('forms.pre.infrastructure.store');
+Route::get('/forms/pre/infrastructure/edit/{infrastructure}','FormsController@editInfrastructure')->name('forms.pre.infrastructure.edit');
+Route::put('/forms/pre/infrastructure/update/{infrastructure}','FormsController@updateInfrastructure')->name('forms.pre.infrastructure.update');
 
 
 Route::get('/infrastructure/index','InfrastructureController@index')->name('infrastructure.index');
@@ -71,10 +73,16 @@ Route::put('/infrastructure/update/{type}','InfrastructureController@update')->n
 Route::get('/infrastructure/{infrastructure}/habitants','FormsController@habitants')->name('habitants.index');
 Route::get('/infrastructure/{infrastructure}/habitants/create','FormsController@createHabitant')->name('habitants.create');
 Route::post('/infrastructure/{infrastructure}/habitants/store','FormsController@storeHabitant')->name('habitants.store');
+Route::get('/infrastructure/{infrastructure}/habitant/{habitant}/edit','FormsController@editHabitant')->name('habitants.edit');
+Route::put('/infrastructure/habitant/{habitant}/update','FormsController@updateHabitant')->name('habitants.update');
 
 
-Route::get('/infrastructure/edit/{infrastructure}','FormsControler@editInfrastructure')->name('infrastructure.edit');
+Route::get('/forms/post/index','PostFormController@index')->name('forms.post.index');
+Route::get('/forms/post/infrastructures/urbanspace/{urbanspace}/index','PostFormController@infrastructures')->name('forms.post.infrastructure');
 
+Route::get('/forms/post/infrastructure/{infrastructure}/condition','PostFormController@infrastructureCondition')->name('post.infrastructure.condition');
+
+Route::get('/forms/post/infrastructure/{infrastructure}/habitants/condition','PostFormController@habitantsCondition')->name('post.habitants.condition');
 //AJAX UBIGEO
 Route::get('/ajax-departments/',function(){
     return Response::json(App\Department::all());

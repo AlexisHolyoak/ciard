@@ -55,7 +55,7 @@
                             <a class="nav-link  dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Formularios </a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="{{route('forms.pre.index')}}">Pre catastrofe</a>
-                                <a class="dropdown-item" href="#">Post catastrofe</a>
+                                <a class="dropdown-item" href="{{route('forms.post.index')}}">Post catastrofe</a>
                             </div>
                         </li>
                         @endif

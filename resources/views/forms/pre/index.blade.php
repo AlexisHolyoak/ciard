@@ -4,17 +4,19 @@
     <div class="container">
         <div class="row mb-4">
             @if($designations->count() > 0)
-            <div class="list-group col-md-12">
-                @foreach($designations as $designation)
-                <a href="{{route('forms.pre.infrastructure',$designation->urbanspace)}}" class="list-group-item list-group-item-action ">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">{{$designation->urbanspace->zone->district->nombre}} {{$designation->urbanspace->zone->name}} {{$designation->urbanspace->type}} {{$designation->urbanspace->name}}</h5>
-                        <small>Ultima actualización: {{$infrastructures->where('urban_space_id',$designation->urbanspace->id)->sortByDesc('id')->first()->created_at}}</small>
+                <div class="col-md-12">
+                    <div class="list-group">
+                        @foreach($designations as $designation)
+                            <a href="{{route('forms.pre.infrastructure',$designation->urbanspace)}}" class="list-group-item list-group-item-action ">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">{{$designation->urbanspace->zone->district->nombre}} {{$designation->urbanspace->zone->name}} {{$designation->urbanspace->type}} {{$designation->urbanspace->name}}</h5>
+                                    <small>Ultima actualización: {{$infrastructures->where('urban_space_id',$designation->urbanspace->id)->sortByDesc('id')->first()->created_at}}</small>
+                                </div>
+                                <p class="mb-1">Cantidad de infraestructuras: {{$infrastructures->where('urban_space_id',$designation->urbanspace->id)->count()}}</p>
+                            </a>
+                        @endforeach
                     </div>
-                    <p class="mb-1">Cantidad de infraestructuras: {{$infrastructures->where('urban_space_id',$designation->urbanspace->id)->count()}}</p>
-                </a>
-                @endforeach
-            </div>
+                </div>
                 @else
                 <div class="col-md-12">
                     <div class="card">
