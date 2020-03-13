@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Redirect;
 class FormsController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index(){
         $user= Auth::user();
         $evaluator= EdanEvaluator::where('people_id',$user->person->id)->first();
