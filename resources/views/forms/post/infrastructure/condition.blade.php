@@ -6,11 +6,29 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    Evaluación de la infraestructura   {{$infrastructure->urbanspace->zone->district->nombre}} "{{$infrastructure->urbanspace->zone->name}}" {{$infrastructure->urbanspace->type}} {{$infrastructure->urbanspace->name}}-{{$infrastructure->number}}
+                    Evaluación post desastre de la infraestructura   {{$infrastructure->urbanspace->zone->district->nombre}} "{{$infrastructure->urbanspace->zone->name}}" {{$infrastructure->urbanspace->type}} {{$infrastructure->urbanspace->name}}-{{$infrastructure->number}}
                 </div>
                 <div class="card-body">
                     <h6>A continuación evaluaremos la continuidad de sus servicios básicos</h6>
-                    <form action="">
+                    <form action="{{route('post.infrastructure.condition.store',$infrastructure)}}" method="post">
+                        @csrf
+                        <div class="form-group row">
+                            <label for="condition" class="col-md-4 col-form-label text-md-right">Condición de la vivienda</label>
+                            <div class="col-md-6">
+                                <select name="condition" id="condition" class="form-control">
+                                    <option value="BUEN ESTADO">BUEN ESTADO</option>
+                                    <option value="AFECTADA">AFECTADA</option>
+                                    <option value="INHABITABLE">INHABITABLE</option>
+                                    <option value="DESTRUIDA">DESTRUIDA</option>
+                                </select>
+
+                                @error('water')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
                         <div class="form-group row">
                             <label for="water" class="col-md-4 col-form-label text-md-right">Agua</label>
 
@@ -29,8 +47,8 @@
                                 </div>
                             @else
                                 <div class="col-md-6">
-                                    <select name="water" id="water" class="form-control" disabled>
-                                        <option value="3">NO APLICA EVALUACIÓN</option>
+                                    <select name="water" id="water" class="form-control" readonly="true">
+                                        <option selected value="3">NO APLICA EVALUACIÓN</option>
                                     </select>
                                 </div>
                             @endif
@@ -53,8 +71,8 @@
                                 </div>
                             @else
                                 <div class="col-md-6">
-                                    <select name="sewerage" id="sewerage" class="form-control" disabled>
-                                        <option value="3">NO APLICA EVALUACIÓN</option>
+                                    <select name="sewerage" id="sewerage" class="form-control" readonly="true">
+                                        <option selected value="3">NO APLICA EVALUACIÓN</option>
                                     </select>
                                 </div>
                             @endif
@@ -77,8 +95,8 @@
                                 </div>
                             @else
                                 <div class="col-md-6">
-                                    <select name="lights" id="lights" class="form-control" disabled>
-                                        <option value="3">NO APLICA EVALUACIÓN</option>
+                                    <select name="lights" id="lights" class="form-control" readonly="true">
+                                        <option selected value="3">NO APLICA EVALUACIÓN</option>
                                     </select>
                                 </div>
                             @endif
@@ -101,8 +119,8 @@
                                 </div>
                             @else
                                 <div class="col-md-6">
-                                    <select name="natural_gas" id="natural_gas" class="form-control" disabled>
-                                        <option value="3">NO APLICA EVALUACIÓN</option>
+                                    <select name="natural_gas" id="natural_gas" class="form-control" readonly="true">
+                                        <option selected value="3">NO APLICA EVALUACIÓN</option>
                                     </select>
                                 </div>
                             @endif
@@ -125,7 +143,7 @@
                                 </div>
                             @else
                                 <div class="col-md-6">
-                                    <select name="public_transport" id="public_transport" class="form-control" disabled>
+                                    <select name="public_transport" id="public_transport" class="form-control" readonly="true">
                                         <option value="3">NO APLICA EVALUACIÓN</option>
                                     </select>
                                 </div>
@@ -149,8 +167,8 @@
                                 </div>
                             @else
                                 <div class="col-md-6">
-                                    <select name="telecomunications" id="telecomunications" class="form-control" disabled>
-                                        <option value="3">NO APLICA EVALUACIÓN</option>
+                                    <select name="telecomunications" id="telecomunications" class="form-control" readonly="true">
+                                        <option selected value="3">NO APLICA EVALUACIÓN</option>
                                     </select>
                                 </div>
                             @endif
@@ -160,7 +178,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Registrar y censar habitantes
+                                    Registrar y evaluar habitantes
                                 </button>
                                 <a href="{{route('forms.post.infrastructure',$infrastructure->urbanspace)}}" class="btn btn-secondary">Atras</a>
                             </div>

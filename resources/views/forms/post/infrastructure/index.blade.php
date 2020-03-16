@@ -11,7 +11,7 @@
                     <div class="card-body">
                         <div class="row col-md-12 mb-4 justify-content-between">
                             <div class="">
-                                <a href="{{route('forms.pre.infrastructure.create',$urbanspace)}}" class="btn btn-success">Registrar infraestructura</a>
+                                <a href="{{route('forms.post.infrastructure.create',$urbanspace)}}" class="btn btn-success">Registrar infraestructura</a>
                             </div>
                             <div class="">
                                 <a href="{{route('forms.post.index')}}" class="btn btn-secondary">Atras</a>
