@@ -12,4 +12,7 @@ class FamilyInfo extends Model
     public function person(){
         return $this->belongsTo(Person::class, 'people_id');
     }
+    public function conditions(){
+        return $this->hasMany(FamilyPostInfo::class,'family_info_id');
+    }
 }

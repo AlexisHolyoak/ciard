@@ -78,19 +78,22 @@ Route::put('/infrastructure/habitant/{habitant}/update','FormsController@updateH
 
 
 Route::get('/forms/post/index','PostFormController@index')->name('forms.post.index');
-Route::get('/forms/post/infrastructures/urbanspace/{urbanspace}/index','PostFormController@infrastructures')->name('forms.post.infrastructure');
+Route::get('/forms/post/disaster/{disaster}/infrastructures/urbanspace/{urbanspace}/index','PostFormController@infrastructures')->name('forms.post.infrastructure');
 Route::get('/forms/post/infrastructure/urbanspace/{urbanspace}/create','PostFormController@createInfrastructure')->name('forms.post.infrastructure.create');
 Route::post('/forms/post/infrastructure/urbanspace/{urbanspace}/store','PostFormController@storeInfrastructure')->name('forms.post.infrastructure.store');
-Route::get('/forms/post/infrastructure/{infrastructure}/condition','PostFormController@infrastructureCondition')->name('post.infrastructure.condition');
-Route::post('/forms/post/infrastructure/{infrastructure}/condition/store','PostFormController@storeInfrastructureCondition')->name('post.infrastructure.condition.store');
+Route::get('/forms/post/disaster/{disaster}/infrastructure/{infrastructure}/condition','PostFormController@infrastructureCondition')->name('post.infrastructure.condition');
+Route::post('/forms/post/disaster/{disaster}/infrastructure/{infrastructure}/condition/store','PostFormController@storeInfrastructureCondition')->name('post.infrastructure.condition.store');
 
-Route::get('/forms/post/infrastructure/{infrastructure}/habitants/condition','PostFormController@habitantsCondition')->name('post.habitants.condition');
-Route::post('/forms/post/infrastructure/{infrastructure}/habitants/condition/store','PostFormController@storeHabitantsCondition')->name('post.habitants.condition.store');
+Route::get('/forms/post/disaster/{disaster}/infrastructure/{infrastructure}/habitants/condition','PostFormController@habitantsCondition')->name('post.habitants.condition');
+Route::post('/forms/post/disaster/{disaster}/infrastructure/{infrastructure}/habitants/condition/store','PostFormController@storeHabitantsCondition')->name('post.habitants.condition.store');
 Route::get('/infrastructure/{infrastructure}/post/habitants/create','PostFormController@createHabitant')->name('post.habitants.create');
 Route::post('/infrastructure/{infrastructure}/post/habitants/store','PostFormController@storeHabitant')->name('post.habitants.store');
 Route::get('/infrastructure/{infrastructure}/post/habitant/{habitant}/edit','PostFormController@editHabitant')->name('post.habitants.edit');
 Route::put('/infrastructure/post/habitant/{habitant}/update','PostFormController@updateHabitant')->name('post.habitants.update');
 Route::get('/infrastructure/{infrastructure}/post/habitants','PostFormController@habitants')->name('post.habitants.index');
+
+
+Route::get('/disasters/{disaster}/report','ReportsController@disasters')->name('reports.disasters');
 //AJAX UBIGEO
 Route::get('/ajax-departments/',function(){
     return Response::json(App\Department::all());

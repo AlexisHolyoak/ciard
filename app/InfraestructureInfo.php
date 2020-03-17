@@ -17,4 +17,7 @@ class InfraestructureInfo extends Model
     public function urbanspace(){
         return $this->belongsTo(UrbanSpace::class, 'urban_space_id');
     }
+    public function habitants(){
+        return $this->hasMany(FamilyInfo::class,'infraestructure_info_id');
+    }
 }

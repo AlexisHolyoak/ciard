@@ -6,10 +6,10 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    Evaluación post desastre de habitantes de {{$infrastructure->urbanspace->zone->district->nombre}} "{{$infrastructure->urbanspace->zone->name}}" {{$infrastructure->urbanspace->type}} {{$infrastructure->urbanspace->name}}-{{$infrastructure->number}}
+                    Evaluación post {{$disaster->disastertype->name}} de los habitantes de {{$infrastructure->urbanspace->zone->district->nombre}} "{{$infrastructure->urbanspace->zone->name}}" {{$infrastructure->urbanspace->type}} {{$infrastructure->urbanspace->name}}-{{$infrastructure->number}}
                 </div>
                 <div class="card-body">
-                    <form action="{{route('post.habitants.condition.store',$infrastructure)}}" method="post">
+                    <form action="{{route('post.habitants.condition.store',['disaster'=>$disaster,'infrastructure'=>$infrastructure])}}" method="post">
                         @csrf
                         <h6>Evaluación de los habitantes de la infraestructura post desastre:</h6>
                         @foreach($habitants as $habitant)
@@ -48,7 +48,7 @@
                                 <button type="submit" class="btn btn-primary">
                                     Registrar
                                 </button>
-                                <a href="{{route('forms.post.infrastructure',$infrastructure->urbanspace)}}" class="btn btn-secondary">Atras</a>
+                                <a href="{{route('forms.post.infrastructure',['disaster'=>$disaster, 'urbanspace'=>$infrastructure->urbanspace])}}" class="btn btn-secondary">Atras</a>
                             </div>
                         </div>
                     </form>

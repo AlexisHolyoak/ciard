@@ -17,6 +17,10 @@ class CreateInfraestructuresPostInfoTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('infraestructure_info_id')->unsigned();
             $table->foreign('infraestructure_info_id')->references('id')->on('infraestructures_info');
+            $table->bigInteger('disaster_id')->unsigned();
+            $table->foreign('disaster_id')->references('id')->on('disasters');
+            $table->bigInteger('evaluator_id')->unsigned();
+            $table->foreign('evaluator_id')->references('id')->on('edan_evaluators');
             $table->boolean('water')->default(0);
             $table->boolean('lights')->default(0);
             $table->boolean('natural_gas')->default(0);

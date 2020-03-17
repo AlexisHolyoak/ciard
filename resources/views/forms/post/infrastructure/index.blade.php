@@ -6,7 +6,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                       Infraestructuras de {{$urbanspace->zone->district->nombre}} "{{$urbanspace->zone->name}}" {{$urbanspace->type}} "{{$urbanspace->name}}" registradas dentro del peligro
+                       Infraestructuras de {{$urbanspace->zone->district->nombre}} "{{$urbanspace->zone->name}}" {{$urbanspace->type}} "{{$urbanspace->name}}" registradas dentro del desastre: {{$disaster->disastertype->name}}
                     </div>
                     <div class="card-body">
                         <div class="row col-md-12 mb-4 justify-content-between">
@@ -38,8 +38,8 @@
 
                                     <td>{{$infrastructure->category->name}}</td>
                                     <td>
-                                        <a href="{{route('post.habitants.condition',$infrastructure)}}" class="btn btn-sm btn-warning">Habitantes</a>
-                                        <a href="{{route('post.infrastructure.condition',$infrastructure)}}" class="btn btn-primary btn-sm">Infraestructura</a>
+                                        <a href="{{route('post.habitants.condition',['disaster'=>$disaster, 'infrastructure'=>$infrastructure])}}" class="btn btn-sm btn-warning">Habitantes</a>
+                                        <a href="{{route('post.infrastructure.condition',['disaster'=>$disaster, 'infrastructure'=>$infrastructure])}}" class="btn btn-primary btn-sm">Infraestructura</a>
                                     </td>
                                 </tr>
                             @endforeach

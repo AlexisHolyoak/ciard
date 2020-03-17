@@ -17,6 +17,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
 
 
 class PostFormController extends Controller
@@ -35,18 +36,22 @@ class PostFormController extends Controller
         $infrastructures = InfraestructureInfo::all();
         return view('forms.post.index',compact(['disasters','infrastructures']));
     }
-    public function infrastructures(UrbanSpace $urbanspace){
+    public function infrastructures(Disaster $disaster, UrbanSpace $urbanspace){
         $infrastructures = InfraestructureInfo::where('urban_space_id',$urbanspace->id)->get();
-        return view('forms.post.infrastructure.index',compact(['urbanspace','infrastructures']));
+        return view('forms.post.infrastructure.index',compact(['urbanspace','infrastructures','disaster']));
     }
-    public function infrastructureCondition(InfraestructureInfo $infrastructure){
-        return view('forms.post.infrastructure.condition', compact(['infrastructure']));
+    public function infrastructureCondition(Disaster $disaster,InfraestructureInfo $infrastructure){
+        if(count(InfraestructurePostInfo::where('infraestructure_info_id',$infrastructure->id)->where('disaster_id',$disaster->id)->get())>0){
+            //TODO: Change for an edit button to infrastructure condition or pass parameter to not show button
+            return redirect()->back()->with('warning' ,'Ya se ha completado la evaluación post desastre de esta infraestructura');
+        }
+        return view('forms.post.infrastructure.condition', compact(['infrastructure','disaster']));
     }
-    public function storeInfrastructureCondition(InfraestructureInfo $infrastructure, Request $request){
-        $validator = Validator::make($request->all(),[
-            'infraestructure_info_id' => ['unique:infraestructures_post_info']
-        ]);
-        if($validator->fails()){
+    public function storeInfrastructureCondition(Disaster $disaster,InfraestructureInfo $infrastructure, Request $request){
+        $user= Auth::user();
+        $evaluator= EdanEvaluator::where('people_id',$user->person->id)->first();
+        if(count(InfraestructurePostInfo::where('infraestructure_info_id',$infrastructure->id)->where('disaster_id',$disaster->id)->get())>0){
+            //TODO: Change for an edit button to infrastructure condition or pass parameter to not show button
             return redirect()->back()->with('warning' ,'Ya se ha completado la evaluación post desastre de esta infraestructura');
         }
         $post_infrastructure=new InfraestructurePostInfo();
@@ -58,33 +63,41 @@ class PostFormController extends Controller
         $post_infrastructure->natural_gas = $request->get('natural_gas');
         $post_infrastructure->public_transport = $request->get('public_transport');
         $post_infrastructure->telecomunications =$request->get('telecomunications');
+        $post_infrastructure->disaster_id = $disaster->id;
+        $post_infrastructure->evaluator_id = $evaluator->id;
         $post_infrastructure->save();
-        return Redirect::action('PostFormController@habitantsCondition',[$infrastructure])->with('success','Se ha registrado la condición post desastre de la infraestructura');
+        return Redirect::action('PostFormController@infrastructures',['disaster'=>$disaster,'urbanspace'=>$infrastructure->urbanspace])->with('success','Se ha registrado la condición post desastre de la infraestructura');;
     }
-    public function habitantsCondition(InfraestructureInfo $infrastructure){
+    public function habitantsCondition(Disaster $disaster,InfraestructureInfo $infrastructure){
         $habitants = FamilyInfo::where('infraestructure_info_id',$infrastructure->id)->get();
-        return view('forms.post.habitants.condition',compact(['habitants','infrastructure']));
-    }
-    public function storeHabitantsCondition(InfraestructureInfo $infrastructure, Request $request){
-       $validator = Validator::make($request->all(),[
-           'family_info_id' => ['unique:families_post_info']
-       ]);
-        if($validator->fails()){
-            return redirect()->back()->with('warning' ,'Ya se ha completado la evaluación post desastre de estos habitantes');
+        $habitants_id= $habitants->pluck('id');
+        if(count(FamilyPostInfo::whereIn('family_info_id',$habitants_id)->where('disaster_id',$disaster->id)->get())>0){
+            //TODO: Change for an edit button to habitants condition or pass parameter to not show button
+            return redirect()->back()->with('warning' ,'Ya se ha completado la evaluación post desastre de los habitantes de esta infraestructura');
         }
+        return view('forms.post.habitants.condition',compact(['habitants','infrastructure','disaster']));
+    }
+    public function storeHabitantsCondition(Disaster $disaster,InfraestructureInfo $infrastructure, Request $request){
+        $user= Auth::user();
+        $evaluator= EdanEvaluator::where('people_id',$user->person->id)->first();
         $data=[];
         for ($i=0; $i<count($request->family_info_id);$i++){
             $now = Carbon::now();
+            if(count(FamilyPostInfo::where('family_info_id',$request->family_info_id[$i])->where('disaster_id',$disaster->id)->get())>0){
+                return redirect()->back()->with('warning' ,'Ya se ha completado la evaluación post desastre de estos habitantes');
+            }
             $data[]=[
                 'family_info_id'=>$request->family_info_id[$i],
                 'condition'=>$request->condition[$i],
                 'personal_damage'=>$request->personal_damage[$i],
+                'disaster_id'=> $disaster->id,
+                'evaluator_id'=> $evaluator->id,
                 'updated_at' => $now,
                 'created_at' => $now
             ];
         }
         $post_habitants=FamilyPostInfo::insert($data);
-        return Redirect::action('PostFormController@infrastructures',[$infrastructure->urbanspace])->with('success','Se ha registrado la condición post desastre de los habitantes');;
+        return Redirect::action('PostFormController@infrastructures',['disaster'=>$disaster,'urbanspace'=>$infrastructure->urbanspace])->with('success','Se ha registrado la condición post desastre de los habitantes');;
     }
     public function createInfrastructure(UrbanSpace $urbanspace){
         $types=InfraestructureType::all();
@@ -197,5 +210,8 @@ class PostFormController extends Controller
         $habitant->chronic_disease = $request->chronic_disease;
         $habitant->save();
         return Redirect::action('PostFormController@habitants',[$habitant->infraestructure_info_id])->with('success','Se ha actualizado correctamente el habitante de esta infraestructura');
+    }
+    public function concludeEvaluation(){
+
     }
 }

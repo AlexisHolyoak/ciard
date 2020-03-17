@@ -10,7 +10,7 @@
                 </div>
                 <div class="card-body">
                     <h6>A continuación evaluaremos la continuidad de sus servicios básicos</h6>
-                    <form action="{{route('post.infrastructure.condition.store',$infrastructure)}}" method="post">
+                    <form action="{{route('post.infrastructure.condition.store',['disaster'=>$disaster, 'infrastructure'=>$infrastructure])}}" method="post">
                         @csrf
                         <div class="form-group row">
                             <label for="condition" class="col-md-4 col-form-label text-md-right">Condición de la vivienda</label>
@@ -178,9 +178,9 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Registrar y evaluar habitantes
+                                    Registrar
                                 </button>
-                                <a href="{{route('forms.post.infrastructure',$infrastructure->urbanspace)}}" class="btn btn-secondary">Atras</a>
+                                <a href="{{route('forms.post.infrastructure',['disaster'=>$disaster, 'urbanspace'=>$infrastructure->urbanspace])}}" class="btn btn-secondary">Atras</a>
                             </div>
                         </div>
                     </form>
