@@ -16,7 +16,7 @@
                             <label for="condition" class="col-md-4 col-form-label text-md-right">Condición de la vivienda</label>
                             <div class="col-md-6">
                                 <select name="condition" id="condition" class="form-control">
-                                    <option value="BUEN ESTADO">BUEN ESTADO</option>
+                                    <option value="BUENA">BUENA</option>
                                     <option value="AFECTADA">AFECTADA</option>
                                     <option value="INHABITABLE">INHABITABLE</option>
                                     <option value="DESTRUIDA">DESTRUIDA</option>

@@ -7,7 +7,7 @@
                 <div class="col-md-12">
                     <div class="list-group ">
                         @foreach($disasters as $disaster)
-                            <a href="{{route('forms.post.infrastructure',['disaster'=>$disaster, 'urbanspace'=>$disaster->urbanspace])}}" class="list-group-item list-group-item-action ">
+                            <a href="{{route('forms.post.infrastructure',['disaster'=>$disaster, 'urbanspace'=>$disaster->urbanspace])}}" class="list-group-item list-group-item-action {{($disaster->evaluated==1)?'list-group-item-danger':''}}">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">{{$disaster->urbanspace->zone->district->nombre}} {{$disaster->urbanspace->zone->name}} {{$disaster->urbanspace->type}} {{$disaster->urbanspace->name}}</h5>
                                     <small>Fecha del desastre: {{$disaster->date_time_disaster}}</small>
@@ -16,6 +16,10 @@
                                     Peligro: {{$disaster->disastertype->danger->name}}
                                     <br>
                                     Especificación del peligro: {{$disaster->disastertype->name}}
+                                    <br>
+                                    @if($disaster->evaluated==1)
+                                        EVAUACIÓN COMPLETADA
+                                    @endif
                                 </p>
                                 <small class="text-muted">Cantidad de infraestructuras: {{$infrastructures->where('urban_space_id',$disaster->urbanspace->id)->count()}}</small>
                             </a>

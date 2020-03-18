@@ -9,12 +9,9 @@
                        Infraestructuras de {{$urbanspace->zone->district->nombre}} "{{$urbanspace->zone->name}}" {{$urbanspace->type}} "{{$urbanspace->name}}" registradas dentro del desastre: {{$disaster->disastertype->name}}
                     </div>
                     <div class="card-body">
-                        <div class="row col-md-12 mb-4 justify-content-between">
-                            <div class="">
+                        <div class="row">
+                            <div class="col-md-12">
                                 <a href="{{route('forms.post.infrastructure.create',$urbanspace)}}" class="btn btn-success">Registrar infraestructura</a>
-                            </div>
-                            <div class="">
-                                <a href="{{route('forms.post.index')}}" class="btn btn-secondary">Atras</a>
                             </div>
                         </div>
 
@@ -46,11 +43,37 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="card-footer text-center">
+                        <a href="" class="btn btn-danger btn-sm float-left" data-toggle="modal" data-target="#exampleModal">Concluir evaluación</a>
+                        <a href="{{route('forms.post.index')}}" class="btn btn-secondary btn-sm float-right">Atras</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form action="{{route('post.evaluation.conclude',['disaster'=>$disaster,'urbanspace'=>$urbanspace ])}}" method="post">
+                    <input type="hidden" name="_method" value="PUT">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">¿Desea concluir?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ¿Esta seguro que desea concluir la evaluación del desastre en este espacio urbano?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Aceptar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 @endsection
 @section('style')
     <link href="{{asset('css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css" />

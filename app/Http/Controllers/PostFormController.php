@@ -32,7 +32,7 @@ class PostFormController extends Controller
         $evaluator= EdanEvaluator::where('people_id',$user->person->id)->first();
         $designations = UrbanSpaceEvaluator::where('evaluator_id',$evaluator->id);
         $designations_id = UrbanSpaceEvaluator::where('evaluator_id',$evaluator->id)->pluck('urban_space_id');
-        $disasters =Disaster::whereIn('urban_space_id',$designations_id)->where('evaluated',0)->orderBy('date_time_disaster','DESC')->get();
+        $disasters =Disaster::whereIn('urban_space_id',$designations_id)->orderBy('date_time_disaster','DESC')->get();
         $infrastructures = InfraestructureInfo::all();
         return view('forms.post.index',compact(['disasters','infrastructures']));
     }
@@ -56,7 +56,7 @@ class PostFormController extends Controller
         }
         $post_infrastructure=new InfraestructurePostInfo();
         $post_infrastructure->infraestructure_info_id = $infrastructure->id;
-        $post_infrastructure->condition = $request->condition;
+        $post_infrastructure->condition = $request->get('condition');
         $post_infrastructure->water = $request->get('water');
         $post_infrastructure->sewerage = $request->get('sewerage');
         $post_infrastructure->lights = $request->get('lights');
@@ -211,7 +211,10 @@ class PostFormController extends Controller
         $habitant->save();
         return Redirect::action('PostFormController@habitants',[$habitant->infraestructure_info_id])->with('success','Se ha actualizado correctamente el habitante de esta infraestructura');
     }
-    public function concludeEvaluation(){
-
+    public function concludeEvaluation(Disaster $disaster, UrbanSpace $urbanspace, Request $request){
+        $disaster=Disaster::where('id',$disaster->id)->where('urban_space_id',$urbanspace->id)->first();
+        $disaster->evaluated =1;
+        $disaster->save();
+        return Redirect::action('PostFormController@infrastructures',['disaster'=>$disaster, 'urbanspace'=>$urbanspace])->with('success','Se ha completado exitosamente la evaluación post desastre de este espacio urbano');
     }
 }

@@ -31,7 +31,9 @@
                                 <td>{{$disaster->date_time_disaster}}</td>
                                 <td>
                                     <a href="{{route('disasters.edit',$disaster)}}" class="btn btn-primary btn-sm">Editar</a>
+                                    @if($disaster->evaluated==1)
                                     <a href="{{route('reports.disasters',$disaster)}}" class="btn btn-warning btn-sm">Reporte</a>
+                                    @endif
                                 </td>
                             </tr>
                         @endforeach

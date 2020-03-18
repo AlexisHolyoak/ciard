@@ -92,6 +92,7 @@ Route::get('/infrastructure/{infrastructure}/post/habitant/{habitant}/edit','Pos
 Route::put('/infrastructure/post/habitant/{habitant}/update','PostFormController@updateHabitant')->name('post.habitants.update');
 Route::get('/infrastructure/{infrastructure}/post/habitants','PostFormController@habitants')->name('post.habitants.index');
 
+Route::put('/conclude/evaluation/post/disaster/{disaster}/urbanspace/{urbanspace}/','PostFormController@concludeEvaluation')->name('post.evaluation.conclude');
 
 Route::get('/disasters/{disaster}/report','ReportsController@disasters')->name('reports.disasters');
 //AJAX UBIGEO
