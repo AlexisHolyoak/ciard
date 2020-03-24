@@ -62,7 +62,9 @@ class QueriesController extends Controller
             return Redirect::action('QueriesController@disastersList')->with('disasters',$disasters)->with('scale','zona de '.$zone->name);
         }
         }else{
-
+            $urbanspace=$request->get('urbanspace');
+            $disasters=Disaster::where('urban_spae_id',$urbanspace)->first();
+            dd("Detalle especifico, aun nada que ver aqui");
         }
     }
     public function disastersList(){
