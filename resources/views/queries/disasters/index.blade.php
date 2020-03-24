@@ -82,9 +82,8 @@
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-primary">
-                                        Registrar
+                                        Buscar
                                     </button>
-                                    <a href="{{route('disasters.index')}}" class="btn btn-secondary">Atras</a>
                                 </div>
                             </div>
                         </form>

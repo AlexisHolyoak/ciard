@@ -15,4 +15,8 @@ class FamilyInfo extends Model
     public function conditions(){
         return $this->hasMany(FamilyPostInfo::class,'family_info_id');
     }
+    public function infrastructure(){
+        return $this->belongsTo(InfraestructureInfo::class,'infraestructure_info_id');
+    }
+
 }

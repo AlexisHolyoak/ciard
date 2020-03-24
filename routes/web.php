@@ -99,7 +99,10 @@ Route::get('/disasters/{disaster}/report','ReportsController@disasters')->name('
 Route::get('/queries/disasters/index','QueriesController@disastersIndex')->name('queries.disasters.index');
 Route::get('/queries/disasters/search/list','QueriesController@disastersList')->name('queries.disasters.list');
 Route::post('/queries/disasters/search','QueriesController@disastersSearch')->name('queries.disasters.search');
-Route::get('/queries/disasters/search/list/detail/type/{type}/date/{date}','QueriesController@disastersDetail')->name('queries.disasters.detail');
+Route::get('/queries/disasters/search/list/detail/type/{type}/date/{date}/{scale}/{location}','QueriesController@disastersDetail')->name('queries.disasters.detail');
+Route::get('/queries/disasters/search/list/habitants/detail/type/{type}/date/{date}/{scale}/{location}/{condition}','QueriesController@disasterHabitantsDetail')->name('queries.disasters.habitants.detail');
+
+Route::get('/queries/disaster/{disaster}/habitant/{habitant}','QueriesController@disasterHabitantsPreEdan')->name('queries.disasters.habitants.pre.edan');
 //AJAX UBIGEO
 Route::get('/ajax-departments/',function(){
     return Response::json(App\Department::all());
