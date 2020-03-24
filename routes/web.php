@@ -95,6 +95,11 @@ Route::get('/infrastructure/{infrastructure}/post/habitants','PostFormController
 Route::put('/conclude/evaluation/post/disaster/{disaster}/urbanspace/{urbanspace}/','PostFormController@concludeEvaluation')->name('post.evaluation.conclude');
 
 Route::get('/disasters/{disaster}/report','ReportsController@disasters')->name('reports.disasters');
+
+Route::get('/queries/disasters/index','QueriesController@disastersIndex')->name('queries.disasters.index');
+Route::get('/queries/disasters/search/list','QueriesController@disastersList')->name('queries.disasters.list');
+Route::post('/queries/disasters/search','QueriesController@disastersSearch')->name('queries.disasters.search');
+Route::get('/queries/disasters/search/list/detail/type/{type}/date/{date}','QueriesController@disastersDetail')->name('queries.disasters.detail');
 //AJAX UBIGEO
 Route::get('/ajax-departments/',function(){
     return Response::json(App\Department::all());

@@ -6,9 +6,9 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        Editar desastre: {{$disaster->disastertype->name}} {{$disaster->urbanspace->zone->district->nombre}} "{{$disaster->urbanspace->zone->name}}" {{$disaster->urbanspace->type}} "{{$disaster->urbanspace->name}}" fecha: {{$disaster->date_time_disaster}}
+                        Desastre: {{$disaster->disastertype->name}} {{$disaster->urbanspace->zone->district->nombre}} "{{$disaster->urbanspace->zone->name}}" {{$disaster->urbanspace->type}} "{{$disaster->urbanspace->name}}" fecha: {{$disaster->date_time_disaster}}
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" id="report">
                         Desastre: {{$disaster->disastertype->danger->name}}
                         <br>
                         Especificación de desastre: {{$disaster->disastertype->name}}
@@ -37,8 +37,35 @@
                         Infraestructuras destruidas: {{$infrastructures_afected->where('condition','DESTRUIDA')->count()}}
                         <br>
                         Infraestructuras en buen estado: {{$infrastructures_afected->where('condition','BUENA')->count()}}
+                        <br>
+                        <ul class="list-unstyled">
+                            <li>Servicios básicos afectados:</li>
+                                <ul>
+                                    <li>Agua: {{$infrastructures_afected->where('water',0)->count()}}</li>
+                                    <li>Electricidad: {{$infrastructures_afected->where('lights',0)->count()}}</li>
+                                    <li>Desagüe: {{$infrastructures_afected->where('sewerage',0)->count()}}</li>
+                                    <li>Gas natural: {{$infrastructures_afected->where('natural_gas',0)->count()}}</li>
+                                    <li>Transporte público: {{$infrastructures_afected->where('public_transport',0)->count()}}</li>
+                                    <li>Telecomunicaciones: {{$infrastructures_afected->where('telecomunications',0)->count()}}</li>
+                                </ul>
+                        </ul>
+                        <h5>Información general de habitantes</h5>
+                        <ul class="list-unstyled">
+                            <li>Condición:</li>
+                            <ul>
+                                <li>Damnificados: {{$habitants_afected->where('condition','DAMNIFICADO')->count()}}</li>
+                                <li>Afectados: {{$habitants_afected->where('condition','AFECTADO')->count()}}</li>
+                            </ul>
+                            <li>Daños personales:</li>
+                            <ul>
+                                <li>Ningun daño: {{$habitants_afected->where('personal_damage','NINGUNO')->count()}}</li>
+                                <li>Lesionados: {{$habitants_afected->where('personal_damage','LESIONADO')->count()}}</li>
+                                <li>Desaparecidos: {{$habitants_afected->where('personal_damage','DESAPARECIDO')->count()}}</li>
+                                <li>Fallecidos: {{$habitants_afected->where('personal_damage','FALLECIDO')->count()}}</li>
+                            </ul>
+                        </ul>
                         <hr>
-                        <h4 class="font-weight-bold text-danger">Detalle de las infraestructuras</h4>
+                        <h4 class="font-weight-bold text-danger">Reporte detallado</h4>
                         @foreach($infrastructures_afected as $infrastructure_afected)
                         <hr>
                         <h5 class="font-weight-bold text-primary">"{{$disaster->urbanspace->zone->name}}" {{$disaster->urbanspace->type}} "{{$disaster->urbanspace->name}}" {{$infrastructure_afected->precondition->number}}</h5>
@@ -119,10 +146,10 @@
                                 NINGUNO
                             @endif
                         <br>
-                        <h5 class="font-weight-bold">Evaluación de los habitantes</h5>
+                        <h5 class="font-weight-bold">Evaluación de los habitantes: </h5>
                          @foreach($infrastructure_afected->precondition->habitants as $habitant)
                              <ul class="list-unstyled">
-                                 <li>Nombres: {{$habitant->person->name}} {{$habitant->person->first_surname}} {{$habitant->person->second_surname}}</li>
+                                 <li class="font-weight-bold">Nombres: {{$habitant->person->name}} {{$habitant->person->first_surname}} {{$habitant->person->second_surname}}</li>
                                  <li>Edad: {{\Carbon\Carbon::parse($habitant->person->birthday)->diff(\Carbon\Carbon::now())->format('%y años, %m meses and %d días')}}</li>
                                  <li>Tipo de documento: ({{$habitant->person->document_type}})
                                      @switch($habitant->person->document_type)
@@ -147,8 +174,44 @@
                                                 @case(6)OTRO TIPO DE DISCAPACIDAD @break
                                             @endswitch</li>
                                         </li>
-                                        <li>Tipo de enfermedad crónica: ({{$habitant->disability}}) {{($habitant->disability!=0)? $habitant->disability : 'NO APLICA'}}</li>
+                                        <li>Tipo de enfermedad crónica: ({{$habitant->disability}})
+                                            @switch($habitant->chronic_disease)
+                                                @case(0)NO POSEE @break
+                                                @case(1)ANEMIA @break
+                                                @case(2)ARRITMIAS CARDIACAS @break
+                                                @case(3)ASMA BRONQUIAL @break
+                                                @case(4)DESNUTRICIÓN @break
+                                                @case(5)DIABETES @break
+                                                @case(6)DISLIPMIAS @break
+                                                @case(7)ARTRITIS, ARTROSIS, LUPS @break
+                                                @case(8)ENFERMEDAD PSIQUIATRICA GRAVE @break
+                                                @case(9)EPILEPSIA @break
+                                                @case(10)ESQUIZOFRENIA @break
+                                                @case(11)GLAUCOMA @break
+                                                @case(12)HEPATITIS @break
+                                                @case(13)HIPERTENSION ARTERIAL @break
+                                                @case(14)HIPERTIROIDISMO - HIPOTIROIDISMO @break
+                                                @case(15)HIPERTROFIA PROSTÁTICA BENIGNA @break
+                                                @case(16)HIPERUCIREMIA GOT @break
+                                                @case(17)INSUFICIENCIA CARDIACA @break
+                                                @case(18)INSUFICIENCIA CORONARI @break
+                                                @case(19)INSUFICIENCIA RENAL CRÓNICA @break
+                                                @case(20)NEUROPATIAS DESMIELIZANTES @break
+                                                @case(21)OSTEOPOROSIS Y DESCALSIFICACIÓN GENERAL @break
+                                                @case(22)PARKINSON @break
+                                                @case(23)TUBERCULOSIS @break
+                                                @case(24)VIH @break
+                                                @case(25)OTRAS @break
+                                            @endswitch</li></li>
                                     </ul>
+                             </ul>
+
+                             <ul class="list-unstyled">
+                                 <li>Situación post desastre</li>
+                                 <ul>
+                                     <li>Condición: {{$habitant->conditions->where('disaster_id',$disaster->id)->first()->condition}}</li>
+                                     <li>Daños personales: {{$habitant->conditions->where('disaster_id',$disaster->id)->first()->personal_damage}}</li>
+                                 </ul>
                              </ul>
                          @endforeach
                         @endforeach
@@ -158,3 +221,4 @@
         </div>
     </div>
 @endsection
+

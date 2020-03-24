@@ -3,7 +3,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                Nueva zona para el distrito de {{$district->name}}
+                Nueva zona para el distrito de {{$district->nombrex}}
             </div>
             <div class="card-body">
                 <form action="{{route('admin.location.store.zone',$district)}}" method="post">

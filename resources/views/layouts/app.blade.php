@@ -49,6 +49,14 @@
                         <li class="nav-item {{ Request::segment('1')=='infrastructure' ? 'active' : '' }}">
                             <a class="nav-link" href="{{route('infrastructure.index')}}">Infraestructuras</a>
                         </li>
+                            <li class="nav-item dropdown {{ Request::segment('1')=='queries' ? 'active' : '' }}">
+                                <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" href="#">Consultas especializadas</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="{{route('queries.disasters.index')}}">Desastres</a>
+                                    <a class="dropdown-item" href="">Personas</a>
+                                    <a class="dropdown-item" href="">Infraestructuras</a>
+                                </div>
+                            </li>
                         @endif
                         @if(Auth::user()->hasRole(['evaluador']))
                         <li class="nav-item dropdown {{ Request::segment('1')=='forms' ? 'active' : '' }}">
@@ -59,6 +67,7 @@
                             </div>
                         </li>
                         @endif
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->

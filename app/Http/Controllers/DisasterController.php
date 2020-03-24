@@ -24,9 +24,9 @@ class DisasterController extends Controller
     public function store(Request $request){
         $urbanspaces = $request->get('urbanspace');
         $disasters_records=[];
+        $now = Carbon::now();
         foreach ($urbanspaces as $urbanspace){
             if(!empty($urbanspace)){
-                $now = Carbon::now();
                 $disasters_records[]=[
                     'disaster_type_id'=>$request->get('danger_type'),
                     'date_time_disaster'=>$request->date_time_disaster,
