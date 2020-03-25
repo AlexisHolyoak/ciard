@@ -207,7 +207,63 @@ class QueriesController extends Controller
         return view('queries.disasters.habitants.edan',compact(['disaster','habitant','habitant_info']));
     }
     public function disasterInfrastructureDetail($type, $date, $scale, $location,$typeinfra, $condition){
-
-
+        $infrastructure_type=InfraestructureType::find($typeinfra);
+        $disasters='';
+        $disaster_type= DisasterType::where('id',$type)->first();
+        $disasters_id='';
+        $habitants='';
+        if($scale=='nacional'){
+            $disasters=Disaster::where('disaster_type_id',$type)->where('date_time_disaster',$date)->get();
+        }
+        if($scale=='departamento'){
+            $department=Department::where('id',$location)->first();
+            $provinces=$department->provinces->pluck('id');
+            $districts=District::whereIn('province_id',$provinces)->pluck('id');
+            $zones=Zone::whereIn('district_id',$districts)->pluck('id');
+            $urbanspaces=UrbanSpace::whereIn('zone_id',$zones)->pluck('id');
+            $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->where('disaster_type_id',$type)->where('date_time_disaster',$date)->get();
+        }
+        if($scale=='provincia'){
+            $province=Province::where('id',$location)->first();
+            $districts=$province->districts->pluck('id');
+            $zones=Zone::whereIn('district_id',$districts)->pluck('id');
+            $urbanspaces=UrbanSpace::whereIn('zone_id',$zones)->pluck('id');
+            $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->where('disaster_type_id',$type)->where('date_time_disaster',$date)->get();
+        }
+        if($scale=='distrito'){
+            $province=Province::where('id',$location)->first();
+            $districts=$province->districts->pluck('id');
+            $zones=Zone::whereIn('district_id',$districts)->pluck('id');
+            $urbanspaces=UrbanSpace::whereIn('zone_id',$zones)->pluck('id');
+            $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->get();
+        }
+        if($scale=='zona'){
+            $zone=Zone::where('id',$location)->first();
+            $urbanspaces=$zone->urbanspaces->pluck('id');
+            $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->where('disaster_type_id',$type)->where('date_time_disaster',$date)->get();
+        }
+        if($scale=='urbano'){
+            $urbanspace=UrbanSpace::where('id',$location)->first();
+            $disasters=Disaster::whereIn('urban_space_id',$urbanspace)->where('disaster_type_id',$type)->where('date_time_disaster',$date)->get();
+        }
+        $disasters_id=$disasters->pluck('id');
+        $infrastructures= DB::table('infraestructures_post_info')
+            ->join('infraestructures_info','infraestructures_post_info.infraestructure_info_id','=','infraestructures_info.id')
+            ->join('infraestructure_types','infraestructures_info.infraestructure_type_id','=','infraestructure_types.id')
+            ->join('urban_spaces','infraestructures_info.urban_space_id','=','urban_spaces.id')
+            ->join('zones','urban_spaces.zone_id','=','zones.id')
+            ->join('districts','zones.district_id','=','districts.id')
+            ->join('provinces','districts.province_id','=','provinces.id')
+            ->join('departments','provinces.department_id','=','departments.id')
+            ->select('infraestructures_post_info.id as ID','departments.nombre as DEPARTMENT','provinces.nombre as PROVINCE',
+                'districts.nombre as DISTRICT','zones.name as ZONE', 'urban_spaces.name as URBAN_SPACE','infraestructures_info.number as NUMBER')
+            ->whereIn('infraestructures_post_info.disaster_id',$disasters_id)
+            ->where('infraestructure_types.id',$typeinfra)
+            ->where('infraestructures_post_info.condition',$condition)->get();
+        return view('queries.disasters.infrastructure.list',compact(['infrastructures','disaster_type','date','scale','condition','infrastructure_type']));
+    }
+    public function disasterInfrastructurePreEdan($id){
+        $infrastructure=InfraestructurePostInfo::find($id);
+        return view('queries.disasters.infrastructure.edan',compact(['infrastructure']));
     }
 }

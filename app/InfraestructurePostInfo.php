@@ -15,5 +15,7 @@ class InfraestructurePostInfo extends Model
     public function evaluator(){
         return $this->belongsTo(EdanEvaluator::class,'evaluator_id');
     }
-
+    public function disaster(){
+        return $this->belongsTo(Disaster::class,'disaster_id');
+    }
 }

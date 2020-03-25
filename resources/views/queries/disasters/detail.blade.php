@@ -76,22 +76,22 @@
                                             <tr>
                                                 <td>{{$infrastructure_type->name}}</td>
                                                 <td>
-                                                    <a href="">
+                                                    <a href="{{route('queries.disasters.infrastructures.detail',['type'=>$disaster_type->id,'date'=>$date,'scale'=>$scale,'location'=>$location,'typeinfra'=>$infrastructure_type->id,'condition'=>'AFECTADA'])}}">
                                                         {{$infrastructures_detail->where('IDTYPEINFRA',$infrastructure_type->id)->where('CONDITION','AFECTADA')->count()}}
                                                     </a>
                                                     </td>
                                                 <td>
-                                                    <a href="">
+                                                    <a href="{{route('queries.disasters.infrastructures.detail',['type'=>$disaster_type->id,'date'=>$date,'scale'=>$scale,'location'=>$location,'typeinfra'=>$infrastructure_type->id,'condition'=>'INHABITABLE'])}}">
                                                         {{$infrastructures_detail->where('IDTYPEINFRA',$infrastructure_type->id)->where('CONDITION','INHABITABLE')->count()}}
                                                     </a>
                                                     </td>
                                                 <td>
-                                                    <a href="">
+                                                    <a href="{{route('queries.disasters.infrastructures.detail',['type'=>$disaster_type->id,'date'=>$date,'scale'=>$scale,'location'=>$location,'typeinfra'=>$infrastructure_type->id,'condition'=>'DESTRUIDA'])}}">
                                                         {{$infrastructures_detail->where('IDTYPEINFRA',$infrastructure_type->id)->where('CONDITION','DESTRUIDA')->count()}}
                                                     </a>
                                                 </td>
                                                 <td>
-                                                    <a href="">
+                                                    <a href="{{route('queries.disasters.infrastructures.detail',['type'=>$disaster_type->id,'date'=>$date,'scale'=>$scale,'location'=>$location,'typeinfra'=>$infrastructure_type->id,'condition'=>'BUENA'])}}">
                                                         {{$infrastructures_detail->where('IDTYPEINFRA',$infrastructure_type->id)->where('CONDITION','BUENA')->count()}}
                                                     </a>
                                                 </td>
