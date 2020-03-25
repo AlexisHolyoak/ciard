@@ -22,6 +22,10 @@ use Illuminate\Support\Facades\Session;
 class QueriesController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function disastersIndex(){
 
         return view('queries.disasters.index');
@@ -265,5 +269,91 @@ class QueriesController extends Controller
     public function disasterInfrastructurePreEdan($id){
         $infrastructure=InfraestructurePostInfo::find($id);
         return view('queries.disasters.infrastructure.edan',compact(['infrastructure']));
+    }
+    public function infrastructureIndex(){
+        return view('queries.infrastructures.index');
+    }
+    public function infrastructureSearch(){
+
+    }
+    public function peopleIndex(){
+        return view('queries.people.index');
+    }
+    public function peopleSearch(Request $request){
+        $multipleSelection= $request->input('selection');
+        if ($multipleSelection!=null){
+            if($multipleSelection[0] == "allDepartments"){
+                $disasters= Disaster::all();
+                return Redirect::action('QueriesController@peopleList')
+                    ->with('disasters',$disasters)
+                    ->with('scale','nacional')
+                    ->with('location','all');
+            }
+            if($multipleSelection[0] == "allProvinces"){
+                $department=Department::where('id',$request->get('department'))->first();
+                $provinces=$department->provinces->pluck('id');
+                $districts=District::whereIn('province_id',$provinces)->pluck('id');
+                $zones=Zone::whereIn('district_id',$districts)->pluck('id');
+                $urbanspaces=UrbanSpace::whereIn('zone_id',$zones)->pluck('id');
+                $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->get();
+                return Redirect::action('QueriesController@peopleList')
+                    ->with('disasters',$disasters)
+                    ->with('scale','departamento')
+                    ->with('location',$department->id);
+
+            }
+            if($multipleSelection[0] == "allDistricts"){
+                $province=Province::where('id',$request->get('province'))->first();
+                $districts=$province->districts->pluck('id');
+                $zones=Zone::whereIn('district_id',$districts)->pluck('id');
+                $urbanspaces=UrbanSpace::whereIn('zone_id',$zones)->pluck('id');
+                $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->get();
+                return Redirect::action('QueriesController@peopleList')
+                    ->with('disasters',$disasters)
+                    ->with('scale','provincia')
+                    ->with('location',$province->id);
+
+            }
+            if($multipleSelection[0] == "allZones"){
+                $district=District::where('id',$request->get('district_id'))->first();
+                $zones=$district->zones->pluck('id');
+                $urbanspaces=UrbanSpace::whereIn('zone_id',$zones)->pluck('id');
+                $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->get();
+                return Redirect::action('QueriesController@peopleList')
+                    ->with('disasters',$disasters)
+                    ->with('scale','distrito')
+                    ->with('location',$district->id);
+            }
+            if($multipleSelection[0] == "allUrbanSpaces"){
+                $zone=Zone::where('id',$request->get('zone'))->first();
+                $urbanspaces=$zone->urbanspaces->pluck('id');
+                $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->get();
+                return Redirect::action('QueriesController@peopleList')
+                    ->with('disasters',$disasters)
+                    ->with('scale','zona')
+                    ->with('location',$zone->id);
+            }
+        }else{
+            $urbanspace=UrbanSpace::where('id',$request->get('urbanspace'))->first();
+            $disasters=Disaster::where('urban_space_id',$urbanspace->id)->get();
+            return Redirect::action('QueriesController@peopleList')
+                ->with('disasters',$disasters)
+                ->with('scale','urbano')
+                ->with('location',$urbanspace->id);
+        }
+    }
+
+    public function peopleList(){
+        if(Session::has('disasters')){
+            $disasters=Session::get('disasters');
+            $disasters_id=$disasters->pluck('id');
+            $families_post_info=FamilyPostInfo::whereIn('disaster_id',$disasters_id)->get();
+            $scale=Session::get('scale');
+            $location=Session::get('location');
+            $disaster_type=DisasterType::all();
+            return view('queries.disasters.list',compact(['scale','location','disaster_type','families_post_info']));
+        }else{
+            return view('queries.disasters.index');
+        }
     }
 }

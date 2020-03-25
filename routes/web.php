@@ -102,9 +102,13 @@ Route::post('/queries/disasters/search','QueriesController@disastersSearch')->na
 Route::get('/queries/disasters/search/list/detail/type/{type}/date/{date}/{scale}/{location}','QueriesController@disastersDetail')->name('queries.disasters.detail');
 Route::get('/queries/disasters/search/list/habitants/detail/type/{type}/date/{date}/{scale}/{location}/{condition}','QueriesController@disasterHabitantsDetail')->name('queries.disasters.habitants.detail');
 Route::get('/queries/disasters/search/list/infrastructures/detail/type/{type}/date/{date}/scale/{scale}/location/{location}/typeinfra/{typeinfra}/condition/{condition}','QueriesController@disasterInfrastructureDetail')->name('queries.disasters.infrastructures.detail');
+Route::get('/queries/disasters/{disaster}/habitant/{habitant}','QueriesController@disasterHabitantsPreEdan')->name('queries.disasters.habitants.pre.edan');
+Route::get('/queries/disasters/infrastructure/{id}','QueriesController@disasterInfrastructurePreEdan')->name('queries.disasters.infrastructure.pre.edan');
 
-Route::get('/queries/disaster/{disaster}/habitant/{habitant}','QueriesController@disasterHabitantsPreEdan')->name('queries.disasters.habitants.pre.edan');
-Route::get('/queries/disaster/infrastructure/{id}','QueriesController@disasterInfrastructurePreEdan')->name('queries.disasters.infrastructure.pre.edan');
+Route::get('/queries/people/index','QueriesController@peopleIndex')->name('queries.people.index');
+Route::post('/queries/people/search','QueriesController@peopleSearch')->name('queries.people.search');
+
+Route::get('/queries/infrastructures/index','QueriesController@infrastructureIndex')->name('queries.infrastructures.index');
 //AJAX UBIGEO
 Route::get('/ajax-departments/',function(){
     return Response::json(App\Department::all());

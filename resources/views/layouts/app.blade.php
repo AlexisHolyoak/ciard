@@ -53,8 +53,8 @@
                                 <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" href="#">Consultas especializadas</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="{{route('queries.disasters.index')}}">Desastres</a>
-                                    <a class="dropdown-item" href="">Personas</a>
-                                    <a class="dropdown-item" href="">Infraestructuras</a>
+                                    <a class="dropdown-item" href="{{route('queries.people.index')}}">Personas</a>
+                                    <a class="dropdown-item" href="{{route('queries.infrastructures.index')}}">Infraestructuras</a>
                                 </div>
                             </li>
                         @endif
