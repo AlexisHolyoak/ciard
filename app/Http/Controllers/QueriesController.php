@@ -82,8 +82,8 @@ class QueriesController extends Controller
                 ->with('location',$zone->id);
         }
         }else{
-            $urbanspace=$request->get('urbanspace');
-            $disasters=Disaster::where('urban_space_id',$urbanspace)->first();
+            $urbanspace=UrbanSpace::where('id',$request->get('urbanspace'))->first();
+            $disasters=Disaster::where('urban_space_id',$urbanspace->id)->get();
             return Redirect::action('QueriesController@disastersList')
                 ->with('disasters',$disasters)
                 ->with('scale','urbano')
