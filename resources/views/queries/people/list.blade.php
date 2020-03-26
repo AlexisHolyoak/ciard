@@ -13,19 +13,20 @@
                         <div>
                             <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="0">Nombres</button>
                             <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="1">Apellido paterno</button>
-                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="2">Apellido matern</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="2">Apellido materno</button>
                             <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="3">Tipo de documento</button>
                             <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="4">Número de documento</button>
                             <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="5">Fecha de nacimiento</button>
-                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="6">Sexo</button>
-                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="7">Departamento</button>
-                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="8">Provincia</button>
-                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="9">Distrito</button>
-                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="10">Zona</button>
-                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="11">Espacio urbano</button>
-                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="12">Embarazo (semanas)</button>
-                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="13">Discapacidad</button>
-                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="14">Enfermedad crónica</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="6">Edad</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="7">Sexo</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="8">Departamento</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="9">Provincia</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="10">Distrito</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="11">Zona</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="12">Espacio urbano</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="13">Embarazo (semanas)</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="14">Discapacidad</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="15">Enfermedad crónica</button>
                         </div>
                         <table class="mb-2">
                             <tbody>
@@ -43,24 +44,22 @@
                             <table class="display" style="width: 100%" id="habitants_table">
                                 <thead>
                                 <tr>
-                                    <th data-priority="1">Departamento</th>
-                                    <th data-priority="2">Provincia</th>
-                                    <th data-priority="3">Distrito</th>
+                                    <th data-priority="1">Nombres</th>
+                                    <th data-priority="2">Apellido paterno</th>
+                                    <th data-priority="3">Apellido materno</th>
+                                    <th>Tipo de documento</th>
+                                    <th>Número de documento</th>
+                                    <th>Fecha de nacimiento</th>
+                                    <th>Edad</th>
+                                    <th>Sexo</th>
+                                    <th>Departamento</th>
+                                    <th>Provincia</th>
+                                    <th>Distrito</th>
                                     <th>Zona</th>
                                     <th>Espacio urbano</th>
-                                    <th>Número o lote</th>
-                                    <th>Tenencia (propia)</th>
-                                    <th>Condición de uso</th>
-                                    <th>Techo</th>
-                                    <th>Piso</th>
-                                    <th>Paredes</th>
-                                    <th>Número de pisos</th>
-                                    <th>Agua</th>
-                                    <th>Desagüe</th>
-                                    <th>Electricidad</th>
-                                    <th>Gas natural</th>
-                                    <th>Transporte público</th>
-                                    <th>Telecomunicaciones</th>
+                                    <th>Embarazo (semanas)</th>
+                                    <th>Discapacidad</th>
+                                    <th>Enfermedad crónica</th>
                                 </tr>
                                 </thead>
                                 <tbody>
