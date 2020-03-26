@@ -86,12 +86,14 @@ class QueriesController extends Controller
                 ->with('location',$zone->id);
         }
         }else{
-            $urbanspace=UrbanSpace::where('id',$request->get('urbanspace'))->first();
-            $disasters=Disaster::where('urban_space_id',$urbanspace->id)->get();
+            $this->validate($request,[
+                'urbanspace' => ['required'],
+            ]);
+            $disasters=Disaster::where('urban_space_id',$request->get('urbanspace'))->get();
             return Redirect::action('QueriesController@disastersList')
                 ->with('disasters',$disasters)
                 ->with('scale','urbano')
-                ->with('location',$urbanspace->id);
+                ->with('location',$request->get('urbanspace'));
         }
     }
     public function disastersList(){
@@ -273,8 +275,142 @@ class QueriesController extends Controller
     public function infrastructureIndex(){
         return view('queries.infrastructures.index');
     }
-    public function infrastructureSearch(){
+    public function infrastructureSearch(Request $request){
+        $multipleSelection= $request->input('selection');
+        if ($multipleSelection!=null){
+            if($multipleSelection[0] == "allDepartments"){
+                //TODO: WE CAN APPLY DRY HERE
+                $infrastructures=DB::table('infraestructures_info')
+                    ->join('infraestructure_types','infraestructures_info.infraestructure_type_id','=','infraestructure_types.id')
+                    ->join('families_info','infraestructures_info.family_boss_id','=','families_info.id')
+                    ->join('urban_spaces','infraestructures_info.urban_space_id','=','urban_spaces.id')
+                    ->join('zones','urban_spaces.zone_id','=','zones.id')
+                    ->join('districts','zones.district_id','=','districts.id')
+                    ->join('provinces','districts.province_id','=','provinces.id')
+                    ->join('departments','provinces.department_id','=','departments.id')
+                    ->select('infraestructures_info.id as ID', 'departments.nombre as DEPARTAMENT','provinces.nombre as PROVINCE','districts.nombre as DISTRICT','zones.name as ZONE','urban_spaces.name as URBAN_SPACE',
+                        'infraestructures_info.number as NUMBER','infraestructures_info.tenencia as TENURE','infraestructures_info.usage_condition as USAGE_CONDITION',
+                        'infraestructures_info.roof as ROOF','infraestructures_info.floor as FLOOR','infraestructures_info.wall as WALL','infraestructures_info.floors_number AS FLOORS_NUMBER',
+                        'infraestructures_info.water as WATER','infraestructures_info.sewerage as SEWERAGE','infraestructures_info.lights as LIGHTS','infraestructures_info.natural_gas as NATURAL_GAS',
+                        'infraestructures_info.public_transport as PUBLIC_TRANSPORT','infraestructures_info.telecomunications as TELECOMUNICATIONS')->get();
+                return Redirect::action('QueriesController@infrastructureList')
+                    ->with('infrastructures',$infrastructures)
+                    ->with('scale','nacional')
+                    ->with('location','all');
+            }
+            if($multipleSelection[0] == "allProvinces"){
+                $infrastructures=DB::table('infraestructures_info')
+                    ->join('infraestructure_types','infraestructures_info.infraestructure_type_id','=','infraestructure_types.id')
+                    ->join('families_info','infraestructures_info.family_boss_id','=','families_info.id')
+                    ->join('urban_spaces','infraestructures_info.urban_space_id','=','urban_spaces.id')
+                    ->join('zones','urban_spaces.zone_id','=','zones.id')
+                    ->join('districts','zones.district_id','=','districts.id')
+                    ->join('provinces','districts.province_id','=','provinces.id')
+                    ->join('departments','provinces.department_id','=','departments.id')
+                    ->select('infraestructures_info.id as ID', 'departments.nombre as DEPARTAMENT','provinces.nombre as PROVINCE','districts.nombre as DISTRICT','zones.name as ZONE','urban_spaces.name as URBAN_SPACE',
+                        'infraestructures_info.number as NUMBER','infraestructures_info.tenencia as TENURE','infraestructures_info.usage_condition as USAGE_CONDITION',
+                        'infraestructures_info.roof as ROOF','infraestructures_info.floor as FLOOR','infraestructures_info.wall as WALL','infraestructures_info.floors_number AS FLOORS_NUMBER',
+                        'infraestructures_info.water as WATER','infraestructures_info.sewerage as SEWERAGE','infraestructures_info.lights as LIGHTS','infraestructures_info.natural_gas as NATURAL_GAS',
+                        'infraestructures_info.public_transport as PUBLIC_TRANSPORT','infraestructures_info.telecomunications as TELECOMUNICATIONS')
+                    ->where('departments.id',$request->get('department'))->get();
+                return Redirect::action('QueriesController@infrastructureList')
+                    ->with('infrastructures',$infrastructures)
+                    ->with('scale','departamento')
+                    ->with('location',$request->get('department'));
 
+            }
+            if($multipleSelection[0] == "allDistricts"){
+                $infrastructures=DB::table('infraestructures_info')
+                    ->join('infraestructure_types','infraestructures_info.infraestructure_type_id','=','infraestructure_types.id')
+                    ->join('families_info','infraestructures_info.family_boss_id','=','families_info.id')
+                    ->join('urban_spaces','infraestructures_info.urban_space_id','=','urban_spaces.id')
+                    ->join('zones','urban_spaces.zone_id','=','zones.id')
+                    ->join('districts','zones.district_id','=','districts.id')
+                    ->join('provinces','districts.province_id','=','provinces.id')
+                    ->join('departments','provinces.department_id','=','departments.id')
+                    ->select('infraestructures_info.id as ID', 'departments.nombre as DEPARTAMENT','provinces.nombre as PROVINCE','districts.nombre as DISTRICT','zones.name as ZONE','urban_spaces.name as URBAN_SPACE',
+                        'infraestructures_info.number as NUMBER','infraestructures_info.tenencia as TENURE','infraestructures_info.usage_condition as USAGE_CONDITION',
+                        'infraestructures_info.roof as ROOF','infraestructures_info.floor as FLOOR','infraestructures_info.wall as WALL','infraestructures_info.floors_number AS FLOORS_NUMBER',
+                        'infraestructures_info.water as WATER','infraestructures_info.sewerage as SEWERAGE','infraestructures_info.lights as LIGHTS','infraestructures_info.natural_gas as NATURAL_GAS',
+                        'infraestructures_info.public_transport as PUBLIC_TRANSPORT','infraestructures_info.telecomunications as TELECOMUNICATIONS')
+                    ->where('provinces.id',$request->get('province'))->get();
+                return Redirect::action('QueriesController@infrastructureList')
+                    ->with('infrastructures',$infrastructures)
+                    ->with('scale','provincia')
+                    ->with('location',$request->get('province'));
+
+            }
+            if($multipleSelection[0] == "allZones"){
+                $infrastructures=DB::table('infraestructures_info')
+                    ->join('infraestructure_types','infraestructures_info.infraestructure_type_id','=','infraestructure_types.id')
+                    ->join('families_info','infraestructures_info.family_boss_id','=','families_info.id')
+                    ->join('urban_spaces','infraestructures_info.urban_space_id','=','urban_spaces.id')
+                    ->join('zones','urban_spaces.zone_id','=','zones.id')
+                    ->join('districts','zones.district_id','=','districts.id')
+                    ->join('provinces','districts.province_id','=','provinces.id')
+                    ->join('departments','provinces.department_id','=','departments.id')
+                    ->select('infraestructures_info.id as ID', 'departments.nombre as DEPARTAMENT','provinces.nombre as PROVINCE','districts.nombre as DISTRICT','zones.name as ZONE','urban_spaces.name as URBAN_SPACE',
+                        'infraestructures_info.number as NUMBER','infraestructures_info.tenencia as TENURE','infraestructures_info.usage_condition as USAGE_CONDITION',
+                        'infraestructures_info.roof as ROOF','infraestructures_info.floor as FLOOR','infraestructures_info.wall as WALL','infraestructures_info.floors_number AS FLOORS_NUMBER',
+                        'infraestructures_info.water as WATER','infraestructures_info.sewerage as SEWERAGE','infraestructures_info.lights as LIGHTS','infraestructures_info.natural_gas as NATURAL_GAS',
+                        'infraestructures_info.public_transport as PUBLIC_TRANSPORT','infraestructures_info.telecomunications as TELECOMUNICATIONS')
+                    ->where('districts.id',$request->get('district_id'))->get();
+                return Redirect::action('QueriesController@infrastructureList')
+                    ->with('infrastructures',$infrastructures)
+                    ->with('scale','distrito')
+                    ->with('location',$request->get('district_id'));
+            }
+            if($multipleSelection[0] == "allUrbanSpaces"){
+                $infrastructures=DB::table('infraestructures_info')
+                    ->join('infraestructure_types','infraestructures_info.infraestructure_type_id','=','infraestructure_types.id')
+                    ->join('families_info','infraestructures_info.family_boss_id','=','families_info.id')
+                    ->join('urban_spaces','infraestructures_info.urban_space_id','=','urban_spaces.id')
+                    ->join('zones','urban_spaces.zone_id','=','zones.id')
+                    ->join('districts','zones.district_id','=','districts.id')
+                    ->join('provinces','districts.province_id','=','provinces.id')
+                    ->join('departments','provinces.department_id','=','departments.id')
+                    ->select('infraestructures_info.id as ID', 'departments.nombre as DEPARTAMENT','provinces.nombre as PROVINCE','districts.nombre as DISTRICT','zones.name as ZONE','urban_spaces.name as URBAN_SPACE',
+                        'infraestructures_info.number as NUMBER','infraestructures_info.tenencia as TENURE','infraestructures_info.usage_condition as USAGE_CONDITION',
+                        'infraestructures_info.roof as ROOF','infraestructures_info.floor as FLOOR','infraestructures_info.wall as WALL','infraestructures_info.floors_number AS FLOORS_NUMBER',
+                        'infraestructures_info.water as WATER','infraestructures_info.sewerage as SEWERAGE','infraestructures_info.lights as LIGHTS','infraestructures_info.natural_gas as NATURAL_GAS',
+                        'infraestructures_info.public_transport as PUBLIC_TRANSPORT','infraestructures_info.telecomunications as TELECOMUNICATIONS')
+                    ->where('zones.id',$request->get('zone'))->get();
+                return Redirect::action('QueriesController@infrastructureList')
+                    ->with('infrastructures',$infrastructures)
+                    ->with('scale','zona')
+                    ->with('location',$request->get('zone'));
+            }
+        }else{
+            $infrastructures=DB::table('infraestructures_info')
+                ->join('infraestructure_types','infraestructures_info.infraestructure_type_id','=','infraestructure_types.id')
+                ->join('families_info','infraestructures_info.family_boss_id','=','families_info.id')
+                ->join('urban_spaces','infraestructures_info.urban_space_id','=','urban_spaces.id')
+                ->join('zones','urban_spaces.zone_id','=','zones.id')
+                ->join('districts','zones.district_id','=','districts.id')
+                ->join('provinces','districts.province_id','=','provinces.id')
+                ->join('departments','provinces.department_id','=','departments.id')
+                ->select('infraestructures_info.id as ID', 'departments.nombre as DEPARTAMENT','provinces.nombre as PROVINCE','districts.nombre as DISTRICT','zones.name as ZONE','urban_spaces.name as URBAN_SPACE',
+                    'infraestructures_info.number as NUMBER','infraestructures_info.tenencia as TENURE','infraestructures_info.usage_condition as USAGE_CONDITION',
+                    'infraestructures_info.roof as ROOF','infraestructures_info.floor as FLOOR','infraestructures_info.wall as WALL','infraestructures_info.floors_number AS FLOORS_NUMBER',
+                    'infraestructures_info.water as WATER','infraestructures_info.sewerage as SEWERAGE','infraestructures_info.lights as LIGHTS','infraestructures_info.natural_gas as NATURAL_GAS',
+                    'infraestructures_info.public_transport as PUBLIC_TRANSPORT','infraestructures_info.telecomunications as TELECOMUNICATIONS')
+                ->where('urban_spaces.id',$request->get('urbanspace'))->get();
+            return Redirect::action('QueriesController@infrastructureList')
+                ->with('infrastructures',$infrastructures)
+                ->with('scale','urbano')
+                ->with('location',$request->get('urbanspace'));
+        }
+
+    }
+    public function infrastructureList(){
+        if(Session::has('infrastructures')){
+            $infrastructures=Session::get('infrastructures');
+            $scale=Session::get('scale');
+            $location=Session::get('location');
+            return view('queries.infrastructures.list',compact(['scale','location','infrastructures']));
+        }else{
+            return view('queries.infrastructures.index');
+        }
     }
     public function peopleIndex(){
         return view('queries.people.index');

@@ -9,7 +9,7 @@
                         Reportes de infraestructuras
                     </div>
                     <div class="card-body">
-                        <form action="{{route('queries.disasters.search')}}" method="post">
+                        <form action="{{route('queries.infrastructures.search')}}" method="post">
                             @csrf
                             Aqui podras consultar información general y especifica de las infraestructuras, para comenzar selecciona la ubicación de la(s) infraestructura(s). Si deseas consultar masivamente por departamento, provincia, distrito, zona o espacio urbano selecciona uno de los checks según corresponda automaticamente podras consultar según tu selección.
                             <br>

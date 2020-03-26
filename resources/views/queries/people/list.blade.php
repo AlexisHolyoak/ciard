@@ -9,29 +9,62 @@
                         Reporte de personas a nivel {{$scale}}
                     </div>
                     <div class="card-body">
+                        Ocultar o mostrar columnas:
+                        <div>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="0">Nombres</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="1">Apellido paterno</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="2">Apellido matern</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="3">Tipo de documento</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="4">Número de documento</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="5">Fecha de nacimiento</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="6">Sexo</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="7">Departamento</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="8">Provincia</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="9">Distrito</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="10">Zona</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="11">Espacio urbano</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="12">Embarazo (semanas)</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="13">Discapacidad</button>
+                            <button type="button" class="toggle-vis btn btn-outline-primary btn-sm mb-2" data-toggle="button" aria-pressed="false" autocomplete="off" data-column="14">Enfermedad crónica</button>
+                        </div>
+                        <table class="mb-2">
+                            <tbody>
+                            <tr>
+                                <td>Edad minima:</td>
+                                <td><input type="text" id="min_age" name="min_age"></td>
+                            </tr>
+                            <tr>
+                                <td>Edad máxima:</td>
+                                <td><input type="text" id="max_age" name="max_age"></td>
+                            </tr>
+                            </tbody>
+                        </table>
                         <div class="table-responsive">
                             <table class="display" style="width: 100%" id="habitants_table">
                                 <thead>
                                 <tr>
-                                    <th data-priority="1">Nombres</th>
-                                    <th data-priority="2">Apellido paterno</th>
-                                    <th data-priority="3">Apellido materno</th>
-                                    <th>Tipo de documento</th>
-                                    <th>Número de documento</th>
-                                    <th>Fecha de nacimiento</th>
-                                    <th>Sexo</th>
-                                    <th>Departamento</th>
-                                    <th>Provincia</th>
-                                    <th>Distrito</th>
+                                    <th data-priority="1">Departamento</th>
+                                    <th data-priority="2">Provincia</th>
+                                    <th data-priority="3">Distrito</th>
                                     <th>Zona</th>
                                     <th>Espacio urbano</th>
-                                    <th>Embarazo (semanas)</th>
-                                    <th>Discapacidad</th>
-                                    <th>Enfermedad crónica</th>
+                                    <th>Número o lote</th>
+                                    <th>Tenencia (propia)</th>
+                                    <th>Condición de uso</th>
+                                    <th>Techo</th>
+                                    <th>Piso</th>
+                                    <th>Paredes</th>
+                                    <th>Número de pisos</th>
+                                    <th>Agua</th>
+                                    <th>Desagüe</th>
+                                    <th>Electricidad</th>
+                                    <th>Gas natural</th>
+                                    <th>Transporte público</th>
+                                    <th>Telecomunicaciones</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($habitants as $habitant)
+                                @foreach($habitants  as $habitant)
                                     <tr>
                                         <td>{{$habitant->NAME}}</td>
                                         <td>{{$habitant->FIRST_SURNAME}}</td>
@@ -44,6 +77,7 @@
                                             @endswitch</td>
                                         <td>{{$habitant->DOCUMENT_NUMBER}}</td>
                                         <td>{{$habitant->BIRTHDAY}}</td>
+                                        <td>{{\Carbon\Carbon::parse($habitant->BIRTHDAY)->diff(\Carbon\Carbon::now())->format('%y')}}</td>
                                         <td>{{$habitant->SEX}}</td>
                                         <td>{{$habitant->DEPARTAMENT}}</td>
                                         <td>{{$habitant->PROVINCE}}</td>
@@ -94,6 +128,9 @@
                                 </tbody>
                             </table>
                         </div>
+                        <div class="mt-2 mb-2">
+                            <a href="{{route('queries.people.index')}}" class="btn btn-secondary">Atras</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,6 +152,22 @@
 
     <script src="https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js"></script>
     <script>
+        $.fn.dataTable.ext.search.push(
+            function( settings, data, dataIndex ) {
+                var min = parseInt( $('#min_age').val(), 10 );
+                var max = parseInt( $('#max_age').val(), 10 );
+                var age = parseFloat( data[6] ) || 0; // use data for the age column
+
+                if ( ( isNaN( min ) && isNaN( max ) ) ||
+                    ( isNaN( min ) && age <= max ) ||
+                    ( min <= age   && isNaN( max ) ) ||
+                    ( min <= age   && age <= max ) )
+                {
+                    return true;
+                }
+                return false;
+            }
+        );
         $(document).ready(function() {
             $('#habitants_table thead tr').clone(true).appendTo( '#habitants_table thead' );
             $('#habitants_table thead tr:eq(1) th').each( function (i) {
@@ -133,7 +186,18 @@
 
             var table = $('#habitants_table').DataTable( {
                 orderCellsTop: true,
-                fixedHeader: true
+            } );
+            $('button.toggle-vis').on( 'click', function (e) {
+                //e.preventDefault();
+
+                // Get the column API object
+                var column = table.column( $(this).attr('data-column') );
+
+                // Toggle the visibility
+                column.visible( ! column.visible() );
+            } );
+            $('#min_age, #max_age').keyup( function() {
+                table.draw();
             } );
         } );
     </script>
