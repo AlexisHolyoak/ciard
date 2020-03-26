@@ -283,77 +283,131 @@ class QueriesController extends Controller
         $multipleSelection= $request->input('selection');
         if ($multipleSelection!=null){
             if($multipleSelection[0] == "allDepartments"){
-                $disasters= Disaster::all();
+                //TODO: WE CAN APPLY DRY HERE
+                $habitants=DB::table('families_info')
+                    ->join('infraestructures_info','families_info.infraestructure_info_id','=','infraestructures_info.id')
+                    ->join('people','families_info.people_id','=','people.id')
+                    ->join('urban_spaces','infraestructures_info.urban_space_id','=','urban_spaces.id')
+                    ->join('zones','urban_spaces.zone_id','=','zones.id')
+                    ->join('districts','zones.district_id','=','districts.id')
+                    ->join('provinces','districts.province_id','=','provinces.id')
+                    ->join('departments','provinces.department_id','=','departments.id')
+                    ->select('families_info.id as ID','people.name as NAME','people.first_surname as FIRST_SURNAME','people.second_surname as SECOND_SURNAME',
+                        'people.document_type as DOCUMENT_TYPE','people.document_number as DOCUMENT_NUMBER','people.birthday as BIRTHDAY','people.sex as SEX',
+                        'departments.nombre as DEPARTAMENT','provinces.nombre as PROVINCE','districts.nombre as DISTRICT','zones.name as ZONE','urban_spaces.name as URBAN_SPACE',
+                        'families_info.pregnant as PREGNANT','families_info.disability as DISABILITY','families_info.chronic_disease as CHRONIC_DISEASE')->get();
                 return Redirect::action('QueriesController@peopleList')
-                    ->with('disasters',$disasters)
+                    ->with('habitants',$habitants)
                     ->with('scale','nacional')
                     ->with('location','all');
             }
             if($multipleSelection[0] == "allProvinces"){
-                $department=Department::where('id',$request->get('department'))->first();
-                $provinces=$department->provinces->pluck('id');
-                $districts=District::whereIn('province_id',$provinces)->pluck('id');
-                $zones=Zone::whereIn('district_id',$districts)->pluck('id');
-                $urbanspaces=UrbanSpace::whereIn('zone_id',$zones)->pluck('id');
-                $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->get();
+                $habitants=DB::table('families_info')
+                    ->join('infraestructures_info','families_info.infraestructure_info_id','=','infraestructures_info.id')
+                    ->join('people','families_info.people_id','=','people.id')
+                    ->join('urban_spaces','infraestructures_info.urban_space_id','=','urban_spaces.id')
+                    ->join('zones','urban_spaces.zone_id','=','zones.id')
+                    ->join('districts','zones.district_id','=','districts.id')
+                    ->join('provinces','districts.province_id','=','provinces.id')
+                    ->join('departments','provinces.department_id','=','departments.id')
+                    ->select('families_info.id as ID','people.name as NAME','people.first_surname as FIRST_SURNAME','people.second_surname as SECOND_SURNAME',
+                        'people.document_type as DOCUMENT_TYPE','people.document_number as DOCUMENT_NUMBER','people.birthday as BIRTHDAY','people.sex as SEX',
+                        'departments.nombre as DEPARTAMENT','provinces.nombre as PROVINCE','districts.nombre as DISTRICT','zones.name as ZONE','urban_spaces.name as URBAN_SPACE',
+                        'families_info.pregnant as PREGNANT','families_info.disability as DISABILITY','families_info.chronic_disease as CHRONIC_DISEASE')
+                    ->where('departments.id',$request->get('department'))->get();
                 return Redirect::action('QueriesController@peopleList')
-                    ->with('disasters',$disasters)
+                    ->with('habitants',$habitants)
                     ->with('scale','departamento')
-                    ->with('location',$department->id);
+                    ->with('location',$request->get('department'));
 
             }
             if($multipleSelection[0] == "allDistricts"){
-                $province=Province::where('id',$request->get('province'))->first();
-                $districts=$province->districts->pluck('id');
-                $zones=Zone::whereIn('district_id',$districts)->pluck('id');
-                $urbanspaces=UrbanSpace::whereIn('zone_id',$zones)->pluck('id');
-                $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->get();
+                $habitants=DB::table('families_info')
+                    ->join('infraestructures_info','families_info.infraestructure_info_id','=','infraestructures_info.id')
+                    ->join('people','families_info.people_id','=','people.id')
+                    ->join('urban_spaces','infraestructures_info.urban_space_id','=','urban_spaces.id')
+                    ->join('zones','urban_spaces.zone_id','=','zones.id')
+                    ->join('districts','zones.district_id','=','districts.id')
+                    ->join('provinces','districts.province_id','=','provinces.id')
+                    ->join('departments','provinces.department_id','=','departments.id')
+                    ->select('families_info.id as ID','people.name as NAME','people.first_surname as FIRST_SURNAME','people.second_surname as SECOND_SURNAME',
+                        'people.document_type as DOCUMENT_TYPE','people.document_number as DOCUMENT_NUMBER','people.birthday as BIRTHDAY','people.sex as SEX',
+                        'departments.nombre as DEPARTAMENT','provinces.nombre as PROVINCE','districts.nombre as DISTRICT','zones.name as ZONE','urban_spaces.name as URBAN_SPACE',
+                        'families_info.pregnant as PREGNANT','families_info.disability as DISABILITY','families_info.chronic_disease as CHRONIC_DISEASE')
+                    ->where('provinces.id',$request->get('province'))->get();
                 return Redirect::action('QueriesController@peopleList')
-                    ->with('disasters',$disasters)
+                    ->with('habitants',$habitants)
                     ->with('scale','provincia')
-                    ->with('location',$province->id);
+                    ->with('location',$request->get('province'));
 
             }
             if($multipleSelection[0] == "allZones"){
-                $district=District::where('id',$request->get('district_id'))->first();
-                $zones=$district->zones->pluck('id');
-                $urbanspaces=UrbanSpace::whereIn('zone_id',$zones)->pluck('id');
-                $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->get();
+                $habitants=DB::table('families_info')
+                    ->join('infraestructures_info','families_info.infraestructure_info_id','=','infraestructures_info.id')
+                    ->join('people','families_info.people_id','=','people.id')
+                    ->join('urban_spaces','infraestructures_info.urban_space_id','=','urban_spaces.id')
+                    ->join('zones','urban_spaces.zone_id','=','zones.id')
+                    ->join('districts','zones.district_id','=','districts.id')
+                    ->join('provinces','districts.province_id','=','provinces.id')
+                    ->join('departments','provinces.department_id','=','departments.id')
+                    ->select('families_info.id as ID','people.name as NAME','people.first_surname as FIRST_SURNAME','people.second_surname as SECOND_SURNAME',
+                        'people.document_type as DOCUMENT_TYPE','people.document_number as DOCUMENT_NUMBER','people.birthday as BIRTHDAY','people.sex as SEX',
+                        'departments.nombre as DEPARTAMENT','provinces.nombre as PROVINCE','districts.nombre as DISTRICT','zones.name as ZONE','urban_spaces.name as URBAN_SPACE',
+                        'families_info.pregnant as PREGNANT','families_info.disability as DISABILITY','families_info.chronic_disease as CHRONIC_DISEASE')
+                    ->where('districts.id',$request->get('district_id'))->get();
                 return Redirect::action('QueriesController@peopleList')
-                    ->with('disasters',$disasters)
+                    ->with('habitants',$habitants)
                     ->with('scale','distrito')
-                    ->with('location',$district->id);
+                    ->with('location',$request->get('district_id'));
             }
             if($multipleSelection[0] == "allUrbanSpaces"){
-                $zone=Zone::where('id',$request->get('zone'))->first();
-                $urbanspaces=$zone->urbanspaces->pluck('id');
-                $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->get();
+                $habitants=DB::table('families_info')
+                    ->join('infraestructures_info','families_info.infraestructure_info_id','=','infraestructures_info.id')
+                    ->join('people','families_info.people_id','=','people.id')
+                    ->join('urban_spaces','infraestructures_info.urban_space_id','=','urban_spaces.id')
+                    ->join('zones','urban_spaces.zone_id','=','zones.id')
+                    ->join('districts','zones.district_id','=','districts.id')
+                    ->join('provinces','districts.province_id','=','provinces.id')
+                    ->join('departments','provinces.department_id','=','departments.id')
+                    ->select('families_info.id as ID','people.name as NAME','people.first_surname as FIRST_SURNAME','people.second_surname as SECOND_SURNAME',
+                        'people.document_type as DOCUMENT_TYPE','people.document_number as DOCUMENT_NUMBER','people.birthday as BIRTHDAY','people.sex as SEX',
+                        'departments.nombre as DEPARTAMENT','provinces.nombre as PROVINCE','districts.nombre as DISTRICT','zones.name as ZONE','urban_spaces.name as URBAN_SPACE',
+                        'families_info.pregnant as PREGNANT','families_info.disability as DISABILITY','families_info.chronic_disease as CHRONIC_DISEASE')
+                    ->where('zones.id',$request->get('zone'))->get();
                 return Redirect::action('QueriesController@peopleList')
-                    ->with('disasters',$disasters)
+                    ->with('habitants',$habitants)
                     ->with('scale','zona')
-                    ->with('location',$zone->id);
+                    ->with('location',$request->get('zone'));
             }
         }else{
-            $urbanspace=UrbanSpace::where('id',$request->get('urbanspace'))->first();
-            $disasters=Disaster::where('urban_space_id',$urbanspace->id)->get();
+            $habitants=DB::table('families_info')
+                ->join('infraestructures_info','families_info.infraestructure_info_id','=','infraestructures_info.id')
+                ->join('people','families_info.people_id','=','people.id')
+                ->join('urban_spaces','infraestructures_info.urban_space_id','=','urban_spaces.id')
+                ->join('zones','urban_spaces.zone_id','=','zones.id')
+                ->join('districts','zones.district_id','=','districts.id')
+                ->join('provinces','districts.province_id','=','provinces.id')
+                ->join('departments','provinces.department_id','=','departments.id')
+                ->select('families_info.id as ID','people.name as NAME','people.first_surname as FIRST_SURNAME','people.second_surname as SECOND_SURNAME',
+                    'people.document_type as DOCUMENT_TYPE','people.document_number as DOCUMENT_NUMBER','people.birthday as BIRTHDAY','people.sex as SEX',
+                    'departments.nombre as DEPARTAMENT','provinces.nombre as PROVINCE','districts.nombre as DISTRICT','zones.name as ZONE','urban_spaces.name as URBAN_SPACE',
+                    'families_info.pregnant as PREGNANT','families_info.disability as DISABILITY','families_info.chronic_disease as CHRONIC_DISEASE')
+                ->where('urban_spaces.id',$request->get('urbanspace'))->get();
             return Redirect::action('QueriesController@peopleList')
-                ->with('disasters',$disasters)
+                ->with('habitants',$habitants)
                 ->with('scale','urbano')
-                ->with('location',$urbanspace->id);
+                ->with('location',$request->get('urbanspace'));
         }
     }
 
     public function peopleList(){
-        if(Session::has('disasters')){
-            $disasters=Session::get('disasters');
-            $disasters_id=$disasters->pluck('id');
-            $families_post_info=FamilyPostInfo::whereIn('disaster_id',$disasters_id)->get();
+        if(Session::has('habitants')){
+            $habitants=Session::get('habitants');
             $scale=Session::get('scale');
             $location=Session::get('location');
-            $disaster_type=DisasterType::all();
-            return view('queries.disasters.list',compact(['scale','location','disaster_type','families_post_info']));
+            return view('queries.people.list',compact(['scale','location','habitants']));
         }else{
-            return view('queries.disasters.index');
+            return view('queries.people.index');
         }
     }
 }

@@ -107,7 +107,7 @@ Route::get('/queries/disasters/infrastructure/{id}','QueriesController@disasterI
 
 Route::get('/queries/people/index','QueriesController@peopleIndex')->name('queries.people.index');
 Route::post('/queries/people/search','QueriesController@peopleSearch')->name('queries.people.search');
-
+Route::get('/queries/people/list','QueriesController@peopleList')->name('queries.people.list');
 Route::get('/queries/infrastructures/index','QueriesController@infrastructureIndex')->name('queries.infrastructures.index');
 //AJAX UBIGEO
 Route::get('/ajax-departments/',function(){
