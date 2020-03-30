@@ -10,9 +10,10 @@
                             <a href="{{route('forms.pre.infrastructure',$designation->urbanspace)}}" class="list-group-item list-group-item-action ">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">{{$designation->urbanspace->zone->district->nombre}} {{$designation->urbanspace->zone->name}} {{$designation->urbanspace->type}} {{$designation->urbanspace->name}}</h5>
-                                    <small>Ultima actualización: {{$infrastructures->where('urban_space_id',$designation->urbanspace->id)->sortByDesc('id')->first()->created_at}}</small>
+                                    <small>Ultima actualización:@if(!isset($infrastructures)) {{$infrastructures->where('urban_space_id',$designation->urbanspace->id)->sortByDesc('id')->first()->created_at}} @else Ninguna realizada @endif</small>
                                 </div>
-                                <p class="mb-1">Cantidad de infraestructuras: {{$infrastructures->where('urban_space_id',$designation->urbanspace->id)->count()}}</p>
+                                <p class="mb-1">Cantidad de infraestructuras: {{$infrastructures->where('urban_space_id',$designation->urbanspace->id)->count()}}
+                                </p>
                             </a>
                         @endforeach
                     </div>
