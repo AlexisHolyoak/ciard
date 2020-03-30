@@ -53,6 +53,8 @@ Route::delete('/administration/evaluators/{person}/delete/{urbanspace}','AdminCo
 Route::get('/disasters','DisasterController@index')->name('disasters.index');
 Route::get('/disasters/create','DisasterController@create')->name('disasters.create');
 Route::post('/disasters/store','DisasterController@store')->name('disasters.store');
+Route::get('/disasters/massive/create','DisasterController@createMassive')->name('disasters.massive.create');
+Route::post('/disasters/massive/store','DisasterController@storeMassive')->name('disasters.massive.store');
 Route::get('/disasters/edit/{disaster}','DisasterController@edit')->name('disasters.edit');
 Route::put('/disasters/update/{disaster}','DisasterController@update')->name('disasters.update');
 

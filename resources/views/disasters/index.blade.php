@@ -4,8 +4,13 @@
 <div class="container">
     <div class="row mb-4">
         <div class="col-md-12">
-            <a href="{{route('disasters.create')}}" class="btn btn-success">Registrar desastre</a>
+            <a href="#" class="btn btn-outline-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registrar desastre</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="{{route('disasters.create')}}">Por espacios urbanos</a>
+                <a class="dropdown-item" href="{{route('disasters.massive.create')}}">Por zonas</a>
+            </div>
         </div>
+
     </div>
     <div class="row ">
         <div class="col-md-12">

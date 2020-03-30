@@ -145,7 +145,9 @@
 @endsection
 @section('script')
     <script src="{{asset('js/jquery.dataTables.min.js') }}" ></script>
-
+    <script src="{{asset('js/dataTables.buttons.min.js') }}" ></script>
+    <script src="{{asset('js/buttons.html5.min.js') }}" ></script>
+    <script src="{{asset('js/jszip.min.js') }}" ></script>
     <script src="https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js"></script>
     <script>
         $.fn.dataTable.ext.search.push(
@@ -182,6 +184,16 @@
 
             var table = $('#infrastructure_table').DataTable( {
                 orderCellsTop: true,
+                dom: 'Bfrtip',
+                buttons: [
+                    {
+                        extend: 'excelHtml5',
+                        text: 'Exportar a excel',
+                        exportOptions: {
+                            columns: ':visible'
+                        }
+                    }
+                ]
             } );
             $('button.toggle-vis').on( 'click', function (e) {
                 //e.preventDefault();

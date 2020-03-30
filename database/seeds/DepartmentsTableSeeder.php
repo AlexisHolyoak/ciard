@@ -80,7 +80,7 @@ class DepartmentsTableSeeder extends Seeder
             12 => 
             array (
                 'id' => 13,
-                'nombre' => 'LALIBERTAD',
+                'nombre' => 'LA LIBERTAD',
             ),
             13 => 
             array (
@@ -100,7 +100,7 @@ class DepartmentsTableSeeder extends Seeder
             16 => 
             array (
                 'id' => 17,
-                'nombre' => 'MADREDEDIOS',
+                'nombre' => 'MADRE DE DIOS',
             ),
             17 => 
             array (
@@ -125,7 +125,7 @@ class DepartmentsTableSeeder extends Seeder
             21 => 
             array (
                 'id' => 22,
-                'nombre' => 'SANMARTIN',
+                'nombre' => 'SAN MARTIN',
             ),
             22 => 
             array (

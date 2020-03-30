@@ -85,7 +85,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 9,
                 'province_id' => 1,
-                'nombre' => 'LAJALCA',
+                'nombre' => 'LA JALCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -117,7 +117,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 13,
                 'province_id' => 1,
-                'nombre' => 'MARISCALCASTILLA',
+                'nombre' => 'MARISCAL CASTILLA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -157,7 +157,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 18,
                 'province_id' => 1,
-                'nombre' => 'SANFRANCISCODEDAGUAS',
+                'nombre' => 'SAN FRANCISCO DE DAGUAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -165,7 +165,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 19,
                 'province_id' => 1,
-                'nombre' => 'SANISIDRODEMAINO',
+                'nombre' => 'SAN ISIDRO DE MAINO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -213,7 +213,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 25,
                 'province_id' => 2,
-                'nombre' => 'ELPARCO',
+                'nombre' => 'EL PARCO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -229,7 +229,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 27,
                 'province_id' => 2,
-                'nombre' => 'LAPECA',
+                'nombre' => 'LA PECA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -301,7 +301,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 36,
                 'province_id' => 3,
-                'nombre' => 'SANCARLOS',
+                'nombre' => 'SAN CARLOS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -341,7 +341,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 41,
                 'province_id' => 4,
-                'nombre' => 'ELCENEPA',
+                'nombre' => 'EL CENEPA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -349,7 +349,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 42,
                 'province_id' => 4,
-                'nombre' => 'RIOSANTIAGO',
+                'nombre' => 'RIO SANTIAGO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -413,7 +413,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 50,
                 'province_id' => 5,
-                'nombre' => 'LONYACHICO',
+                'nombre' => 'LONYA CHICO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -429,7 +429,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 52,
                 'province_id' => 5,
-                'nombre' => 'LUYAVIEJO',
+                'nombre' => 'LUYA VIEJO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -477,7 +477,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 58,
                 'province_id' => 5,
-                'nombre' => 'SANCRISTOBAL',
+                'nombre' => 'SAN CRISTOBAL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -485,7 +485,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 59,
                 'province_id' => 5,
-                'nombre' => 'SANFRANCISCODELYESO',
+                'nombre' => 'SAN FRANCISCO DEL YESO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -493,7 +493,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 60,
                 'province_id' => 5,
-                'nombre' => 'SANJERONIMO',
+                'nombre' => 'SAN JERONIMO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -501,7 +501,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 61,
                 'province_id' => 5,
-                'nombre' => 'SANJUANDELOPECANCHA',
+                'nombre' => 'SAN JUAN DE LOPECANCHA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -509,7 +509,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 62,
                 'province_id' => 5,
-                'nombre' => 'SANTACATALINA',
+                'nombre' => 'SANTA CATALINA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -517,7 +517,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 63,
                 'province_id' => 5,
-                'nombre' => 'SANTOTOMAS',
+                'nombre' => 'SANTO TOMAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -541,7 +541,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 66,
                 'province_id' => 6,
-                'nombre' => 'SANNICOLAS',
+                'nombre' => 'SAN NICOLAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -589,7 +589,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 72,
                 'province_id' => 6,
-                'nombre' => 'MARISCALBENAVIDES',
+                'nombre' => 'MARISCAL BENAVIDES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -613,7 +613,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 75,
                 'province_id' => 6,
-                'nombre' => 'SANTAROSA',
+                'nombre' => 'SANTA ROSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -629,7 +629,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 77,
                 'province_id' => 6,
-                'nombre' => 'VISTAALEGRE',
+                'nombre' => 'VISTA ALEGRE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -637,7 +637,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 78,
                 'province_id' => 7,
-                'nombre' => 'BAGUAGRANDE',
+                'nombre' => 'BAGUA GRANDE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -661,7 +661,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 81,
                 'province_id' => 7,
-                'nombre' => 'ELMILAGRO',
+                'nombre' => 'EL MILAGRO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -677,7 +677,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 83,
                 'province_id' => 7,
-                'nombre' => 'LONYAGRANDE',
+                'nombre' => 'LONYA GRANDE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -741,7 +741,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 91,
                 'province_id' => 8,
-                'nombre' => 'LALIBERTAD',
+                'nombre' => 'LA LIBERTAD',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -813,7 +813,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 100,
                 'province_id' => 9,
-                'nombre' => 'LAMERCED',
+                'nombre' => 'LA MERCED',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -869,7 +869,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 107,
                 'province_id' => 10,
-                'nombre' => 'SANJUANDERONTOY',
+                'nombre' => 'SAN JUAN DE RONTOY',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -901,7 +901,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 111,
                 'province_id' => 12,
-                'nombre' => 'ABELARDOPARDOLEZAMETA',
+                'nombre' => 'ABELARDO PARDO LEZAMETA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -909,7 +909,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 112,
                 'province_id' => 12,
-                'nombre' => 'ANTONIORAYMONDI',
+                'nombre' => 'ANTONIO RAYMONDI',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -973,7 +973,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 120,
                 'province_id' => 12,
-                'nombre' => 'LAPRIMAVERA',
+                'nombre' => 'LA PRIMAVERA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -997,7 +997,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 123,
                 'province_id' => 12,
-                'nombre' => 'SANMIGUELDECORPANQUI',
+                'nombre' => 'SAN MIGUEL DE CORPANQUI',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1069,7 +1069,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 132,
                 'province_id' => 13,
-                'nombre' => 'SANMIGUELDEACO',
+                'nombre' => 'SAN MIGUEL DE ACO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1101,7 +1101,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 136,
                 'province_id' => 14,
-                'nombre' => 'SANLUIS',
+                'nombre' => 'SAN LUIS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1109,7 +1109,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 137,
                 'province_id' => 14,
-                'nombre' => 'SANNICOLAS',
+                'nombre' => 'SAN NICOLAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1133,7 +1133,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 140,
                 'province_id' => 15,
-                'nombre' => 'BUENAVISTAALTA',
+                'nombre' => 'BUENA VISTA ALTA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1141,7 +1141,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 141,
                 'province_id' => 15,
-                'nombre' => 'COMANDANTENOEL',
+                'nombre' => 'COMANDANTE NOEL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1189,7 +1189,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 147,
                 'province_id' => 16,
-                'nombre' => 'LAPAMPA',
+                'nombre' => 'LA PAMPA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1237,7 +1237,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 153,
                 'province_id' => 17,
-                'nombre' => 'CHAVINDEHUANTAR',
+                'nombre' => 'CHAVIN DE HUANTAR',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1317,7 +1317,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 163,
                 'province_id' => 17,
-                'nombre' => 'SANMARCOS',
+                'nombre' => 'SAN MARCOS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1325,7 +1325,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 164,
                 'province_id' => 17,
-                'nombre' => 'SANPEDRODECHANA',
+                'nombre' => 'SAN PEDRO DE CHANA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1429,7 +1429,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 177,
                 'province_id' => 19,
-                'nombre' => 'PUEBLOLIBRE',
+                'nombre' => 'PUEBLO LIBRE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1437,7 +1437,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 178,
                 'province_id' => 19,
-                'nombre' => 'SANTACRUZ',
+                'nombre' => 'SANTA CRUZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1445,7 +1445,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 179,
                 'province_id' => 19,
-                'nombre' => 'SANTOTORIBIO',
+                'nombre' => 'SANTO TORIBIO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1477,7 +1477,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 183,
                 'province_id' => 20,
-                'nombre' => 'ELEAZARGUZMANBARRON',
+                'nombre' => 'ELEAZAR GUZMAN BARRON',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1485,7 +1485,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 184,
                 'province_id' => 20,
-                'nombre' => 'FIDELOLIVASESCUDERO',
+                'nombre' => 'FIDEL OLIVAS ESCUDERO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1581,7 +1581,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 196,
                 'province_id' => 21,
-                'nombre' => 'SANCRISTOBALDERAJAN',
+                'nombre' => 'SAN CRISTOBAL DE RAJAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1589,7 +1589,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 197,
                 'province_id' => 21,
-                'nombre' => 'SANPEDRO',
+                'nombre' => 'SAN PEDRO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1597,7 +1597,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 198,
                 'province_id' => 21,
-                'nombre' => 'SANTIAGODECHILCAS',
+                'nombre' => 'SANTIAGO DE CHILCAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1677,7 +1677,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 208,
                 'province_id' => 22,
-                'nombre' => 'SANTAROSA',
+                'nombre' => 'SANTA ROSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1773,7 +1773,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 220,
                 'province_id' => 24,
-                'nombre' => 'PAMPASCHICO',
+                'nombre' => 'PAMPAS CHICO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1813,7 +1813,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 225,
                 'province_id' => 25,
-                'nombre' => 'CACERESDELPERU',
+                'nombre' => 'CACERES DEL PERU',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1869,7 +1869,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 232,
                 'province_id' => 25,
-                'nombre' => 'NUEVOCHIMBOTE',
+                'nombre' => 'NUEVO CHIMBOTE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1893,7 +1893,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 235,
                 'province_id' => 26,
-                'nombre' => 'ALFONSOUGARTE',
+                'nombre' => 'ALFONSO UGARTE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -1941,7 +1941,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 241,
                 'province_id' => 26,
-                'nombre' => 'SANJUAN',
+                'nombre' => 'SAN JUAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2077,7 +2077,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 258,
                 'province_id' => 28,
-                'nombre' => 'SANPEDRODECACHORA',
+                'nombre' => 'SAN PEDRO DE CACHORA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2181,7 +2181,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 271,
                 'province_id' => 29,
-                'nombre' => 'SANANTONIODECACHI',
+                'nombre' => 'SAN ANTONIO DE CACHI',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2189,7 +2189,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 272,
                 'province_id' => 29,
-                'nombre' => 'SANJERONIMO',
+                'nombre' => 'SAN JERONIMO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2197,7 +2197,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 273,
                 'province_id' => 29,
-                'nombre' => 'SANMIGUELDECHACCRAMPA',
+                'nombre' => 'SAN MIGUEL DE CHACCRAMPA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2205,7 +2205,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 274,
                 'province_id' => 29,
-                'nombre' => 'SANTAMARIADECHICMO',
+                'nombre' => 'SANTA MARIA DE CHICMO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2221,7 +2221,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 276,
                 'province_id' => 29,
-                'nombre' => 'TUMAYHUARACA',
+                'nombre' => 'TUMAY HUARACA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2253,7 +2253,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 280,
                 'province_id' => 30,
-                'nombre' => 'ELORO',
+                'nombre' => 'EL ORO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2269,7 +2269,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 282,
                 'province_id' => 30,
-                'nombre' => 'JUANESPINOZAMEDRANO',
+                'nombre' => 'JUAN ESPINOZA MEDRANO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2357,7 +2357,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 293,
                 'province_id' => 31,
-                'nombre' => 'JUSTOAPUSAHUARAURA',
+                'nombre' => 'JUSTO APU SAHUARAURA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2381,7 +2381,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 296,
                 'province_id' => 31,
-                'nombre' => 'SANJUANDECHACÑA',
+                'nombre' => 'SAN JUAN DE CHACÑA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2589,7 +2589,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 322,
                 'province_id' => 34,
-                'nombre' => 'MICAELABASTIDAS',
+                'nombre' => 'MICAELA BASTIDAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2613,7 +2613,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 325,
                 'province_id' => 34,
-                'nombre' => 'SANANTONIO',
+                'nombre' => 'SAN ANTONIO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2621,7 +2621,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 326,
                 'province_id' => 34,
-                'nombre' => 'SANTAROSA',
+                'nombre' => 'SANTA ROSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2669,7 +2669,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 332,
                 'province_id' => 35,
-                'nombre' => 'ALTOSELVAALEGRE',
+                'nombre' => 'ALTO SELVA ALEGRE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2685,7 +2685,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 334,
                 'province_id' => 35,
-                'nombre' => 'CERROCOLORADO',
+                'nombre' => 'CERRO COLORADO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2709,7 +2709,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 337,
                 'province_id' => 35,
-                'nombre' => 'JACOBOHUNTER',
+                'nombre' => 'JACOBO HUNTER',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2717,7 +2717,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 338,
                 'province_id' => 35,
-                'nombre' => 'LAJOYA',
+                'nombre' => 'LA JOYA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2725,7 +2725,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 339,
                 'province_id' => 35,
-                'nombre' => 'MARIANOMELGAR',
+                'nombre' => 'MARIANO MELGAR',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2797,7 +2797,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 348,
                 'province_id' => 35,
-                'nombre' => 'SANJUANDESIGUAS',
+                'nombre' => 'SAN JUAN DE SIGUAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2805,7 +2805,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 349,
                 'province_id' => 35,
-                'nombre' => 'SANJUANDETARUCANI',
+                'nombre' => 'SAN JUAN DE TARUCANI',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2813,7 +2813,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 350,
                 'province_id' => 35,
-                'nombre' => 'SANTAISABELDESIGUAS',
+                'nombre' => 'SANTA ISABEL DE SIGUAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2821,7 +2821,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 351,
                 'province_id' => 35,
-                'nombre' => 'SANTARITADESIGUAS',
+                'nombre' => 'SANTA RITA DE SIGUAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2885,7 +2885,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 359,
                 'province_id' => 35,
-                'nombre' => 'JOSELUISBUSTAMANTEYRIVERO',
+                'nombre' => 'JOSE LUIS BUSTAMANTE Y RIVERO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2901,7 +2901,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 361,
                 'province_id' => 36,
-                'nombre' => 'JOSEMARIAQUIMPER',
+                'nombre' => 'JOSE MARIA QUIMPER',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2909,7 +2909,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 362,
                 'province_id' => 36,
-                'nombre' => 'MARIANONICOLASVALCARCEL',
+                'nombre' => 'MARIANO NICOLAS VALCARCEL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2917,7 +2917,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 363,
                 'province_id' => 36,
-                'nombre' => 'MARISCALCACERES',
+                'nombre' => 'MARISCAL CACERES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2925,7 +2925,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 364,
                 'province_id' => 36,
-                'nombre' => 'NICOLASDEPIEROLA',
+                'nombre' => 'NICOLAS DE PIEROLA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2949,7 +2949,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 367,
                 'province_id' => 36,
-                'nombre' => 'SAMUELPASTOR',
+                'nombre' => 'SAMUEL PASTOR',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -2989,7 +2989,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 372,
                 'province_id' => 37,
-                'nombre' => 'BELLAUNION',
+                'nombre' => 'BELLA UNION',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3277,7 +3277,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 408,
                 'province_id' => 39,
-                'nombre' => 'SANANTONIODECHUCA',
+                'nombre' => 'SAN ANTONIO DE CHUCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3373,7 +3373,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 420,
                 'province_id' => 40,
-                'nombre' => 'RIOGRANDE',
+                'nombre' => 'RIO GRANDE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3413,7 +3413,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 425,
                 'province_id' => 41,
-                'nombre' => 'DEANVALDIVIA',
+                'nombre' => 'DEAN VALDIVIA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3437,7 +3437,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 428,
                 'province_id' => 41,
-                'nombre' => 'PUNTADEBOMBON',
+                'nombre' => 'PUNTA DE BOMBON',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3549,7 +3549,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 442,
                 'province_id' => 43,
-                'nombre' => 'ACOSVINCHOS',
+                'nombre' => 'ACOS VINCHOS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3557,7 +3557,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 443,
                 'province_id' => 43,
-                'nombre' => 'CARMENALTO',
+                'nombre' => 'CARMEN ALTO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3597,7 +3597,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 448,
                 'province_id' => 43,
-                'nombre' => 'SANJOSEDETICLLAS',
+                'nombre' => 'SAN JOSE DE TICLLAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3605,7 +3605,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 449,
                 'province_id' => 43,
-                'nombre' => 'SANJUANBAUTISTA',
+                'nombre' => 'SAN JUAN BAUTISTA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3613,7 +3613,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 450,
                 'province_id' => 43,
-                'nombre' => 'SANTIAGODEPISCHA',
+                'nombre' => 'SANTIAGO DE PISCHA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3645,7 +3645,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 454,
                 'province_id' => 43,
-                'nombre' => 'JESUSNAZARENO',
+                'nombre' => 'JESUS NAZARENO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3669,7 +3669,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 457,
                 'province_id' => 44,
-                'nombre' => 'LOSMOROCHUCOS',
+                'nombre' => 'LOS MOROCHUCOS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3677,7 +3677,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 458,
                 'province_id' => 44,
-                'nombre' => 'MARIAPARADODEBELLIDO',
+                'nombre' => 'MARIA PARADO DE BELLIDO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3725,7 +3725,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 464,
                 'province_id' => 45,
-                'nombre' => 'SANTIAGODELUCANAMARCA',
+                'nombre' => 'SANTIAGO DE LUCANAMARCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3797,7 +3797,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 473,
                 'province_id' => 47,
-                'nombre' => 'SANMIGUEL',
+                'nombre' => 'SAN MIGUEL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3837,7 +3837,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 478,
                 'province_id' => 47,
-                'nombre' => 'LUISCARRANZA',
+                'nombre' => 'LUIS CARRANZA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3845,7 +3845,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 479,
                 'province_id' => 47,
-                'nombre' => 'SANTAROSA',
+                'nombre' => 'SANTA ROSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3885,7 +3885,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 484,
                 'province_id' => 48,
-                'nombre' => 'CARMENSALCEDO',
+                'nombre' => 'CARMEN SALCEDO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3925,7 +3925,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 489,
                 'province_id' => 48,
-                'nombre' => 'LEONCIOPRADO',
+                'nombre' => 'LEONCIO PRADO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3973,7 +3973,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 495,
                 'province_id' => 48,
-                'nombre' => 'SANCRISTOBAL',
+                'nombre' => 'SAN CRISTOBAL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3981,7 +3981,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 496,
                 'province_id' => 48,
-                'nombre' => 'SANJUAN',
+                'nombre' => 'SAN JUAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3989,7 +3989,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 497,
                 'province_id' => 48,
-                'nombre' => 'SANPEDRO',
+                'nombre' => 'SAN PEDRO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -3997,7 +3997,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 498,
                 'province_id' => 48,
-                'nombre' => 'SANPEDRODEPALCO',
+                'nombre' => 'SAN PEDRO DE PALCO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4013,7 +4013,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 500,
                 'province_id' => 48,
-                'nombre' => 'SANTAANADEHUAYCAHUACHO',
+                'nombre' => 'SANTA ANA DE HUAYCAHUACHO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4023,7 +4023,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 501,
                 'province_id' => 48,
-                'nombre' => 'SANTALUCIA',
+                'nombre' => 'SANTA LUCIA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4047,7 +4047,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 504,
                 'province_id' => 49,
-                'nombre' => 'CORONELCASTAÑEDA',
+                'nombre' => 'CORONEL CASTAÑEDA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4079,7 +4079,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 508,
                 'province_id' => 49,
-                'nombre' => 'SANFRANCISCODERAVACAYCO',
+                'nombre' => 'SAN FRANCISCO DE RAVACAYCO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4151,7 +4151,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 517,
                 'province_id' => 50,
-                'nombre' => 'SANJAVIERDEALPABAMBA',
+                'nombre' => 'SAN JAVIER DE ALPABAMBA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4159,7 +4159,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 518,
                 'province_id' => 50,
-                'nombre' => 'SANJOSEDEUSHUA',
+                'nombre' => 'SAN JOSE DE USHUA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4167,7 +4167,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 519,
                 'province_id' => 50,
-                'nombre' => 'SARASARA',
+                'nombre' => 'SARA SARA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4231,7 +4231,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 527,
                 'province_id' => 51,
-                'nombre' => 'SANPEDRODELARCAY',
+                'nombre' => 'SAN PEDRO DE LARCAY',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4239,7 +4239,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 528,
                 'province_id' => 51,
-                'nombre' => 'SANSALVADORDEQUIJE',
+                'nombre' => 'SAN SALVADOR DE QUIJE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4247,7 +4247,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 529,
                 'province_id' => 51,
-                'nombre' => 'SANTIAGODEPAUCARAY',
+                'nombre' => 'SANTIAGO DE PAUCARAY',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4359,7 +4359,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 543,
                 'province_id' => 53,
-                'nombre' => 'VILCASHUAMAN',
+                'nombre' => 'VILCAS HUAMAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4479,7 +4479,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 558,
                 'province_id' => 54,
-                'nombre' => 'LOSBAÑOSDELINCA',
+                'nombre' => 'LOS BAÑOS DEL INCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4511,7 +4511,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 562,
                 'province_id' => 54,
-                'nombre' => 'SANJUAN',
+                'nombre' => 'SAN JUAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4583,7 +4583,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 571,
                 'province_id' => 56,
-                'nombre' => 'JORGECHAVEZ',
+                'nombre' => 'JORGE CHAVEZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4591,7 +4591,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 572,
                 'province_id' => 56,
-                'nombre' => 'JOSEGALVEZ',
+                'nombre' => 'JOSE GALVEZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4599,7 +4599,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 573,
                 'province_id' => 56,
-                'nombre' => 'MIGUELIGLESIAS',
+                'nombre' => 'MIGUEL IGLESIAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4639,7 +4639,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 578,
                 'province_id' => 56,
-                'nombre' => 'LALIBERTADDEPALLAN',
+                'nombre' => 'LA LIBERTAD DE PALLAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4767,7 +4767,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 594,
                 'province_id' => 57,
-                'nombre' => 'SANJUANDELICUPIS',
+                'nombre' => 'SAN JUAN DE LICUPIS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4831,7 +4831,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 602,
                 'province_id' => 58,
-                'nombre' => 'SANBENITO',
+                'nombre' => 'SAN BENITO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4839,7 +4839,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 603,
                 'province_id' => 58,
-                'nombre' => 'SANTACRUZDETOLED',
+                'nombre' => 'SANTA CRUZ DE TOLED',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4895,7 +4895,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 610,
                 'province_id' => 59,
-                'nombre' => 'LARAMADA',
+                'nombre' => 'LA RAMADA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4919,7 +4919,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 613,
                 'province_id' => 59,
-                'nombre' => 'SANANDRESDECUTERVO',
+                'nombre' => 'SAN ANDRES DE CUTERVO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4927,7 +4927,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 614,
                 'province_id' => 59,
-                'nombre' => 'SANJUANDECUTERVO',
+                'nombre' => 'SAN JUAN DE CUTERVO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4935,7 +4935,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 615,
                 'province_id' => 59,
-                'nombre' => 'SANLUISDELUCMA',
+                'nombre' => 'SAN LUIS DE LUCMA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4943,7 +4943,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 616,
                 'province_id' => 59,
-                'nombre' => 'SANTACRUZ',
+                'nombre' => 'SANTA CRUZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4951,7 +4951,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 617,
                 'province_id' => 59,
-                'nombre' => 'SANTODOMINGODELACAPILLA',
+                'nombre' => 'SANTO DOMINGO DE LA CAPILLA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4959,7 +4959,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 618,
                 'province_id' => 59,
-                'nombre' => 'SANTOTOMAS',
+                'nombre' => 'SANTO TOMAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -4975,7 +4975,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 620,
                 'province_id' => 59,
-                'nombre' => 'TORIBIOCASANOVA',
+                'nombre' => 'TORIBIO CASANOVA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5047,7 +5047,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 629,
                 'province_id' => 61,
-                'nombre' => 'LASPIRIAS',
+                'nombre' => 'LAS PIRIAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5079,7 +5079,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 633,
                 'province_id' => 61,
-                'nombre' => 'SANFELIPE',
+                'nombre' => 'SAN FELIPE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5087,7 +5087,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 634,
                 'province_id' => 61,
-                'nombre' => 'SANJOSEDELALTO',
+                'nombre' => 'SAN JOSE DEL ALTO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5095,7 +5095,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 635,
                 'province_id' => 61,
-                'nombre' => 'SANTAROSA',
+                'nombre' => 'SANTA ROSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5103,7 +5103,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 636,
                 'province_id' => 62,
-                'nombre' => 'SANIGNACIO',
+                'nombre' => 'SAN IGNACIO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5127,7 +5127,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 639,
                 'province_id' => 62,
-                'nombre' => 'LACOIPA',
+                'nombre' => 'LA COIPA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5143,7 +5143,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 641,
                 'province_id' => 62,
-                'nombre' => 'SANJOSEDELOURDES',
+                'nombre' => 'SAN JOSE DE LOURDES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5159,7 +5159,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 643,
                 'province_id' => 63,
-                'nombre' => 'PEDROGALVEZ',
+                'nombre' => 'PEDRO GALVEZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5175,7 +5175,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 645,
                 'province_id' => 63,
-                'nombre' => 'EDUARDOVILLANUEVA',
+                'nombre' => 'EDUARDO VILLANUEVA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5183,7 +5183,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 646,
                 'province_id' => 63,
-                'nombre' => 'GREGORIOPITA',
+                'nombre' => 'GREGORIO PITA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5199,7 +5199,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 648,
                 'province_id' => 63,
-                'nombre' => 'JOSEMANUELQUIROZ',
+                'nombre' => 'JOSE MANUEL QUIROZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5207,7 +5207,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 649,
                 'province_id' => 63,
-                'nombre' => 'JOSESABOGAL',
+                'nombre' => 'JOSE SABOGAL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5215,7 +5215,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 650,
                 'province_id' => 64,
-                'nombre' => 'SANMIGUEL',
+                'nombre' => 'SAN MIGUEL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5247,7 +5247,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 654,
                 'province_id' => 64,
-                'nombre' => 'ELPRADO',
+                'nombre' => 'EL PRADO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5255,7 +5255,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 655,
                 'province_id' => 64,
-                'nombre' => 'LAFLORIDA',
+                'nombre' => 'LA FLORIDA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5287,7 +5287,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 659,
                 'province_id' => 64,
-                'nombre' => 'SANGREGORIO',
+                'nombre' => 'SAN GREGORIO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5295,7 +5295,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 660,
                 'province_id' => 64,
-                'nombre' => 'SANSILVESTREDECOCHAN',
+                'nombre' => 'SAN SILVESTRE DE COCHAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5311,7 +5311,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 662,
                 'province_id' => 64,
-                'nombre' => 'UNIONAGUABLANCA',
+                'nombre' => 'UNION AGUA BLANCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5319,7 +5319,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 663,
                 'province_id' => 65,
-                'nombre' => 'SANPABLO',
+                'nombre' => 'SAN PABLO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5327,7 +5327,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 664,
                 'province_id' => 65,
-                'nombre' => 'SANBERNARDINO',
+                'nombre' => 'SAN BERNARDINO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5335,7 +5335,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 665,
                 'province_id' => 65,
-                'nombre' => 'SANLUIS',
+                'nombre' => 'SAN LUIS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5351,7 +5351,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 667,
                 'province_id' => 66,
-                'nombre' => 'SANTACRUZ',
+                'nombre' => 'SANTA CRUZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5383,7 +5383,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 671,
                 'province_id' => 66,
-                'nombre' => 'LAESPERANZA',
+                'nombre' => 'LA ESPERANZA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5455,7 +5455,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 680,
                 'province_id' => 67,
-                'nombre' => 'CARMENDELALEGUAYREYNOSO',
+                'nombre' => 'CARMEN DE LA LEGUA Y REYNOSO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5463,7 +5463,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 681,
                 'province_id' => 67,
-                'nombre' => 'LAPERLA',
+                'nombre' => 'LA PERLA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5471,7 +5471,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 682,
                 'province_id' => 67,
-                'nombre' => 'LAPUNTA',
+                'nombre' => 'LA PUNTA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5487,7 +5487,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 684,
                 'province_id' => 67,
-                'nombre' => 'MIPERÚ',
+                'nombre' => 'MI PERÚ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5519,7 +5519,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 688,
                 'province_id' => 68,
-                'nombre' => 'SANJERONIMO',
+                'nombre' => 'SAN JERONIMO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5527,7 +5527,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 689,
                 'province_id' => 68,
-                'nombre' => 'SANSEBASTIAN',
+                'nombre' => 'SAN SEBASTIAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5583,7 +5583,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 696,
                 'province_id' => 69,
-                'nombre' => 'MOSOCLLACTA',
+                'nombre' => 'MOSOC LLACTA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5727,7 +5727,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 714,
                 'province_id' => 71,
-                'nombre' => 'SANSALVADOR',
+                'nombre' => 'SAN SALVADOR',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5807,7 +5807,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 724,
                 'province_id' => 72,
-                'nombre' => 'TUPACAMARU',
+                'nombre' => 'TUPAC AMARU',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5855,7 +5855,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 730,
                 'province_id' => 73,
-                'nombre' => 'SANPABLO',
+                'nombre' => 'SAN PABLO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5863,7 +5863,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 731,
                 'province_id' => 73,
-                'nombre' => 'SANPEDRO',
+                'nombre' => 'SAN PEDRO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5879,7 +5879,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 733,
                 'province_id' => 74,
-                'nombre' => 'SANTOTOMAS',
+                'nombre' => 'SANTO TOMAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -5999,7 +5999,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 748,
                 'province_id' => 75,
-                'nombre' => 'ALTOPICHIGUA',
+                'nombre' => 'ALTO PICHIGUA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6007,7 +6007,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 749,
                 'province_id' => 76,
-                'nombre' => 'SANTAANA',
+                'nombre' => 'SANTA ANA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6063,7 +6063,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 756,
                 'province_id' => 76,
-                'nombre' => 'SANTATERESA',
+                'nombre' => 'SANTA TERESA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6439,7 +6439,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 803,
                 'province_id' => 81,
-                'nombre' => 'MARISCALCACERES',
+                'nombre' => 'MARISCAL CACERES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6455,7 +6455,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 805,
                 'province_id' => 81,
-                'nombre' => 'NUEVOOCCORO',
+                'nombre' => 'NUEVO OCCORO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6631,7 +6631,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 827,
                 'province_id' => 83,
-                'nombre' => 'HUAYLLAYGRANDE',
+                'nombre' => 'HUAYLLAY GRANDE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6647,7 +6647,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 829,
                 'province_id' => 83,
-                'nombre' => 'SANANTONIODEANTAPARCO',
+                'nombre' => 'SAN ANTONIO DE ANTAPARCO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6655,7 +6655,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 830,
                 'province_id' => 83,
-                'nombre' => 'SANTOTOMASDEPATA',
+                'nombre' => 'SANTO TOMAS DE PATA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6743,7 +6743,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 841,
                 'province_id' => 84,
-                'nombre' => 'SANJUAN',
+                'nombre' => 'SAN JUAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6751,7 +6751,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 842,
                 'province_id' => 84,
-                'nombre' => 'SANTAANA',
+                'nombre' => 'SANTA ANA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6799,7 +6799,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 848,
                 'province_id' => 85,
-                'nombre' => 'ELCARMEN',
+                'nombre' => 'EL CARMEN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6807,7 +6807,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 849,
                 'province_id' => 85,
-                'nombre' => 'LAMERCED',
+                'nombre' => 'LA MERCED',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6831,7 +6831,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 852,
                 'province_id' => 85,
-                'nombre' => 'SANMIGUELDEMAYOCC',
+                'nombre' => 'SAN MIGUEL DE MAYOCC',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6839,7 +6839,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 853,
                 'province_id' => 85,
-                'nombre' => 'SANPEDRODECORIS',
+                'nombre' => 'SAN PEDRO DE CORIS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6879,7 +6879,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 858,
                 'province_id' => 86,
-                'nombre' => 'HUAYACUNDOARMA',
+                'nombre' => 'HUAYACUNDO ARMA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6927,7 +6927,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 864,
                 'province_id' => 86,
-                'nombre' => 'SANANTONIODECUSICANCHA',
+                'nombre' => 'SAN ANTONIO DE CUSICANCHA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6935,7 +6935,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 865,
                 'province_id' => 86,
-                'nombre' => 'SANFRANCISCODESANGAYAICO',
+                'nombre' => 'SAN FRANCISCO DE SANGAYAICO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6943,7 +6943,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 866,
                 'province_id' => 86,
-                'nombre' => 'SANISIDRO',
+                'nombre' => 'SAN ISIDRO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6951,7 +6951,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 867,
                 'province_id' => 86,
-                'nombre' => 'SANTIAGODECHOCORVOS',
+                'nombre' => 'SANTIAGO DE CHOCORVOS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6959,7 +6959,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 868,
                 'province_id' => 86,
-                'nombre' => 'SANTIAGODEQUIRAHUARA',
+                'nombre' => 'SANTIAGO DE QUIRAHUARA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -6967,7 +6967,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 869,
                 'province_id' => 86,
-                'nombre' => 'SANTODOMINGODECAPILLAS',
+                'nombre' => 'SANTO DOMINGO DE CAPILLAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7023,7 +7023,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 876,
                 'province_id' => 87,
-                'nombre' => 'DANIELHERNANDEZ',
+                'nombre' => 'DANIEL HERNANDEZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7087,7 +7087,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 884,
                 'province_id' => 87,
-                'nombre' => 'SANMARCOSDEROCCHAC',
+                'nombre' => 'SAN MARCOS DE ROCCHAC',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7103,7 +7103,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 886,
                 'province_id' => 87,
-                'nombre' => 'TINTAYPUNCU',
+                'nombre' => 'TINTAY PUNCU',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7159,7 +7159,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 893,
                 'province_id' => 88,
-                'nombre' => 'SANFRANCISCODECAYRAN',
+                'nombre' => 'SAN FRANCISCO DE CAYRAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7167,7 +7167,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 894,
                 'province_id' => 88,
-                'nombre' => 'SANPEDRODECHAULAN',
+                'nombre' => 'SAN PEDRO DE CHAULAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7175,7 +7175,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 895,
                 'province_id' => 88,
-                'nombre' => 'SANTAMARIADELVALLE',
+                'nombre' => 'SANTA MARIA DEL VALLE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7191,7 +7191,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 897,
                 'province_id' => 88,
-                'nombre' => 'PILLCOMARCA',
+                'nombre' => 'PILLCO MARCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7239,7 +7239,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 903,
                 'province_id' => 89,
-                'nombre' => 'SANFRANCISCO',
+                'nombre' => 'SAN FRANCISCO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7247,7 +7247,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 904,
                 'province_id' => 89,
-                'nombre' => 'SANRAFAEL',
+                'nombre' => 'SAN RAFAEL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7255,7 +7255,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 905,
                 'province_id' => 89,
-                'nombre' => 'TOMAYKICHWA',
+                'nombre' => 'TOMAY KICHWA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7263,7 +7263,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 906,
                 'province_id' => 90,
-                'nombre' => 'LAUNION',
+                'nombre' => 'LA UNION',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7383,7 +7383,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 921,
                 'province_id' => 92,
-                'nombre' => 'CHAVINDEPARIARCA',
+                'nombre' => 'CHAVIN DE PARIARCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7391,7 +7391,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 922,
                 'province_id' => 92,
-                'nombre' => 'JACASGRANDE',
+                'nombre' => 'JACAS GRANDE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7463,7 +7463,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 931,
                 'province_id' => 93,
-                'nombre' => 'DANIELALOMIASROBLES',
+                'nombre' => 'DANIEL ALOMIAS ROBLES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7471,7 +7471,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 932,
                 'province_id' => 93,
-                'nombre' => 'HERMILIOVALDIZAN',
+                'nombre' => 'HERMILIO VALDIZAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7479,7 +7479,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 933,
                 'province_id' => 93,
-                'nombre' => 'JOSECRESPOYCASTILLO',
+                'nombre' => 'JOSE CRESPO Y CASTILLO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7495,7 +7495,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 935,
                 'province_id' => 93,
-                'nombre' => 'MARIANODAMASOBERAUN',
+                'nombre' => 'MARIANO DAMASO BERAUN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7519,7 +7519,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 938,
                 'province_id' => 94,
-                'nombre' => 'SANBUENAVENTURA',
+                'nombre' => 'SAN BUENAVENTURA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7559,7 +7559,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 943,
                 'province_id' => 96,
-                'nombre' => 'PUERTOINCA',
+                'nombre' => 'PUERTO INCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7567,7 +7567,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 944,
                 'province_id' => 96,
-                'nombre' => 'CODODELPOZUZO',
+                'nombre' => 'CODO DEL POZUZO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7639,7 +7639,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 953,
                 'province_id' => 97,
-                'nombre' => 'SANFRANCISCODEASIS',
+                'nombre' => 'SAN FRANCISCO DE ASIS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7647,7 +7647,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 954,
                 'province_id' => 97,
-                'nombre' => 'SANMIGUELDECAURI',
+                'nombre' => 'SAN MIGUEL DE CAURI',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7679,7 +7679,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 958,
                 'province_id' => 98,
-                'nombre' => 'APARICIOPOMARES',
+                'nombre' => 'APARICIO POMARES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7687,7 +7687,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 959,
                 'province_id' => 98,
-                'nombre' => 'JACASCHICO',
+                'nombre' => 'JACAS CHICO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7727,7 +7727,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 964,
                 'province_id' => 99,
-                'nombre' => 'LATINGUIÑA',
+                'nombre' => 'LA TINGUIÑA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7735,7 +7735,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 965,
                 'province_id' => 99,
-                'nombre' => 'LOSAQUIJES',
+                'nombre' => 'LOS AQUIJES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7767,7 +7767,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 969,
                 'province_id' => 99,
-                'nombre' => 'PUEBLONUEVO',
+                'nombre' => 'PUEBLO NUEVO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7783,7 +7783,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 971,
                 'province_id' => 99,
-                'nombre' => 'SANJOSEDELOSMOLINOS',
+                'nombre' => 'SAN JOSE DE LOS MOLINOS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7791,7 +7791,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 972,
                 'province_id' => 99,
-                'nombre' => 'SANJUANBAUTISTA',
+                'nombre' => 'SAN JUAN BAUTISTA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7823,7 +7823,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 976,
                 'province_id' => 99,
-                'nombre' => 'YAUCADELROSARIO',
+                'nombre' => 'YAUCA DEL ROSARIO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7831,7 +7831,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 977,
                 'province_id' => 100,
-                'nombre' => 'CHINCHAALTA',
+                'nombre' => 'CHINCHA ALTA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7839,7 +7839,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 978,
                 'province_id' => 100,
-                'nombre' => 'ALTOLARAN',
+                'nombre' => 'ALTO LARAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7855,7 +7855,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 980,
                 'province_id' => 100,
-                'nombre' => 'CHINCHABAJA',
+                'nombre' => 'CHINCHA BAJA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7863,7 +7863,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 981,
                 'province_id' => 100,
-                'nombre' => 'ELCARMEN',
+                'nombre' => 'EL CARMEN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7871,7 +7871,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 982,
                 'province_id' => 100,
-                'nombre' => 'GROCIOPRADO',
+                'nombre' => 'GROCIO PRADO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7879,7 +7879,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 983,
                 'province_id' => 100,
-                'nombre' => 'PUEBLONUEVO',
+                'nombre' => 'PUEBLO NUEVO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7887,7 +7887,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 984,
                 'province_id' => 100,
-                'nombre' => 'SANJUANDEYANAC',
+                'nombre' => 'SAN JUAN DE YANAC',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7895,7 +7895,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 985,
                 'province_id' => 100,
-                'nombre' => 'SANPEDRODEHUACARPANA',
+                'nombre' => 'SAN PEDRO DE HUACARPANA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7911,7 +7911,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 987,
                 'province_id' => 100,
-                'nombre' => 'TAMBODEMORA',
+                'nombre' => 'TAMBO DE MORA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7935,7 +7935,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 990,
                 'province_id' => 101,
-                'nombre' => 'ELINGENIO',
+                'nombre' => 'EL INGENIO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7951,7 +7951,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 992,
                 'province_id' => 101,
-                'nombre' => 'VISTAALEGRE',
+                'nombre' => 'VISTA ALEGRE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7975,7 +7975,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 995,
                 'province_id' => 102,
-                'nombre' => 'RIOGRANDE',
+                'nombre' => 'RIO GRANDE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -7983,7 +7983,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 996,
                 'province_id' => 102,
-                'nombre' => 'SANTACRUZ',
+                'nombre' => 'SANTA CRUZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8041,7 +8041,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1003,
                 'province_id' => 103,
-                'nombre' => 'SANANDRES',
+                'nombre' => 'SAN ANDRES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8049,7 +8049,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1004,
                 'province_id' => 103,
-                'nombre' => 'SANCLEMENTE',
+                'nombre' => 'SAN CLEMENTE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8057,7 +8057,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1005,
                 'province_id' => 103,
-                'nombre' => 'TUPACAMARUINCA',
+                'nombre' => 'TUPAC AMARU INCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8105,7 +8105,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1011,
                 'province_id' => 104,
-                'nombre' => 'CHONGOSALTO',
+                'nombre' => 'CHONGOS ALTO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8137,7 +8137,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1015,
                 'province_id' => 104,
-                'nombre' => 'ELTAMBO',
+                'nombre' => 'EL TAMBO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8233,7 +8233,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1027,
                 'province_id' => 104,
-                'nombre' => 'SANAGUSTIN',
+                'nombre' => 'SAN AGUSTIN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8241,7 +8241,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1028,
                 'province_id' => 104,
-                'nombre' => 'SANJERONIMODETUNAN',
+                'nombre' => 'SAN JERONIMO DE TUNAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8273,7 +8273,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1032,
                 'province_id' => 104,
-                'nombre' => 'SANTODOMINGODEACOBAMBA',
+                'nombre' => 'SANTO DOMINGO DE ACOBAMBA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8337,7 +8337,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1040,
                 'province_id' => 105,
-                'nombre' => 'HEROINASTOLEDO',
+                'nombre' => 'HEROINAS TOLEDO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8353,7 +8353,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1042,
                 'province_id' => 105,
-                'nombre' => 'MARISCALCASTILLA',
+                'nombre' => 'MARISCAL CASTILLA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8377,7 +8377,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1045,
                 'province_id' => 105,
-                'nombre' => 'NUEVEDEJULIO',
+                'nombre' => 'NUEVE DE JULIO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8393,7 +8393,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1047,
                 'province_id' => 105,
-                'nombre' => 'SANJOSEDEQUERO',
+                'nombre' => 'SAN JOSE DE QUERO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8401,7 +8401,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1048,
                 'province_id' => 105,
-                'nombre' => 'SANTAROSADEOCOPA',
+                'nombre' => 'SANTA ROSA DE OCOPA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8433,7 +8433,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1052,
                 'province_id' => 106,
-                'nombre' => 'SANLUISDESHUARO',
+                'nombre' => 'SAN LUIS DE SHUARO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8441,7 +8441,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1053,
                 'province_id' => 106,
-                'nombre' => 'SANRAMON',
+                'nombre' => 'SAN RAMON',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8505,7 +8505,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1061,
                 'province_id' => 107,
-                'nombre' => 'ELMANTARO',
+                'nombre' => 'EL MANTARO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8553,7 +8553,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1067,
                 'province_id' => 107,
-                'nombre' => 'LEONORORDOÑEZ',
+                'nombre' => 'LEONOR ORDOÑEZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8585,7 +8585,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1071,
                 'province_id' => 107,
-                'nombre' => 'MASMACHICCHE',
+                'nombre' => 'MASMA CHICCHE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8673,7 +8673,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1082,
                 'province_id' => 107,
-                'nombre' => 'SANLORENZO',
+                'nombre' => 'SAN LORENZO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8681,7 +8681,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1083,
                 'province_id' => 107,
-                'nombre' => 'SANPEDRODECHUNAN',
+                'nombre' => 'SAN PEDRO DE CHUNAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8705,7 +8705,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1086,
                 'province_id' => 107,
-                'nombre' => 'TUNANMARCA',
+                'nombre' => 'TUNAN MARCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8793,7 +8793,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1097,
                 'province_id' => 109,
-                'nombre' => 'PAMPAHERMOSA',
+                'nombre' => 'PAMPA HERMOSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8809,7 +8809,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1099,
                 'province_id' => 109,
-                'nombre' => 'RIONEGRO',
+                'nombre' => 'RIO NEGRO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8817,7 +8817,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1100,
                 'province_id' => 109,
-                'nombre' => 'RIOTAMBO',
+                'nombre' => 'RIO TAMBO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8857,7 +8857,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1105,
                 'province_id' => 110,
-                'nombre' => 'LAUNION',
+                'nombre' => 'LA UNION',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8881,7 +8881,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1108,
                 'province_id' => 110,
-                'nombre' => 'SANPEDRODECAJAS',
+                'nombre' => 'SAN PEDRO DE CAJAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8897,7 +8897,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1110,
                 'province_id' => 111,
-                'nombre' => 'LAOROYA',
+                'nombre' => 'LA OROYA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8945,7 +8945,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1116,
                 'province_id' => 111,
-                'nombre' => 'SANTABARBARADECARHUACAYAN',
+                'nombre' => 'SANTA BARBARA DE CARHUACAYAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8953,7 +8953,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1117,
                 'province_id' => 111,
-                'nombre' => 'SANTAROSADESACCO',
+                'nombre' => 'SANTA ROSA DE SACCO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -8993,7 +8993,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1122,
                 'province_id' => 112,
-                'nombre' => 'CHONGOSBAJO',
+                'nombre' => 'CHONGOS BAJO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9009,7 +9009,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1124,
                 'province_id' => 112,
-                'nombre' => 'HUAMANCACACHICO',
+                'nombre' => 'HUAMANCACA CHICO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9017,7 +9017,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1125,
                 'province_id' => 112,
-                'nombre' => 'SANJUANDEYSCOS',
+                'nombre' => 'SAN JUAN DE YSCOS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9025,7 +9025,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1126,
                 'province_id' => 112,
-                'nombre' => 'SANJUANDEJARPA',
+                'nombre' => 'SAN JUAN DE JARPA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9033,7 +9033,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1127,
                 'province_id' => 112,
-                'nombre' => 'TRESDEDICIEMBRE',
+                'nombre' => 'TRES DE DICIEMBRE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9057,7 +9057,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1130,
                 'province_id' => 113,
-                'nombre' => 'ELPORVENIR',
+                'nombre' => 'EL PORVENIR',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9065,7 +9065,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1131,
                 'province_id' => 113,
-                'nombre' => 'FLORENCIADEMORA',
+                'nombre' => 'FLORENCIA DE MORA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9081,7 +9081,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1133,
                 'province_id' => 113,
-                'nombre' => 'LAESPERANZA',
+                'nombre' => 'LA ESPERANZA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9129,7 +9129,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1139,
                 'province_id' => 113,
-                'nombre' => 'VICTORLARCOHERRERA',
+                'nombre' => 'VICTOR LARCO HERRERA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9161,7 +9161,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1143,
                 'province_id' => 114,
-                'nombre' => 'MAGDALENADECAO',
+                'nombre' => 'MAGDALENA DE CAO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9185,7 +9185,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1146,
                 'province_id' => 114,
-                'nombre' => 'SANTIAGODECAO',
+                'nombre' => 'SANTIAGO DE CAO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9193,7 +9193,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1147,
                 'province_id' => 114,
-                'nombre' => 'CASAGRANDE',
+                'nombre' => 'CASA GRANDE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9265,7 +9265,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1156,
                 'province_id' => 116,
-                'nombre' => 'PUEBLONUEVO',
+                'nombre' => 'PUEBLO NUEVO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9337,7 +9337,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1165,
                 'province_id' => 118,
-                'nombre' => 'LACUESTA',
+                'nombre' => 'LA CUESTA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9385,7 +9385,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1171,
                 'province_id' => 119,
-                'nombre' => 'SANPEDRODELLOC',
+                'nombre' => 'SAN PEDRO DE LLOC',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9417,7 +9417,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1175,
                 'province_id' => 119,
-                'nombre' => 'SANJOSE',
+                'nombre' => 'SAN JOSE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9505,7 +9505,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1186,
                 'province_id' => 120,
-                'nombre' => 'SANTIAGODECHALLAS',
+                'nombre' => 'SANTIAGO DE CHALLAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9593,7 +9593,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1197,
                 'province_id' => 122,
-                'nombre' => 'SANTIAGODECHUCO',
+                'nombre' => 'SANTIAGO DE CHUCO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9641,7 +9641,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1203,
                 'province_id' => 122,
-                'nombre' => 'SANTACRUZDECHUCA',
+                'nombre' => 'SANTA CRUZ DE CHUCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9737,7 +9737,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1215,
                 'province_id' => 125,
-                'nombre' => 'ETENPUERTO',
+                'nombre' => 'ETEN PUERTO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9745,7 +9745,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1216,
                 'province_id' => 125,
-                'nombre' => 'JOSELEONARDOORTIZ',
+                'nombre' => 'JOSE LEONARDO ORTIZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9753,7 +9753,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1217,
                 'province_id' => 125,
-                'nombre' => 'LAVICTORIA',
+                'nombre' => 'LA VICTORIA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9777,7 +9777,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1220,
                 'province_id' => 125,
-                'nombre' => 'NUEVAARICA',
+                'nombre' => 'NUEVA ARICA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9817,7 +9817,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1225,
                 'province_id' => 125,
-                'nombre' => 'SANTAROSA',
+                'nombre' => 'SANTA ROSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9897,7 +9897,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1235,
                 'province_id' => 126,
-                'nombre' => 'MANUELANTONIOMESONESMURO',
+                'nombre' => 'MANUEL ANTONIO MESONES MURO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -9913,7 +9913,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1237,
                 'province_id' => 126,
-                'nombre' => 'PUEBLONUEVO',
+                'nombre' => 'PUEBLO NUEVO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10001,7 +10001,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1248,
                 'province_id' => 127,
-                'nombre' => 'SANJOSE',
+                'nombre' => 'SAN JOSE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10097,7 +10097,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1260,
                 'province_id' => 128,
-                'nombre' => 'ELAGUSTINO',
+                'nombre' => 'EL AGUSTINO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10113,7 +10113,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1262,
                 'province_id' => 128,
-                'nombre' => 'JESUSMARIA',
+                'nombre' => 'JESUS MARIA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10121,7 +10121,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1263,
                 'province_id' => 128,
-                'nombre' => 'LAMOLINA',
+                'nombre' => 'LA MOLINA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10129,7 +10129,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1264,
                 'province_id' => 128,
-                'nombre' => 'LAVICTORIA',
+                'nombre' => 'LA VICTORIA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10145,7 +10145,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1266,
                 'province_id' => 128,
-                'nombre' => 'LOSOLIVOS',
+                'nombre' => 'LOS OLIVOS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10169,7 +10169,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1269,
                 'province_id' => 128,
-                'nombre' => 'MAGDALENADELMAR',
+                'nombre' => 'MAGDALENA DEL MAR',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10177,7 +10177,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1270,
                 'province_id' => 128,
-                'nombre' => 'PUEBLOLIBRE',
+                'nombre' => 'PUEBLO LIBRE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10209,7 +10209,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1274,
                 'province_id' => 128,
-                'nombre' => 'PUENTEPIEDRA',
+                'nombre' => 'PUENTE PIEDRA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10217,7 +10217,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1275,
                 'province_id' => 128,
-                'nombre' => 'PUNTAHERMOSA',
+                'nombre' => 'PUNTA HERMOSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10225,7 +10225,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1276,
                 'province_id' => 128,
-                'nombre' => 'PUNTANEGRA',
+                'nombre' => 'PUNTA NEGRA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10241,7 +10241,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1278,
                 'province_id' => 128,
-                'nombre' => 'SANBARTOLO',
+                'nombre' => 'SAN BARTOLO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10249,7 +10249,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1279,
                 'province_id' => 128,
-                'nombre' => 'SANBORJA',
+                'nombre' => 'SAN BORJA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10257,7 +10257,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1280,
                 'province_id' => 128,
-                'nombre' => 'SANISIDRO',
+                'nombre' => 'SAN ISIDRO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10265,7 +10265,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1281,
                 'province_id' => 128,
-                'nombre' => 'SANJUANDELURIGANCHO',
+                'nombre' => 'SAN JUAN DE LURIGANCHO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10273,7 +10273,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1282,
                 'province_id' => 128,
-                'nombre' => 'SANJUANDEMIRAFLORES',
+                'nombre' => 'SAN JUAN DE MIRAFLORES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10281,7 +10281,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1283,
                 'province_id' => 128,
-                'nombre' => 'SANLUIS',
+                'nombre' => 'SAN LUIS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10289,7 +10289,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1284,
                 'province_id' => 128,
-                'nombre' => 'SANMARTINDEPORRES',
+                'nombre' => 'SAN MARTIN DE PORRES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10297,7 +10297,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1285,
                 'province_id' => 128,
-                'nombre' => 'SANMIGUEL',
+                'nombre' => 'SAN MIGUEL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10305,7 +10305,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1286,
                 'province_id' => 128,
-                'nombre' => 'SANTAANITA',
+                'nombre' => 'SANTA ANITA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10313,7 +10313,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1287,
                 'province_id' => 128,
-                'nombre' => 'SANTAMARIADELMAR',
+                'nombre' => 'SANTA MARIA DEL MAR',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10321,7 +10321,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1288,
                 'province_id' => 128,
-                'nombre' => 'SANTAROSA',
+                'nombre' => 'SANTA ROSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10329,7 +10329,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1289,
                 'province_id' => 128,
-                'nombre' => 'SANTIAGODESURCO',
+                'nombre' => 'SANTIAGO DE SURCO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10345,7 +10345,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1291,
                 'province_id' => 128,
-                'nombre' => 'VILLAELSALVADOR',
+                'nombre' => 'VILLA EL SALVADOR',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10353,7 +10353,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1292,
                 'province_id' => 128,
-                'nombre' => 'VILLAMARIADELTRIUNFO',
+                'nombre' => 'VILLA MARIA DEL TRIUNFO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10393,7 +10393,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1297,
                 'province_id' => 129,
-                'nombre' => 'SUPEPUERTO',
+                'nombre' => 'SUPE PUERTO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10481,7 +10481,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1308,
                 'province_id' => 131,
-                'nombre' => 'SANBUENAVENTURA',
+                'nombre' => 'SAN BUENAVENTURA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10489,7 +10489,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1309,
                 'province_id' => 131,
-                'nombre' => 'SANTAROSADEQUIVES',
+                'nombre' => 'SANTA ROSA DE QUIVES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10497,7 +10497,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1310,
                 'province_id' => 132,
-                'nombre' => 'SANVICENTEDECAÑETE',
+                'nombre' => 'SAN VICENTE DE CAÑETE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10521,7 +10521,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1313,
                 'province_id' => 132,
-                'nombre' => 'CERROAZUL',
+                'nombre' => 'CERRO AZUL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10569,7 +10569,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1319,
                 'province_id' => 132,
-                'nombre' => 'NUEVOIMPERIAL',
+                'nombre' => 'NUEVO IMPERIAL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10593,7 +10593,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1322,
                 'province_id' => 132,
-                'nombre' => 'SANANTONIO',
+                'nombre' => 'SAN ANTONIO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10601,7 +10601,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1323,
                 'province_id' => 132,
-                'nombre' => 'SANLUIS',
+                'nombre' => 'SAN LUIS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10609,7 +10609,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1324,
                 'province_id' => 132,
-                'nombre' => 'SANTACRUZDEFLORES',
+                'nombre' => 'SANTA CRUZ DE FLORES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10633,7 +10633,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1327,
                 'province_id' => 133,
-                'nombre' => 'ATAVILLOSALTO',
+                'nombre' => 'ATAVILLOS ALTO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10641,7 +10641,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1328,
                 'province_id' => 133,
-                'nombre' => 'ATAVILLOSBAJO',
+                'nombre' => 'ATAVILLOS BAJO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10689,7 +10689,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1334,
                 'province_id' => 133,
-                'nombre' => 'SANMIGUELDEACOS',
+                'nombre' => 'SAN MIGUEL DE ACOS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10697,7 +10697,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1335,
                 'province_id' => 133,
-                'nombre' => 'SANTACRUZDEANDAMARCA',
+                'nombre' => 'SANTA CRUZ DE ANDAMARCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10713,7 +10713,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1337,
                 'province_id' => 133,
-                'nombre' => 'VEINTISIETEDENOVIEMBRE',
+                'nombre' => 'VEINTISIETE DE NOVIEMBRE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10825,7 +10825,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1351,
                 'province_id' => 134,
-                'nombre' => 'RICARDOPALMA',
+                'nombre' => 'RICARDO PALMA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10833,7 +10833,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1352,
                 'province_id' => 134,
-                'nombre' => 'SANANDRESDETUPICOCHA',
+                'nombre' => 'SAN ANDRES DE TUPICOCHA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10841,7 +10841,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1353,
                 'province_id' => 134,
-                'nombre' => 'SANANTONIO',
+                'nombre' => 'SAN ANTONIO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10849,7 +10849,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1354,
                 'province_id' => 134,
-                'nombre' => 'SANBARTOLOME',
+                'nombre' => 'SAN BARTOLOME',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10857,7 +10857,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1355,
                 'province_id' => 134,
-                'nombre' => 'SANDAMIAN',
+                'nombre' => 'SAN DAMIAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10865,7 +10865,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1356,
                 'province_id' => 134,
-                'nombre' => 'SANJUANDEIRIS',
+                'nombre' => 'SAN JUAN DE IRIS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10873,7 +10873,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1357,
                 'province_id' => 134,
-                'nombre' => 'SANJUANDETANTARANCHE',
+                'nombre' => 'SAN JUAN DE TANTARANCHE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10881,7 +10881,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1358,
                 'province_id' => 134,
-                'nombre' => 'SANLORENZODEQUINTI',
+                'nombre' => 'SAN LORENZO DE QUINTI',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10889,7 +10889,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1359,
                 'province_id' => 134,
-                'nombre' => 'SANMATEO',
+                'nombre' => 'SAN MATEO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10897,7 +10897,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1360,
                 'province_id' => 134,
-                'nombre' => 'SANMATEODEOTAO',
+                'nombre' => 'SAN MATEO DE OTAO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10905,7 +10905,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1361,
                 'province_id' => 134,
-                'nombre' => 'SANPEDRODECASTA',
+                'nombre' => 'SAN PEDRO DE CASTA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10913,7 +10913,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1362,
                 'province_id' => 134,
-                'nombre' => 'SANPEDRODEHUANCAYRE',
+                'nombre' => 'SAN PEDRO DE HUANCAYRE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10929,7 +10929,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1364,
                 'province_id' => 134,
-                'nombre' => 'SANTACRUZDECOCACHACRA',
+                'nombre' => 'SANTA CRUZ DE COCACHACRA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10937,7 +10937,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1365,
                 'province_id' => 134,
-                'nombre' => 'SANTAEULALIA',
+                'nombre' => 'SANTA EULALIA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10945,7 +10945,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1366,
                 'province_id' => 134,
-                'nombre' => 'SANTIAGODEANCHUCAYA',
+                'nombre' => 'SANTIAGO DE ANCHUCAYA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10953,7 +10953,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1367,
                 'province_id' => 134,
-                'nombre' => 'SANTIAGODETUNA',
+                'nombre' => 'SANTIAGO DE TUNA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10961,7 +10961,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1368,
                 'province_id' => 134,
-                'nombre' => 'SANTODOMINGODELOSOLLEROS',
+                'nombre' => 'SANTO DOMINGO DE LOS OLLEROS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -10993,7 +10993,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1372,
                 'province_id' => 135,
-                'nombre' => 'CALETADECARQUIN',
+                'nombre' => 'CALETA DE CARQUIN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11025,7 +11025,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1376,
                 'province_id' => 135,
-                'nombre' => 'LEONCIOPRADO',
+                'nombre' => 'LEONCIO PRADO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11041,7 +11041,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1378,
                 'province_id' => 135,
-                'nombre' => 'SANTALEONOR',
+                'nombre' => 'SANTA LEONOR',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11049,7 +11049,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1379,
                 'province_id' => 135,
-                'nombre' => 'SANTAMARIA',
+                'nombre' => 'SANTA MARIA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11321,7 +11321,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1413,
                 'province_id' => 137,
-                'nombre' => 'SANJOAQUIN',
+                'nombre' => 'SAN JOAQUIN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11329,7 +11329,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1414,
                 'province_id' => 137,
-                'nombre' => 'SANPEDRODEPILAS',
+                'nombre' => 'SAN PEDRO DE PILAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11393,7 +11393,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1422,
                 'province_id' => 138,
-                'nombre' => 'ALTONANAY',
+                'nombre' => 'ALTO NANAY',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11401,7 +11401,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1423,
                 'province_id' => 138,
-                'nombre' => 'FERNANDOLORES',
+                'nombre' => 'FERNANDO LORES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11417,7 +11417,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1425,
                 'province_id' => 138,
-                'nombre' => 'LASAMAZONAS',
+                'nombre' => 'LAS AMAZONAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11457,7 +11457,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1430,
                 'province_id' => 138,
-                'nombre' => 'TORRESCAUSANA',
+                'nombre' => 'TORRES CAUSANA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11473,7 +11473,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1432,
                 'province_id' => 138,
-                'nombre' => 'SANJUANBAUTISTA',
+                'nombre' => 'SAN JUAN BAUTISTA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11481,7 +11481,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1433,
                 'province_id' => 138,
-                'nombre' => 'TENIENTEMANUELCLAVERO',
+                'nombre' => 'TENIENTE MANUEL CLAVERO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11521,7 +11521,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1438,
                 'province_id' => 139,
-                'nombre' => 'SANTACRUZ',
+                'nombre' => 'SANTA CRUZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11529,7 +11529,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1439,
                 'province_id' => 139,
-                'nombre' => 'TENIENTECESARLOPEZROJAS',
+                'nombre' => 'TENIENTE CESAR LOPEZ ROJAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11577,7 +11577,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1445,
                 'province_id' => 141,
-                'nombre' => 'RAMONCASTILLA',
+                'nombre' => 'RAMON CASTILLA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11601,7 +11601,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1448,
                 'province_id' => 141,
-                'nombre' => 'SANPABLO',
+                'nombre' => 'SAN PABLO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11617,7 +11617,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1450,
                 'province_id' => 142,
-                'nombre' => 'ALTOTAPICHE',
+                'nombre' => 'ALTO TAPICHE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11633,7 +11633,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1452,
                 'province_id' => 142,
-                'nombre' => 'EMILIOSANMARTIN',
+                'nombre' => 'EMILIO SAN MARTIN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11681,7 +11681,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1458,
                 'province_id' => 142,
-                'nombre' => 'JENAROHERRERA',
+                'nombre' => 'JENARO HERRERA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11713,7 +11713,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1462,
                 'province_id' => 143,
-                'nombre' => 'PADREMARQUEZ',
+                'nombre' => 'PADRE MARQUEZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11721,7 +11721,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1463,
                 'province_id' => 143,
-                'nombre' => 'PAMPAHERMOSA',
+                'nombre' => 'PAMPA HERMOSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11737,7 +11737,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1465,
                 'province_id' => 143,
-                'nombre' => 'VARGASGUERRA',
+                'nombre' => 'VARGAS GUERRA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11809,7 +11809,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1474,
                 'province_id' => 145,
-                'nombre' => 'LASPIEDRAS',
+                'nombre' => 'LAS PIEDRAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11841,7 +11841,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1478,
                 'province_id' => 146,
-                'nombre' => 'MADREDEDIOS',
+                'nombre' => 'MADRE DE DIOS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11913,7 +11913,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1487,
                 'province_id' => 148,
-                'nombre' => 'SANCRISTOBAL',
+                'nombre' => 'SAN CRISTOBAL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -11961,7 +11961,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1493,
                 'province_id' => 149,
-                'nombre' => 'LACAPILLA',
+                'nombre' => 'LA CAPILLA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12027,7 +12027,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1501,
                 'province_id' => 150,
-                'nombre' => 'ELALGARROBAL',
+                'nombre' => 'EL ALGARROBAL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12099,7 +12099,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1510,
                 'province_id' => 151,
-                'nombre' => 'SANFRANCISCODEASISDEYARUSYACAN',
+                'nombre' => 'SAN FRANCISCO DE ASIS DE YARUSYACAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12107,7 +12107,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1511,
                 'province_id' => 151,
-                'nombre' => 'SIMONBOLIVAR',
+                'nombre' => 'SIMON BOLIVAR',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12179,7 +12179,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1520,
                 'province_id' => 152,
-                'nombre' => 'SANPEDRODEPILLAO',
+                'nombre' => 'SAN PEDRO DE PILLAO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12187,7 +12187,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1521,
                 'province_id' => 152,
-                'nombre' => 'SANTAANADETUSI',
+                'nombre' => 'SANTA ANA DE TUSI',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12251,7 +12251,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1529,
                 'province_id' => 153,
-                'nombre' => 'PUERTOBERMUDEZ',
+                'nombre' => 'PUERTO BERMUDEZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12259,7 +12259,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1530,
                 'province_id' => 153,
-                'nombre' => 'VILLARICA',
+                'nombre' => 'VILLA RICA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12291,7 +12291,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1534,
                 'province_id' => 154,
-                'nombre' => 'CURAMORI',
+                'nombre' => 'CURA MORI',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12299,7 +12299,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1535,
                 'province_id' => 154,
-                'nombre' => 'ELTALLAN',
+                'nombre' => 'EL TALLAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12307,7 +12307,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1536,
                 'province_id' => 154,
-                'nombre' => 'LAARENA',
+                'nombre' => 'LA ARENA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12315,7 +12315,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1537,
                 'province_id' => 154,
-                'nombre' => 'LAUNION',
+                'nombre' => 'LA UNION',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12323,7 +12323,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1538,
                 'province_id' => 154,
-                'nombre' => 'LASLOMAS',
+                'nombre' => 'LAS LOMAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12331,7 +12331,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1539,
                 'province_id' => 154,
-                'nombre' => 'TAMBOGRANDE',
+                'nombre' => 'TAMBO GRANDE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12435,7 +12435,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1552,
                 'province_id' => 156,
-                'nombre' => 'ELCARMENDELAFRONTERA',
+                'nombre' => 'EL CARMEN DE LA FRONTERA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12459,7 +12459,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1555,
                 'province_id' => 156,
-                'nombre' => 'SANMIGUELDEELFAIQUE',
+                'nombre' => 'SAN MIGUEL DE EL FAIQUE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12491,7 +12491,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1559,
                 'province_id' => 157,
-                'nombre' => 'BUENOSAIRES',
+                'nombre' => 'BUENOS AIRES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12507,7 +12507,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1561,
                 'province_id' => 157,
-                'nombre' => 'LAMATANZA',
+                'nombre' => 'LA MATANZA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12531,7 +12531,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1564,
                 'province_id' => 157,
-                'nombre' => 'SANJUANDEBIGOTE',
+                'nombre' => 'SAN JUAN DE BIGOTE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12539,7 +12539,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1565,
                 'province_id' => 157,
-                'nombre' => 'SANTACATALINADEMOSSA',
+                'nombre' => 'SANTA CATALINA DE MOSSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12547,7 +12547,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1566,
                 'province_id' => 157,
-                'nombre' => 'SANTODOMINGO',
+                'nombre' => 'SANTO DOMINGO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12595,7 +12595,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1572,
                 'province_id' => 158,
-                'nombre' => 'LAHUACA',
+                'nombre' => 'LA HUACA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12635,7 +12635,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1577,
                 'province_id' => 159,
-                'nombre' => 'IGNACIOESCUDERO',
+                'nombre' => 'IGNACIO ESCUDERO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12659,7 +12659,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1580,
                 'province_id' => 159,
-                'nombre' => 'MIGUELCHECA',
+                'nombre' => 'MIGUEL CHECA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12691,7 +12691,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1584,
                 'province_id' => 160,
-                'nombre' => 'ELALTO',
+                'nombre' => 'EL ALTO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12699,7 +12699,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1585,
                 'province_id' => 160,
-                'nombre' => 'LABREA',
+                'nombre' => 'LA BREA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12715,7 +12715,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1587,
                 'province_id' => 160,
-                'nombre' => 'LOSORGANOS',
+                'nombre' => 'LOS ORGANOS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12739,7 +12739,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1590,
                 'province_id' => 161,
-                'nombre' => 'BELLAVISTADELAUNION',
+                'nombre' => 'BELLAVISTA DE LA UNION',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12755,7 +12755,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1592,
                 'province_id' => 161,
-                'nombre' => 'CRISTONOSVALGA',
+                'nombre' => 'CRISTO NOS VALGA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12771,7 +12771,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1594,
                 'province_id' => 161,
-                'nombre' => 'RINCONADALLICUAR',
+                'nombre' => 'RINCONADA LLICUAR',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12875,7 +12875,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1607,
                 'province_id' => 162,
-                'nombre' => 'SANANTONIO',
+                'nombre' => 'SAN ANTONIO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12947,7 +12947,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1616,
                 'province_id' => 163,
-                'nombre' => 'JOSEDOMINGOCHOQUEHUANCA',
+                'nombre' => 'JOSE DOMINGO CHOQUEHUANCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12979,7 +12979,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1620,
                 'province_id' => 163,
-                'nombre' => 'SANANTON',
+                'nombre' => 'SAN ANTON',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12987,7 +12987,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1621,
                 'province_id' => 163,
-                'nombre' => 'SANJOSE',
+                'nombre' => 'SAN JOSE',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -12995,7 +12995,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1622,
                 'province_id' => 163,
-                'nombre' => 'SANJUANDESALINAS',
+                'nombre' => 'SAN JUAN DE SALINAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13003,7 +13003,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1623,
                 'province_id' => 163,
-                'nombre' => 'SANTIAGODEPUPUJA',
+                'nombre' => 'SANTIAGO DE PUPUJA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13083,7 +13083,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1633,
                 'province_id' => 164,
-                'nombre' => 'SANGABAN',
+                'nombre' => 'SAN GABAN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13179,7 +13179,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1645,
                 'province_id' => 166,
-                'nombre' => 'SANTAROSA',
+                'nombre' => 'SANTA ROSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13251,7 +13251,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1654,
                 'province_id' => 167,
-                'nombre' => 'VILQUECHICO',
+                'nombre' => 'VILQUE CHICO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13323,7 +13323,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1663,
                 'province_id' => 168,
-                'nombre' => 'SANTALUCIA',
+                'nombre' => 'SANTA LUCIA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13395,7 +13395,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1672,
                 'province_id' => 169,
-                'nombre' => 'SANTAROSA',
+                'nombre' => 'SANTA ROSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13459,7 +13459,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1680,
                 'province_id' => 171,
-                'nombre' => 'PEDROVILCAAPAZA',
+                'nombre' => 'PEDRO VILCA APAZA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13563,7 +13563,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1693,
                 'province_id' => 173,
-                'nombre' => 'SANJUANDELORO',
+                'nombre' => 'SAN JUAN DEL ORO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13579,7 +13579,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1695,
                 'province_id' => 173,
-                'nombre' => 'ALTOINAMBARI',
+                'nombre' => 'ALTO INAMBARI',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13587,7 +13587,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1696,
                 'province_id' => 173,
-                'nombre' => 'SANPEDRODEPUTINAPUNCO',
+                'nombre' => 'SAN PEDRO DE PUTINA PUNCO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13707,7 +13707,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1711,
                 'province_id' => 176,
-                'nombre' => 'ALTOBIAVO',
+                'nombre' => 'ALTO BIAVO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13715,7 +13715,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1712,
                 'province_id' => 176,
-                'nombre' => 'BAJOBIAVO',
+                'nombre' => 'BAJO BIAVO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13731,7 +13731,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1714,
                 'province_id' => 176,
-                'nombre' => 'SANPABLO',
+                'nombre' => 'SAN PABLO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13739,7 +13739,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1715,
                 'province_id' => 176,
-                'nombre' => 'SANRAFAEL',
+                'nombre' => 'SAN RAFAEL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13747,7 +13747,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1716,
                 'province_id' => 177,
-                'nombre' => 'SANJOSEDESISA',
+                'nombre' => 'SAN JOSE DE SISA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13755,7 +13755,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1717,
                 'province_id' => 177,
-                'nombre' => 'AGUABLANCA',
+                'nombre' => 'AGUA BLANCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13763,7 +13763,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1718,
                 'province_id' => 177,
-                'nombre' => 'SANMARTIN',
+                'nombre' => 'SAN MARTIN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13771,7 +13771,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1719,
                 'province_id' => 177,
-                'nombre' => 'SANTAROSA',
+                'nombre' => 'SANTA ROSA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13795,7 +13795,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1722,
                 'province_id' => 178,
-                'nombre' => 'ALTOSAPOSOA',
+                'nombre' => 'ALTO SAPOSOA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13803,7 +13803,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1723,
                 'province_id' => 178,
-                'nombre' => 'ELESLABON',
+                'nombre' => 'EL ESLABON',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13827,7 +13827,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1726,
                 'province_id' => 178,
-                'nombre' => 'TINGODESAPOSOA',
+                'nombre' => 'TINGO DE SAPOSOA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13843,7 +13843,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1728,
                 'province_id' => 179,
-                'nombre' => 'ALONSODEALVARADO',
+                'nombre' => 'ALONSO DE ALVARADO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13875,7 +13875,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1732,
                 'province_id' => 179,
-                'nombre' => 'PINTORECODO',
+                'nombre' => 'PINTO RECODO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13891,7 +13891,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1734,
                 'province_id' => 179,
-                'nombre' => 'SANROQUEDECUMBAZA',
+                'nombre' => 'SAN ROQUE DE CUMBAZA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -13971,7 +13971,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1744,
                 'province_id' => 181,
-                'nombre' => 'BUENOSAIRES',
+                'nombre' => 'BUENOS AIRES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14003,7 +14003,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1748,
                 'province_id' => 181,
-                'nombre' => 'SANCRISTOBAL',
+                'nombre' => 'SAN CRISTOBAL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14011,7 +14011,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1749,
                 'province_id' => 181,
-                'nombre' => 'SANHILARION',
+                'nombre' => 'SAN HILARION',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14027,7 +14027,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1751,
                 'province_id' => 181,
-                'nombre' => 'TINGODEPONASA',
+                'nombre' => 'TINGO DE PONASA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14035,7 +14035,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1752,
                 'province_id' => 181,
-                'nombre' => 'TRESUNIDOS',
+                'nombre' => 'TRES UNIDOS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14059,7 +14059,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1755,
                 'province_id' => 182,
-                'nombre' => 'ELIASSOPLINVARGAS',
+                'nombre' => 'ELIAS SOPLIN VARGAS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14067,7 +14067,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1756,
                 'province_id' => 182,
-                'nombre' => 'NUEVACAJAMARCA',
+                'nombre' => 'NUEVA CAJAMARCA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14075,7 +14075,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1757,
                 'province_id' => 182,
-                'nombre' => 'PARDOMIGUEL',
+                'nombre' => 'PARDO MIGUEL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14091,7 +14091,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1759,
                 'province_id' => 182,
-                'nombre' => 'SANFERNANDO',
+                'nombre' => 'SAN FERNANDO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14123,7 +14123,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1763,
                 'province_id' => 183,
-                'nombre' => 'ALBERTOLEVEAU',
+                'nombre' => 'ALBERTO LEVEAU',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14155,7 +14155,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1767,
                 'province_id' => 183,
-                'nombre' => 'ELPORVENIR',
+                'nombre' => 'EL PORVENIR',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14171,7 +14171,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1769,
                 'province_id' => 183,
-                'nombre' => 'JUANGUERRA',
+                'nombre' => 'JUAN GUERRA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14179,7 +14179,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1770,
                 'province_id' => 183,
-                'nombre' => 'LABANDADESHILCAYO',
+                'nombre' => 'LA BANDA DE SHILCAYO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14203,7 +14203,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1773,
                 'province_id' => 183,
-                'nombre' => 'SANANTONIO',
+                'nombre' => 'SAN ANTONIO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14235,7 +14235,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1777,
                 'province_id' => 184,
-                'nombre' => 'NUEVOPROGRESO',
+                'nombre' => 'NUEVO PROGRESO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14275,7 +14275,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1782,
                 'province_id' => 185,
-                'nombre' => 'ALTODELAALIANZA',
+                'nombre' => 'ALTO DE LA ALIANZA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14291,7 +14291,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1784,
                 'province_id' => 185,
-                'nombre' => 'CIUDADNUEVA',
+                'nombre' => 'CIUDAD NUEVA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14339,7 +14339,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1790,
                 'province_id' => 185,
-                'nombre' => 'CORONELGREGORIOALBARRACINLANCHIPA',
+                'nombre' => 'CORONEL GREGORIO ALBARRACIN LANCHIPA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14427,7 +14427,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1801,
                 'province_id' => 188,
-                'nombre' => 'HEROESALBARRACIN',
+                'nombre' => 'HEROES ALBARRACIN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14499,7 +14499,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1810,
                 'province_id' => 189,
-                'nombre' => 'LACRUZ',
+                'nombre' => 'LA CRUZ',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14507,7 +14507,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1811,
                 'province_id' => 189,
-                'nombre' => 'PAMPASDEHOSPITAL',
+                'nombre' => 'PAMPAS DE HOSPITAL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14515,7 +14515,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1812,
                 'province_id' => 189,
-                'nombre' => 'SANJACINTO',
+                'nombre' => 'SAN JACINTO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14523,7 +14523,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1813,
                 'province_id' => 189,
-                'nombre' => 'SANJUANDELAVIRGEN',
+                'nombre' => 'SAN JUAN DE LA VIRGEN',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14547,7 +14547,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1816,
                 'province_id' => 190,
-                'nombre' => 'CANOASDEPUNTASAL',
+                'nombre' => 'CANOAS DE PUNTA SAL',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14563,7 +14563,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1818,
                 'province_id' => 191,
-                'nombre' => 'AGUASVERDES',
+                'nombre' => 'AGUAS VERDES',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14627,7 +14627,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1826,
                 'province_id' => 192,
-                'nombre' => 'NUEVAREQUENA',
+                'nombre' => 'NUEVA REQUENA',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
@@ -14675,7 +14675,7 @@ class DistrictsTableSeeder extends Seeder
             array (
                 'id' => 1832,
                 'province_id' => 194,
-                'nombre' => 'PADREABAD',
+                'nombre' => 'PADRE ABAD',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),

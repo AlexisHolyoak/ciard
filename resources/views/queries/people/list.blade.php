@@ -113,7 +113,7 @@
                                                 @case(15)HIPERTROFIA PROSTÁTICA BENIGNA @break
                                                 @case(16)HIPERUCIREMIA GOT @break
                                                 @case(17)INSUFICIENCIA CARDIACA @break
-                                                @case(18)INSUFICIENCIA CORONARI @break
+                                                @case(18)INSUFICIENCIA CORONARIA @break
                                                 @case(19)INSUFICIENCIA RENAL CRÓNICA @break
                                                 @case(20)NEUROPATIAS DESMIELIZANTES @break
                                                 @case(21)OSTEOPOROSIS Y DESCALSIFICACIÓN GENERAL @break
@@ -148,7 +148,10 @@
 @endsection
 @section('script')
     <script src="{{asset('js/jquery.dataTables.min.js') }}" ></script>
-
+    <script src="{{asset('js/dataTables.buttons.min.js') }}" ></script>
+    <script src="{{asset('js/buttons.html5.min.js') }}" ></script>
+    <script src="{{asset('js/jszip.min.js') }}" ></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js"></script>
     <script src="https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js"></script>
     <script>
         $.fn.dataTable.ext.search.push(
@@ -185,6 +188,16 @@
 
             var table = $('#habitants_table').DataTable( {
                 orderCellsTop: true,
+                dom: 'Bfrtip',
+                buttons: [
+                    {
+                        extend: 'excelHtml5',
+                        text: 'Exportar a excel',
+                        exportOptions: {
+                            columns: ':visible'
+                        }
+                    }
+                ]
             } );
             $('button.toggle-vis').on( 'click', function (e) {
                 //e.preventDefault();

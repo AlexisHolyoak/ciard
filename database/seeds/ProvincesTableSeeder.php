@@ -51,7 +51,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 6,
                 'department_id' => 1,
-                'nombre' => 'RODRIGUEZDEMENDOZA',
+                'nombre' => 'RODRIGUEZ DE MENDOZA',
             ),
             6 => 
             array (
@@ -75,7 +75,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 10,
                 'department_id' => 2,
-                'nombre' => 'ANTONIORAYMONDI',
+                'nombre' => 'ANTONIO RAYMONDI',
             ),
             10 => 
             array (
@@ -99,7 +99,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 14,
                 'department_id' => 2,
-                'nombre' => 'CARLOSFERMINFITZCA',
+                'nombre' => 'CARLOS FERMIN FITZCA',
             ),
             14 => 
             array (
@@ -135,7 +135,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 20,
                 'department_id' => 2,
-                'nombre' => 'MARISCALLUZURIAGA',
+                'nombre' => 'MARISCAL LUZURIAGA',
             ),
             20 => 
             array (
@@ -267,7 +267,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 42,
                 'department_id' => 4,
-                'nombre' => 'LAUNION',
+                'nombre' => 'LA UNION',
             ),
             42 => 
             array (
@@ -285,7 +285,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 45,
                 'department_id' => 5,
-                'nombre' => 'HUANCASANCOS',
+                'nombre' => 'HUANCA SANCOS',
             ),
             45 => 
             array (
@@ -297,7 +297,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 47,
                 'department_id' => 5,
-                'nombre' => 'LAMAR',
+                'nombre' => 'LA MAR',
             ),
             47 => 
             array (
@@ -315,7 +315,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 50,
                 'department_id' => 5,
-                'nombre' => 'PAUCARDELSARASARA',
+                'nombre' => 'PAUCAR DEL SARA SARA',
             ),
             50 => 
             array (
@@ -327,13 +327,13 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 52,
                 'department_id' => 5,
-                'nombre' => 'VICTORFAJARDO',
+                'nombre' => 'VICTOR FAJARDO',
             ),
             52 => 
             array (
                 'id' => 53,
                 'department_id' => 5,
-                'nombre' => 'VILCASHUAMAN',
+                'nombre' => 'VILCAS HUAMAN',
             ),
             53 => 
             array (
@@ -387,31 +387,31 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 62,
                 'department_id' => 6,
-                'nombre' => 'SANIGNACIO',
+                'nombre' => 'SAN IGNACIO',
             ),
             62 => 
             array (
                 'id' => 63,
                 'department_id' => 6,
-                'nombre' => 'SANMARCOS',
+                'nombre' => 'SAN MARCOS',
             ),
             63 => 
             array (
                 'id' => 64,
                 'department_id' => 6,
-                'nombre' => 'SANMIGUEL',
+                'nombre' => 'SAN MIGUEL',
             ),
             64 => 
             array (
                 'id' => 65,
                 'department_id' => 6,
-                'nombre' => 'SANPABLO',
+                'nombre' => 'SAN PABLO',
             ),
             65 => 
             array (
                 'id' => 66,
                 'department_id' => 6,
-                'nombre' => 'SANTACRUZ',
+                'nombre' => 'SANTA CRUZ',
             ),
             66 => 
             array (
@@ -471,7 +471,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 76,
                 'department_id' => 8,
-                'nombre' => 'LACONVENCION',
+                'nombre' => 'LA CONVENCION',
             ),
             76 => 
             array (
@@ -555,7 +555,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 90,
                 'department_id' => 10,
-                'nombre' => 'DOSDEMAYO',
+                'nombre' => 'DOS DE MAYO',
             ),
             90 => 
             array (
@@ -573,7 +573,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 93,
                 'department_id' => 10,
-                'nombre' => 'LEONCIOPRADO',
+                'nombre' => 'LEONCIO PRADO',
             ),
             93 => 
             array (
@@ -591,7 +591,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 96,
                 'department_id' => 10,
-                'nombre' => 'PUERTOINCA',
+                'nombre' => 'PUERTO INCA',
             ),
             96 => 
             array (
@@ -741,19 +741,19 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 121,
                 'department_id' => 13,
-                'nombre' => 'SANCHEZCARRION',
+                'nombre' => 'SANCHEZ CARRION',
             ),
             121 => 
             array (
                 'id' => 122,
                 'department_id' => 13,
-                'nombre' => 'SANTIAGODECHUCO',
+                'nombre' => 'SANTIAGO DE CHUCO',
             ),
             122 => 
             array (
                 'id' => 123,
                 'department_id' => 13,
-                'nombre' => 'GRANCHIMU',
+                'nombre' => 'GRAN CHIMU',
             ),
             123 => 
             array (
@@ -849,7 +849,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 139,
                 'department_id' => 16,
-                'nombre' => 'ALTOAMAZONAS',
+                'nombre' => 'ALTO AMAZONAS',
             ),
             139 => 
             array (
@@ -861,7 +861,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 141,
                 'department_id' => 16,
-                'nombre' => 'MARISCALRAMONCASTILLA',
+                'nombre' => 'MARISCAL RAMON CASTILLA',
             ),
             141 => 
             array (
@@ -879,7 +879,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 144,
                 'department_id' => 16,
-                'nombre' => 'DATEMDELMARAÑON',
+                'nombre' => 'DATEM DEL MARAÑON',
             ),
             144 => 
             array (
@@ -903,13 +903,13 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 148,
                 'department_id' => 18,
-                'nombre' => 'MARISCALNIETO',
+                'nombre' => 'MARISCAL NIETO',
             ),
             148 => 
             array (
                 'id' => 149,
                 'department_id' => 18,
-                'nombre' => 'GENERALSANCHEZCERRO',
+                'nombre' => 'GENERAL SANCHEZ CERRO',
             ),
             149 => 
             array (
@@ -927,7 +927,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 152,
                 'department_id' => 19,
-                'nombre' => 'DANIELALCIDESCARRION',
+                'nombre' => 'DANIEL ALCIDES CARRION',
             ),
             152 => 
             array (
@@ -1011,7 +1011,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 166,
                 'department_id' => 21,
-                'nombre' => 'ELCOLLAO',
+                'nombre' => 'EL COLLAO',
             ),
             166 => 
             array (
@@ -1041,13 +1041,13 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 171,
                 'department_id' => 21,
-                'nombre' => 'SANANTONIODEPUTIN',
+                'nombre' => 'SAN ANTONIO DE PUTIN',
             ),
             171 => 
             array (
                 'id' => 172,
                 'department_id' => 21,
-                'nombre' => 'SANROMAN',
+                'nombre' => 'SAN ROMAN',
             ),
             172 => 
             array (
@@ -1077,7 +1077,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 177,
                 'department_id' => 22,
-                'nombre' => 'ELDORADO',
+                'nombre' => 'EL DORADO',
             ),
             177 => 
             array (
@@ -1095,7 +1095,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 180,
                 'department_id' => 22,
-                'nombre' => 'MARISCALCACERES',
+                'nombre' => 'MARISCAL CACERES',
             ),
             180 => 
             array (
@@ -1113,7 +1113,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 183,
                 'department_id' => 22,
-                'nombre' => 'SANMARTIN',
+                'nombre' => 'SAN MARTIN',
             ),
             183 => 
             array (
@@ -1137,7 +1137,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 187,
                 'department_id' => 23,
-                'nombre' => 'JORGEBASADRE',
+                'nombre' => 'JORGE BASADRE',
             ),
             187 => 
             array (
@@ -1155,7 +1155,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 190,
                 'department_id' => 24,
-                'nombre' => 'CONTRALMIRANTEVILLA',
+                'nombre' => 'CONTRALMIRANTE VILLA',
             ),
             190 => 
             array (
@@ -1167,7 +1167,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 192,
                 'department_id' => 25,
-                'nombre' => 'CORONELPORTILLO',
+                'nombre' => 'CORONEL PORTILLO',
             ),
             192 => 
             array (
@@ -1179,7 +1179,7 @@ class ProvincesTableSeeder extends Seeder
             array (
                 'id' => 194,
                 'department_id' => 25,
-                'nombre' => 'PADREABAD',
+                'nombre' => 'PADRE ABAD',
             ),
             194 => 
             array (
