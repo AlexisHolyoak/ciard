@@ -72,9 +72,6 @@
                     @else
                         <a href="{{ route('login') }}">Iniciar sesión</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Registrarse</a>
-                        @endif
                     @endauth
                 </div>
             @endif
@@ -86,7 +83,7 @@
 
                 <div class="links">
                     <a href="https://github.com/AlexisHolyoak/ciard/projects/1">Avance del proyecto</a>
-                    <a href="https://github.com/AlexisHolyoak/ciard/wiki">Sobre el proyecto</a>            
+                    <a href="https://github.com/AlexisHolyoak/ciard/wiki">Sobre el proyecto</a>
                 </div>
             </div>
         </div>

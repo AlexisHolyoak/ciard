@@ -16,7 +16,4 @@
      .nav-color{
          background-color: #0078A7;
      }
-     .nav-item{
-         : white;
-     }
  </style>

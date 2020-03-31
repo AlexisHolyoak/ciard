@@ -10,28 +10,28 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    
-    
-    
+
+
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    
+
     @include('layouts.styles')
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm ">
+        <nav class="navbar navbar-expand-md navbar-dark nav-color shadow-sm ">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'C.I.A.R.D') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
-                </button>               
+                </button>
             </div>
         </nav>
 
@@ -39,7 +39,7 @@
             @yield('body')
         </main>
     </div>
-   
+
     @include('layouts.scripts')
 </body>
 </html>
