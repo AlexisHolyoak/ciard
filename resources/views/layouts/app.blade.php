@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'C.I.A.R.D.') }}</title>
-
+    <meta name="description" content="Consolidado de información para la atención rapida de desastres">
     <!-- Scripts -->
 
 
