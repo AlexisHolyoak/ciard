@@ -7,7 +7,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'C.I.A.R.D.') }}</title>
+    <title>C.I.A.R.D.</title>
+    <meta property="og:title" content="C.I.A.R.D." />
     <meta name="description" content="Consolidado de información para la atención rapida de desastres">
     <!-- Scripts -->
 

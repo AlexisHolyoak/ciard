@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <title>{{ config('app.name', 'C.I.A.R.D.') }}</title>
+        <title>C.I.A.R.D.</title>
+        <meta property="og:title" content="C.I.A.R.D." />
         <meta name="description" content="Consolidado de información para la atención rapida de desastres">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
