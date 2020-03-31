@@ -4,19 +4,19 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>{{ config('app.name', 'C.I.A.R.D.') }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <!-- Styles -->
         <style>
-            html, body {
+            html, body, .content {
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
-                height: 100vh;
+                height: 100%;
                 margin: 0;
             }
 
@@ -61,31 +61,55 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .nav-color{
+                background-color: #80AEAB;
+            }
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Inicio</a>
-                    @else
-                        <a href="{{ route('login') }}">Iniciar sesión</a>
-
-                    @endauth
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-dark nav-color shadow-sm ">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'C.I.A.R.D') }}
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        @auth
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/home') }}">Inicio</a>
+                        </li>
+                        @else
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">Iniciar sesión</a>
+                        </li>
+                        @endauth
+                    </ul>
                 </div>
-            @endif
-
-            <div class="content">
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row justify-content-center">
                 <div class="title m-b-md">
                     C.I.A.R.D.
                 </div>
-
-                <div class="links">
-                    <a href="https://github.com/AlexisHolyoak/ciard/projects/1">Avance del proyecto</a>
-                    <a href="https://github.com/AlexisHolyoak/ciard/wiki">Sobre el proyecto</a>
+            </div>
+            <div class="row justify-content-center">
+                <div class="">
+                    <div class="links float-lg-right">
+                        <a href="https://github.com/AlexisHolyoak/ciard/projects/1">Avance del proyecto</a>
+                    </div>
+                    <div class="links float-lg-left">
+                        <a href="https://github.com/AlexisHolyoak/ciard/wiki">Sobre el proyecto</a>
+                    </div>
                 </div>
+
             </div>
         </div>
+    </div>
+    <script src="{{ asset('js/app.js') }}" ></script>
     </body>
 </html>
