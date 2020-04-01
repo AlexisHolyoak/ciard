@@ -37,7 +37,7 @@ return [
 
              //LOCAL CREDENTIALS
 
-             'url' => env('DATABASE_URL'),
+            'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'ciard'),
@@ -61,12 +61,14 @@ return [
         ],
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL','mysql://b9a97bfae41986:ac9c5aee@us-cdbr-iron-east-04.cleardb.net/heroku_1e37bdb9d8b2879?reconnect=true'),
-            'host' => env('DB_HOST', 'us-cdbr-iron-east-04.cleardb.net'),
+            /* EMPIEZA EL CAMBIO DE VARIABLES */
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'heroku_1e37bdb9d8b2879'),
-            'username' => env('DB_USERNAME', 'b9a97bfae41986'),
-            'password' => env('DB_PASSWORD', 'ac9c5aee'),
+            'database' => env('DB_DATABASE', 'ciard'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', ''),
+            /* TERMINA EL CAMBIO DE VARIABLES */
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8',
             'collation' => 'utf8_spanish_ci',
