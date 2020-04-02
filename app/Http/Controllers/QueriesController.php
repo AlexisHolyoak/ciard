@@ -189,9 +189,8 @@ class QueriesController extends Controller
             $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->where('disaster_type_id',$type)->where('date_time_disaster',$date)->get();
         }
         if($scale=='distrito'){
-            $province=Province::where('id',$location)->first();
-            $districts=$province->districts->pluck('id');
-            $zones=Zone::whereIn('district_id',$districts)->pluck('id');
+            $district=District::where('id',$location)->first();
+            $zones=Zone::whereIn('district_id',$district)->pluck('id');
             $urbanspaces=UrbanSpace::whereIn('zone_id',$zones)->pluck('id');
             $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->get();
         }
@@ -236,10 +235,9 @@ class QueriesController extends Controller
             $urbanspaces=UrbanSpace::whereIn('zone_id',$zones)->pluck('id');
             $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->where('disaster_type_id',$type)->where('date_time_disaster',$date)->get();
         }
-        if($scale=='distrito'){
-            $province=Province::where('id',$location)->first();
-            $districts=$province->districts->pluck('id');
-            $zones=Zone::whereIn('district_id',$districts)->pluck('id');
+        if($scale=='distrito'){            
+            $district=District::where('id',$location)->first();
+            $zones=Zone::whereIn('district_id',$district)->pluck('id');
             $urbanspaces=UrbanSpace::whereIn('zone_id',$zones)->pluck('id');
             $disasters=Disaster::whereIn('urban_space_id', $urbanspaces )->get();
         }

@@ -19,7 +19,7 @@
                     </div>
                     <div class="form-group">
                         <label for="permissions">Permisos</label>
-                        <select class="form-control selectpicker " name="permission_id[]" multiple required  >
+                        <select class="form-control selectpicker " name="permission_id[]" multiple required mobile >
                             @foreach($permissions as $permission)
                                 <option  value="{{$permission->id}}">{{$permission->display_name}}</option>
                             @endforeach

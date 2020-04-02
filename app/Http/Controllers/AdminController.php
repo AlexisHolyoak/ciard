@@ -64,6 +64,9 @@ class AdminController extends Controller
         return view('admin.users.create',compact(['permissions','roles']));
     }
     public function storeUser(Request $request){
+        $name=ucwords(strtolower( $request->name));
+        $first_surname=ucwords(strtolower( $request->first_surname));
+        $second_surname=ucwords(strtolower( $request->second_surname));
         $this->validate($request,[
             'name' => ['required', 'string', 'max:255'],
             'first_surname'=> ['required', 'string', 'max:255'],
@@ -75,15 +78,17 @@ class AdminController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
         $role=Role::find($request->role_id);
-
-        $person = Person::create([
-            'name'=>ucwords(strtolower( $request->name)),
-            'first_surname'=>ucwords(strtolower( $request->first_surname)),
-            'second_surname'=>ucwords(strtolower( $request->second_surname)),
-            'birthday'=> $request->birthday,
-            'document_type'=>$request->document_type,
-            'document_number'=>$request->document_number
-        ]);
+        $person=new Person();
+        $person->name = $name;
+        $person->first_surname = $first_surname;
+        $person->second_surname = $second_surname;
+        $person->birthday = $request->birthday;
+        $person->document_type =   $request->document_type;
+        $person->document_number =   $request->document_number; 
+        $person->sex= $request->sex;   
+       
+        $person->save();        
+        
         $user= User::create([
             'people_id'=>$person->id,
             'email' => $request->email,
@@ -122,6 +127,7 @@ class AdminController extends Controller
         $persona -> first_surname = $str_f_surname;
         $persona -> second_surname = $str_s_surname;
         $persona -> birthday = $request->birthday;
+        $persona -> sex=$request->sex;
         $persona -> document_type = $request->get('document_type');
         $persona -> document_number = $request->document_number;
         $persona->save();

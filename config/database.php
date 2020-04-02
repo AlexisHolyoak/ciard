@@ -70,8 +70,8 @@ return [
             'password' => env('DB_PASSWORD', ''),
             /* TERMINA EL CAMBIO DE VARIABLES */
             'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8',
-            'collation' => 'utf8_spanish_ci',
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'prefix_indexes' => true,
             'strict' => true,

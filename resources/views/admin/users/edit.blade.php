@@ -112,6 +112,21 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label for="sex" class="col-md-4 col-form-label text-md-right">Sexo</label>
+
+                        <div class="col-md-6">
+                            <select id="sex" class="custom-select"  name="sex" required>
+                                <option value="MASCULINO" {{old('sex')== 'MASCULINO' ?'selected':''}}>MASCULINO</option>
+                                <option value="FEMENINO" {{old('sex')== 'FEMENINO' ?'selected':''}}>FEMENINO</option>                          
+                            </select>
+                            @error('sex')
+                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label for="document_type" class="col-md-4 col-form-label text-md-right">Tipo de documento</label>
 
                         <div class="col-md-6">
