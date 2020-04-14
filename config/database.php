@@ -62,12 +62,12 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             /* EMPIEZA EL CAMBIO DE VARIABLES */
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'url' => env('DATABASE_URL','mysql://b9a97bfae41986:ac9c5aee@us-cdbr-iron-east-04.cleardb.net/heroku_1e37bdb9d8b2879?reconnect=true'),
+            'host' => env('DB_HOST', 'us-cdbr-iron-east-04.cleardb.net'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'ciard'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => env('DB_DATABASE', 'heroku_1e37bdb9d8b2879'),
+            'username' => env('DB_USERNAME', 'b9a97bfae41986'),
+            'password' => env('DB_PASSWORD', 'ac9c5aee'),
             /* TERMINA EL CAMBIO DE VARIABLES */
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
