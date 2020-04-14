@@ -228,7 +228,9 @@ class AdminController extends Controller
         return Redirect::action('AdminController@buildings',[$urbanspace])->with('success',"Se ha registrado una nueva construcción en este espacio urbano");
     }
     public function evaluators(){
-        $users = User::whereRoleIs('evaluador')->get();
+        $superadmin = User::whereRoleIs('superadministrador')->get();
+        $evaluator = User::whereRoleIs('evaluador')->get();
+        $users = $superadmin->merge($evaluator);
         return view('admin.evaluators.index',compact(['users']));
     }
     public function editEvaluator(Person $person){

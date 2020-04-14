@@ -59,7 +59,7 @@
                                 </div>
                             </li>
                         @endif
-                        @if(Auth::user()->hasRole(['evaluador']))
+                        @if(Auth::user()->hasRole(['evaluador','superadministrador']))
                         <li class="nav-item dropdown {{ Request::segment('1')=='forms' ? 'active' : '' }}">
                             <a class="nav-link  dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Formularios </a>
                             <div class="dropdown-menu">

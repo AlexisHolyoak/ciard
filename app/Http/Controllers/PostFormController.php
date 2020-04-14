@@ -30,6 +30,9 @@ class PostFormController extends Controller
     public function index(){
         $user= Auth::user();
         $evaluator= EdanEvaluator::where('people_id',$user->person->id)->first();
+        if($evaluator==null){
+            return Redirect::action('AdminController@evaluators')->with('warning','Porfavor asigna el usuario actual a un espacio urbano');            
+        }
         $designations = UrbanSpaceEvaluator::where('evaluator_id',$evaluator->id);
         $designations_id = UrbanSpaceEvaluator::where('evaluator_id',$evaluator->id)->pluck('urban_space_id');
         $disasters =Disaster::whereIn('urban_space_id',$designations_id)->orderBy('date_time_disaster','DESC')->get();

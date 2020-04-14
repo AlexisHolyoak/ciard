@@ -22,7 +22,9 @@ class FormsController extends Controller
     }
     public function index(){
         $user= Auth::user();
-        $evaluator= EdanEvaluator::where('people_id',$user->person->id)->first();
+        $evaluator= EdanEvaluator::where('people_id',$user->person->id)->first();if($evaluator==null){
+            return Redirect::action('AdminController@evaluators')->with('warning','Porfavor asigna el usuario actual a un espacio urbano');            
+        }
         $designations = UrbanSpaceEvaluator::where('evaluator_id',$evaluator->id)->get();
         $infrastructures = InfraestructureInfo::all();
         return view('forms.pre.index',compact(['designations','infrastructures']));
